@@ -10,6 +10,7 @@
     vlc
     texlive.combined.scheme-full
     pandoc
+    gh
     (pkgs.nerdfonts.override { fonts = [ "FantasqueSansMono" ]; })
   ];
 }
