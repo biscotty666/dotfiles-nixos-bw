@@ -3,6 +3,10 @@
 {
   nixpkgs.config.allowUnfree = true;
   home.packages = with pkgs; [
+    thunderbird
+    spotify
+    discord
+    vscode
     brave
     curl
     btop

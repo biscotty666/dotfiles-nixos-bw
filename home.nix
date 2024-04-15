@@ -3,6 +3,7 @@
   imports = [
     ./sh.nix
     ./packages.nix
+    ./programs.nix
   ];
   # Home Manager needs a bit of information about you and the paths it should
   # manage.
@@ -32,26 +33,34 @@
 
   programs = {
 
-    lsd = {
-      enable = true;
-      enableAliases = true;
-    };
+#     vscode = {
+      # enable = true;
+      # extensions = with pkgs.vscode-extensions; [
+        # ecmel.vscode-html-css
+      # ];
+      # enableExtensionUpdateCheck = true;
+    # };
+# 
+    # lsd = {
+      # enable = true;
+      # enableAliases = true;
+    # };
 
-    zellij = {
-      enable = true;
-      enableZshIntegration = true;
-    };
+    # zellij = {
+      # enable = true;
+      # enableZshIntegration = true;
+    # };
 
-    direnv = {
-      enable = true;
-      enableZshIntegration = true;
-      nix-direnv.enable = true;
-    };
+    # direnv = {
+      # enable = true;
+      # enableZshIntegration = true;
+      # nix-direnv.enable = true;
+    # };
 
-    zoxide = {
-      enable = true;
-      enableZshIntegration = true;
-    };
+    # zoxide = {
+      # enable = true;
+      # enableZshIntegration = true;
+    # };
   };
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
   # plain files is through 'home.file'.
