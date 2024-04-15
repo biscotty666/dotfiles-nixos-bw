@@ -1,14 +1,8 @@
 { config, pkgs, ... }:
-# let
-  # myAliases = {
-    # ll = "ls -l";
-    # la = "ls -a";
-    # lal = "ls -lah";
-  # };
-# in
 {
   imports = [
     ./sh.nix
+    ./packages.nix
   ];
   # Home Manager needs a bit of information about you and the paths it should
   # manage.
@@ -27,20 +21,6 @@
   # The home.packages option allows you to install Nix packages into your
   # environment.
   home.packages = with pkgs; [
-    # # Adds the 'hello' command to your environment. It prints a friendly
-    # # "Hello, world!" when run.
-    # pkgs.hello
-    brave
-    curl
-    btop
-    zellij
-    gimp
-    vlc
-    # # It is sometimes useful to fine-tune packages, for example, by applying
-    # # overrides. You can do that directly here, just don't forget the
-    # # parentheses. Maybe you want to install Nerd Fonts with a limited number of
-    # # fonts?
-    (pkgs.nerdfonts.override { fonts = [ "FantasqueSansMono" ]; })
 
     # # You can also create simple shell scripts directly inside your
     # # configuration. For example, this adds a command 'my-hello' to your
@@ -53,6 +33,12 @@
   programs.zellij = {
     enable = true;
     enableZshIntegration = true;
+  };
+
+  programs.direnv = {
+    enable = true;
+    enableZshIntegration = true;
+    nix-direnv.enable = true;
   };
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
@@ -89,15 +75,6 @@
     EDITOR = "vim";
   };
 
-  # programs.zsh = {
-    # enable = true;
-    # shellAliases = myAliases;
-  # };
-# 
-  # programs.bash = {
-    # enable = true;
-    # shellAliases = myAliases;
-  # };
 
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
