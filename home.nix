@@ -19,12 +19,26 @@
     # (pkgs.writeShellScriptBin "my-hello" ''
     #   echo "Hello, ${config.home.username}!"
     # '')
+    kdeconnect
+    syncthing
   ];
 
   programs = {
-
+    # kdeconnect.package = gnomeExtensions.gsconnect;
   };
 
+  services = {
+    kdeconnect = {
+      enable = true;
+      indicator = true;
+      package = pkgs.gnomeExtensions.gsconnect;
+    };
+    syncthing = {
+      enable = true;
+      tray.enable = true;
+    };
+
+  };
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
   # plain files is through 'home.file'.
   home.file = {
