@@ -31,6 +31,12 @@
   ];
 
   programs = {
+
+    lsd = {
+      enable = true;
+      enableAliases = true;
+    };
+
     zellij = {
       enable = true;
       enableZshIntegration = true;

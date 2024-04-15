@@ -2,8 +2,8 @@
 
 let
   myAliases = {
-    ll = "ls -l";
-    la = "ls -a";
+    # ll = "ls -l";
+    # la = "ls -a";
     lal = "ls -lah";
     cd = "z";
   };
