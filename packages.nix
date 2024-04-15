@@ -7,6 +7,7 @@
     spotify
     discord
     vscode
+    qgis
     brave
     curl
     btop

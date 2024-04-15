@@ -9,7 +9,16 @@
         pkgs = nixpkgs.legacyPackages.${system};
         RStudio-with-my-packages = pkgs.rstudioWrapper.override{ packages = with pkgs.rPackages; 
         [ 
-          ggplot2 dplyr xts tidyverse
+          ggplot2 
+          dplyr 
+          xts 
+          tidyverse
+          sf
+          terra
+          shiny
+          plotly
+          tidymodels
+          mlr3
         ]; };
       in
       {
