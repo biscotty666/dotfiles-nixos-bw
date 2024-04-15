@@ -11,6 +11,7 @@
     texlive.combined.scheme-full
     pandoc
     gh
+    zoxide
     (pkgs.nerdfonts.override { fonts = [ "FantasqueSansMono" ]; })
   ];
 }
