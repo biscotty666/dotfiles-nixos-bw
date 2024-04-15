@@ -1,6 +1,7 @@
 { config, pkgs, ... }:
 
 {
+  nixpkgs.config.allowUnfree = true;
   home.packages = with pkgs; [
     brave
     curl
@@ -12,6 +13,8 @@
     pandoc
     gh
     zoxide
+    audacity
+    obsidian
     (pkgs.nerdfonts.override { fonts = [ "FantasqueSansMono" ]; })
   ];
 }
