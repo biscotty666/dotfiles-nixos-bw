@@ -11,6 +11,7 @@
     packages = {
       pythonEnv = nixpkgs.legacyPackages.${system}.python3.withPackages(ps: with ps; [ 
         numpy pandas matplotlib
+        jupyter ipython
       ]);
     };
 
