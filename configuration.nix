@@ -96,6 +96,16 @@
     ];
   };
 
+  users.users.guest = {
+    isNormalUser = true;
+    description = "Guest account";
+    extraGroups = [ ];
+    packages = with pkgs; [
+      firefox
+    #  thunderbird
+    ];
+  };
+
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
