@@ -8,6 +8,7 @@
     discord
     vscode
     qgis
+    libreoffice
     brave
     curl
     btop

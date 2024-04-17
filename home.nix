@@ -19,7 +19,7 @@
     # (pkgs.writeShellScriptBin "my-hello" ''
     #   echo "Hello, ${config.home.username}!"
     # '')
-    kdeconnect
+    # kdeconnect
     syncthing
   ];
 
@@ -28,11 +28,11 @@
   };
 
   services = {
-    kdeconnect = {
-      enable = true;
-      indicator = true;
-      package = pkgs.gnomeExtensions.gsconnect;
-    };
+    # kdeconnect = {
+      # enable = true;
+      # indicator = true;
+      # package = pkgs.gnomeExtensions.gsconnect;
+    # };
     syncthing = {
       enable = true;
       tray.enable = true;
