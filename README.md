@@ -32,3 +32,4 @@ $ nix-channel --update
 3. Edit the flake to add/remove libraries. (Building all the ml and spatial libraries takes a long time.)
 4. Run `direnv allow`
 
+Please let me know if something doesn't work.
