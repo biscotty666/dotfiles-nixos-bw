@@ -6,8 +6,8 @@
     ./programs.nix
   ];
 
-  home.username = "biscotty";
-  home.homeDirectory = "/home/biscotty";
+  home.username = "guest";
+  home.homeDirectory = "/home/guest";
 
   home.stateVersion = "23.11"; # Please read the comment before changing.
 

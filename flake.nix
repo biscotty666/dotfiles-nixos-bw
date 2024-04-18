@@ -17,7 +17,7 @@
         inherit system;
         modules = [ ./configuration.nix ];
       };
-    homeConfigurations."biscotty" = home-manager.lib.homeManagerConfiguration {
+    homeConfigurations."guest" = home-manager.lib.homeManagerConfiguration {
         inherit pkgs;
         modules = [ ./home.nix ];
       };
