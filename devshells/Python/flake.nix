@@ -1,21 +1,29 @@
 {
-  description = "My flake";
-
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs?ref=nixpkgs-unstable";
-    utils.url = "github:numtide/flake-utils";
-  };
-
-  outputs = { self, nixpkgs, utils }: (utils.lib.eachSystem ["x86_64-linux" ] (system: rec {
-
-    packages = {
-      pythonEnv = nixpkgs.legacyPackages.${system}.python3.withPackages(ps: with ps; [ 
-        numpy pandas matplotlib
-        jupyter ipython
-      ]);
+    nixpkgs = {
+      url = "github:nixos/nixpkgs/nixos-unstable";
     };
-
-    defaultPackage = packages.pythonEnv; # If you want to juist build the environment
-    devShell = packages.pythonEnv.env; # We need .env in order to use `nix develop`
-  }));
+    flake-utils = {
+      url = "github:numtide/flake-utils";
+    };
+  };
+  outputs = { nixpkgs, flake-utils, ... }: flake-utils.lib.eachDefaultSystem (system:
+    let
+      pkgs = import nixpkgs {
+        inherit system;
+      };
+    in rec {
+      devShell = pkgs.mkShell {
+        buildInputs = with pkgs; [
+          (python3.withPackages(ps: with ps; [
+            ipython
+            jupyter
+            numpy
+            pandas
+          ]))
+        ];
+        shellHook = "jupyter notebook";
+      };
+    }
+  );
 }
