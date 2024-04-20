@@ -6,8 +6,8 @@
     ./programs.nix
   ];
 
-  home.username = "guest";
-  home.homeDirectory = "/home/guest";
+  home.username = "biscotty";
+  home.homeDirectory = "/home/biscotty";
 
   home.stateVersion = "23.11"; # Please read the comment before changing.
 
@@ -56,6 +56,7 @@
 
   home.sessionVariables = {
     EDITOR = "vim";
+    NIXPKGS_ALLOW_UNFREE = 1;
   };
 
 

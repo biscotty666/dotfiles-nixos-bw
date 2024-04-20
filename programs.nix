@@ -3,6 +3,22 @@
 {
   programs = {
 
+    git = {
+      enable = true;
+      userName = "biscotty666";
+      userEmail = "biscotty666@gmail.com";
+      extraConfig = {
+        push = { autoSetupRemote = true; };
+      };
+    };
+    zsh = {
+#      enable = true;
+      sessionVariables = {
+        EDITOR = "vim";
+        NIXPKGS_ALLOW_UNFREE = 1;
+      };
+    };
+
     vscode = {
       enable = true;
       extensions = with pkgs.vscode-extensions; [

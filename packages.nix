@@ -5,6 +5,7 @@
   home.packages = with pkgs; [
     thunderbird
     spotify
+    gnome.gnome-tweaks
     discord
     vscode
     qgis

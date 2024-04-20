@@ -96,6 +96,28 @@
     ];
   };
 
+  users.users.bob = {
+    isNormalUser = true;
+    description = "Bob Janes";
+    extraGroups = [ "networkmanager" "wheel" ];
+    hashedPassword = "$y$j9T$ychxwrGkYzIgouQ4nLcIJ1$AHCMnBG/ECVo4Wid/pUshzIGDtjOj4xZocdueG.ACTC";
+    packages = with pkgs; [
+      firefox
+    #  thunderbird
+    ];
+  };
+
+  users.users.alice = {
+    isNormalUser = true;
+    description = "Alice Jones";
+    extraGroups = [ "networkmanager" "wheel" ];
+    hashedPassword = "$y$j9T$ychxwrGkYzIgouQ4nLcIJ1$AHCMnBG/ECVo4Wid/pUshzIGDtjOj4xZocdueG.ACTC";
+    packages = with pkgs; [
+      firefox
+    #  thunderbird
+    ];
+  };
+
   users.users.guest = {
     isNormalUser = true;
     description = "Guest account";
