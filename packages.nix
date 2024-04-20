@@ -18,7 +18,7 @@
     vlc
     texlive.combined.scheme-full
     pandoc
-    gh
+    # gh
     zoxide
     audacity
     obsidian

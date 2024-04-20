@@ -94,6 +94,10 @@
       firefox
     #  thunderbird
     ];
+    openssh.authorizedKeys.keys = [
+      "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIMMI4itGTsmV4cIkc/2nd biscotty@nixos-bw"
+      "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAINwU6QfiXTNCzscrUHb0gomWlopdPOsIKd/xoXvhHvNH biscotty666@gmail.com"
+    ];
   };
 
   users.users.bob = {
