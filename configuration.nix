@@ -100,37 +100,16 @@
     ];
   };
 
-  users.users.bob = {
+  users.users.admin = {
     isNormalUser = true;
-    description = "Bob Janes";
+    description = "Administrator";
     extraGroups = [ "networkmanager" "wheel" ];
-    hashedPassword = "$y$j9T$ychxwrGkYzIgouQ4nLcIJ1$AHCMnBG/ECVo4Wid/pUshzIGDtjOj4xZocdueG.ACTC";
     packages = with pkgs; [
       firefox
     #  thunderbird
     ];
   };
 
-  users.users.alice = {
-    isNormalUser = true;
-    description = "Alice Jones";
-    extraGroups = [ "networkmanager" "wheel" ];
-    hashedPassword = "$y$j9T$ychxwrGkYzIgouQ4nLcIJ1$AHCMnBG/ECVo4Wid/pUshzIGDtjOj4xZocdueG.ACTC";
-    packages = with pkgs; [
-      firefox
-    #  thunderbird
-    ];
-  };
-
-  users.users.guest = {
-    isNormalUser = true;
-    description = "Guest account";
-    extraGroups = [ ];
-    packages = with pkgs; [
-      firefox
-    #  thunderbird
-    ];
-  };
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
