@@ -20,9 +20,18 @@
             jupyter
             numpy
             pandas
+            scikit-learn
+            matplotlib
+            seaborn
+            plotly
+            gleam
+            folium
+            leather
+            altair
+            plotnine
           ]))
         ];
-        shellHook = "jupyter notebook";
+        shellHook = "jupyter lab";
       };
     }
   );
