@@ -23,6 +23,7 @@
     zoxide
     audacity
     obsidian
+    bat
     (pkgs.nerdfonts.override { fonts = [ "FantasqueSansMono" ]; })
   ];
 }
