@@ -15,9 +15,14 @@ Configuration with flakes and dev shells.
 $ nix-channel --add https://github.com/nix-community/home-manager/archive/master.tar.gz home-manager
 $ nix-channel --update
 ```
-8. Log out and in
-9. Run `nix-shell '<home-manager>' -A install`
-10. Log out and in
+8. Add libraries for nixGL
+```
+$ nix-channel --add https://github.com/nix-community/nixGL/archive/main.tar.gz nixgl && nix-channel --update
+$ nix-env -iA nixgl.auto.nixGLDefault   # or replace `nixGLDefault` with your desired wrapper
+```
+9. Log out and in
+10. Run `nix-shell '<home-manager>' -A install`
+11. Log out and in
 12. In `dotfiles` run `home-manager switch --flake .`
 13. Log out an in once more
 
