@@ -11,17 +11,10 @@
     ];
 
   # Bootloader.
-  boot.loader.grub.enable = true;
-  boot.loader.grub.device = "/dev/vda";
-  boot.loader.grub.useOSProber = true;
+  boot.loader.systemd-boot.enable = true;
+  boot.loader.efi.canTouchEfiVariables = true;
 
-  # Configure zsh
-  environment.shells = with pkgs; [ zsh ];
-  users.defaultUserShell = pkgs.zsh;
-  programs.zsh.enable = true;
-
-
-  networking.hostName = "nixos-bw"; # Define your hostname.
+  networking.hostName = "nixos"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
   # Configure network proxy if necessary
@@ -82,6 +75,11 @@
     #media-session.enable = true;
   };
 
+  services.syncthing = {
+    enable = true;
+    user = "biscotty";
+    configDir = "/home/biscotty/.config/syncthing";
+  };
   # Enable touchpad support (enabled default in most desktopManager).
   # services.xserver.libinput.enable = true;
 
@@ -94,34 +92,36 @@
       firefox
     #  thunderbird
     ];
-    openssh.authorizedKeys.keys = [
-      "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIMMI4itGTsmV4cIkc/2nd biscotty@nixos-bw"
-      "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAINwU6QfiXTNCzscrUHb0gomWlopdPOsIKd/xoXvhHvNH biscotty666@gmail.com"
-    ];
   };
 
-  users.users.admin = {
+  users.users.restic = {
     isNormalUser = true;
-    description = "Administrator";
-    extraGroups = [ "networkmanager" "wheel" ];
-    packages = with pkgs; [
-      firefox
-    #  thunderbird
-    ];
   };
 
+  security.wrappers.restic = {
+    source = "${pkgs.restic.out}/bin/restic";
+    owner = "restic";
+    group = "users";
+    permissions = "u=rwx,g=,o=";
+    capabilities = "cap_dac_read_search=+ep";
+  };
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
+
+  virtualisation.libvirtd.enable = true;
+  programs.virt-manager.enable = true;
 
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
     vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
-    wget
-    quickemu
     git
     alacritty
+    restic
+    qemu
+    quickemu
+  #  wget
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
@@ -136,10 +136,11 @@
 
   # Enable the OpenSSH daemon.
   services.openssh.enable = true;
+  services.flatpak.enable = true;
 
   # Open ports in the firewall.
-  # networking.firewall.allowedTCPPorts = [ ... ];
-  # networking.firewall.allowedUDPPorts = [ ... ];
+  networking.firewall.allowedTCPPorts = [ 8384 22000 ];
+  networking.firewall.allowedUDPPorts = [ 22000 21027 ];
   # Or disable the firewall altogether.
   # networking.firewall.enable = false;
 

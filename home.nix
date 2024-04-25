@@ -4,6 +4,7 @@
     ./sh.nix
     ./packages.nix
     ./programs.nix
+    ./vim.nix
   ];
 
   home.username = "biscotty";
@@ -20,7 +21,6 @@
     #   echo "Hello, ${config.home.username}!"
     # '')
     # kdeconnect
-    syncthing
   ];
 
   programs = {
@@ -33,10 +33,12 @@
       # indicator = true;
       # package = pkgs.gnomeExtensions.gsconnect;
     # };
-    syncthing = {
-      enable = true;
-      tray.enable = true;
-    };
+    # syncthing = {
+      # enable = true;
+      # user = "biscotty";
+      # tray.enable = true;
+      #configDir = "/home/biscotty/.config/syncthing";
+    # };
 
   };
   # Home Manager is pretty good at managing dotfiles. The primary way to manage

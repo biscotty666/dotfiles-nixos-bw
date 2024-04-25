@@ -5,7 +5,8 @@
   home.packages = with pkgs; [
     thunderbird
     spotify
-    gnome.gnome-tweaks
+    # gnome.gnome-tweaks
+    flatpak
     discord
     vscode
     qgis
@@ -18,7 +19,7 @@
     vlc
     texlive.combined.scheme-full
     pandoc
-    # gh
+    gh
     zoxide
     audacity
     obsidian
