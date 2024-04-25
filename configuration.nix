@@ -121,6 +121,7 @@
     restic
     qemu
     quickemu
+    gnomeExtensions.gsconnect
   #  wget
   ];
 
@@ -139,8 +140,17 @@
   services.flatpak.enable = true;
 
   # Open ports in the firewall.
-  networking.firewall.allowedTCPPorts = [ 8384 22000 ];
-  networking.firewall.allowedUDPPorts = [ 22000 21027 ];
+  networking.firewall = {
+    allowedTCPPorts = [ 8384 22000 ];
+    allowedUDPPorts = [ 22000 21027 ];
+    allowedTCPPortRanges = [ 
+      { from = 1714; to = 1764; }
+    ];
+    allowedUDPPortRanges = [ 
+      { from = 1714; to = 1764; }
+    ];
+  };
+
   # Or disable the firewall altogether.
   # networking.firewall.enable = false;
 
