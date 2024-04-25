@@ -4,20 +4,20 @@ Configuration with flakes and dev shells.
 
 ## Nixos system install with flakes
 
-1. Install NixOS with defaults, allow unfree software, create user named `guest`
-2. Add/uncomment vim, git and `nix.settings.experimental-features = [ "nix-command" "flakes" ];` and rebuild with `sudo nixos-rebuild switch`
-4. Create the `dotfiles` directory and clone the repository.
-5. Copy the configuration.nix to `/etc/nixos` and rebuild
-6. Log out and in
-7. Switch to `dotfiles`, copy the hardware configuration from `/etc/nixos` and rebuild with `sudo nixos-rebuild switch --flake .`
-8. Add home-manager channels with 
+1. Install NixOS with defaults, allow unfree software, create user
+2. Add git, vi, alacritty and rebuild
+3. Create the `dotfiles` directory and clone the repository.
+4. Copy the configuration.nix to `/etc/nixos`, adjust user name and rebuild
+5. Log out and in
+6. Switch to `dotfiles`, copy the hardware configuration from `/etc/nixos` and rebuild with `sudo nixos-rebuild switch --flake .`
+7. Add home-manager channels with 
 ```
 $ nix-channel --add https://github.com/nix-community/home-manager/archive/master.tar.gz home-manager
 $ nix-channel --update
 ```
-9. Log out and in
-10. Run `nix-shell '<home-manager>' -A install`
-11. Log out and in
+8. Log out and in
+9. Run `nix-shell '<home-manager>' -A install`
+10. Log out and in
 12. In `dotfiles` run `home-manager switch --flake .`
 13. Log out an in once more
 
