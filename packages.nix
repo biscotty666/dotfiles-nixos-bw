@@ -7,7 +7,13 @@
     spotify
     # gnome.gnome-tweaks
     flatpak
+#    quarto
+#    rPackages.quarto
+    fzf
     discord
+    zsh-forgit
+    zsh-fzf-history-search
+    zsh-fzf-tab
     vscode
     qgis
     libreoffice

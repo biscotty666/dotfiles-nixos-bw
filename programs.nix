@@ -11,12 +11,10 @@
         push = { autoSetupRemote = true; };
       };
     };
-    zsh = {
-#      enable = true;
-      sessionVariables = {
-        EDITOR = "vim";
-        NIXPKGS_ALLOW_UNFREE = 1;
-      };
+
+    fzf = {
+      enable = true;
+      enableZshIntegration = true;
     };
 
     vscode = {
