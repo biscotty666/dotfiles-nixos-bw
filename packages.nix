@@ -10,6 +10,9 @@
 #    quarto
 #    rPackages.quarto
     fzf
+    feh
+    neovim
+    imagemagick
     discord
     zsh-forgit
     zsh-fzf-history-search
@@ -21,6 +24,9 @@
     curl
     btop
     zellij
+    ranger
+    w3m
+    ueberzug
     gimp
     vlc
     texlive.combined.scheme-full

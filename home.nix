@@ -1,4 +1,14 @@
 { config, pkgs, ... }:
+
+# let
+#   # […]
+#   nix-nvim = builtins.fetchGit {
+#     url = "https://framagit.org/vegaelle/nix-nvim.git";
+#     ref = "main";
+#     rev = "2151b0dff09a010cf092d9780c0902affa1acb25";
+#   };
+# in
+# 
 {
   imports = [
     ./sh.nix
@@ -6,6 +16,8 @@
     ./programs.nix
     ./vim.nix
     ./kdeconnect.nix
+    # ./neovim.nix
+    # (import "${nix-nvim}")
   ];
 
   home.username = "biscotty";

@@ -10,6 +10,7 @@
         gitgutter
         vim-nerdtree-tabs
         vim-nerdtree-syntax-highlight
+        awesome-vim-colorschemes
       ];
       settings = { ignorecase = true; };
       extraConfig = ''
@@ -61,8 +62,8 @@
         nnoremap <C-L> <C-W><C-L>
         nnoremap <C-H> <C-W><C-H>
 
-
-        colorscheme desert
+        set background=dark
+        colorscheme molokai
 
       '';
     };
