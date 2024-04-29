@@ -11,13 +11,12 @@
 #    rPackages.quarto
     fzf
     feh
-    neovim
+#    neovim
     imagemagick
     discord
     zsh-forgit
     zsh-fzf-history-search
     zsh-fzf-tab
-    vscode
     qgis
     libreoffice
     brave

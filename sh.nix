@@ -6,6 +6,7 @@ let
     # la = "ls -a";
     lal = "ls -lah";
     cd = "z";
+    ze = "zellij e";
   };
 in
 {
