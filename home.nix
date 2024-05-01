@@ -16,7 +16,7 @@
     ./programs.nix
     ./vim.nix
     ./kdeconnect.nix
-    ./neovim.nix
+#    ./neovim.nix
     # (import "${nix-nvim}")
   ];
 

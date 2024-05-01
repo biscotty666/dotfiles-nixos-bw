@@ -13,6 +13,8 @@
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
+  systemd.oomd.enableUserSlices = true;
+  environment.localBinInPath = true;
 
   networking.hostName = "nixos"; # Define your hostname.
   networking.hosts = {
@@ -116,6 +118,12 @@
   virtualisation.libvirtd.enable = true;
   programs.virt-manager.enable = true;
 
+  nix.settings.auto-optimise-store = true;
+  nix.gc = {
+    automatic = true;
+    dates = "daily";
+    options = "--delete-older-than 10d";
+  };
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
