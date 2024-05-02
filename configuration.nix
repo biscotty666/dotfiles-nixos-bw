@@ -115,8 +115,18 @@
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
-  virtualisation.libvirtd.enable = true;
+  virtualisation = {
+    libvirtd.enable = true;
+    podman = {
+      enable = true;
+      dockerCompat = true;
+      defaultNetwork.settings.dns_enabled = true;
+    };
+  };
   programs.virt-manager.enable = true;
+
+  virtualisation.containers.enable = true;
+
 
   nix.settings.auto-optimise-store = true;
   nix.gc = {
@@ -134,6 +144,9 @@
     qemu
     quickemu
     gnomeExtensions.gsconnect
+    dive
+    podman
+    podman-tui
   #  wget
   ];
 
