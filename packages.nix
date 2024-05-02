@@ -33,6 +33,7 @@
     gh
     zoxide
     audacity
+    distrobox
     obsidian
     bat
     (pkgs.nerdfonts.override { fonts = [ "FantasqueSansMono" ]; })
