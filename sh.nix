@@ -19,10 +19,19 @@ in
     sessionVariables = {
       EDITOR = "vim";
       NIXPKGS_ALLOW_UNFREE = 1;
+      BARTIB_FILE="/home/biscotty/.local/bartib/activities.bartib";
     };
     oh-my-zsh = {
       enable = true;
-      plugins = [ "git" ];
+      plugins = [
+        "git"
+        # "sudo"
+        "thefuck"
+        "web-search"
+        "catimg"
+        "colored-man-pages"
+        "colorize"
+      ];
       theme = "robbyrussell";
     };
     plugins = [

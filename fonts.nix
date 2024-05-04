@@ -1,7 +1,8 @@
 { config, pkgs, ... }:
 
 {
-  fonts.packages = with pkgs; [
+  fonts.fontconfig.enable = true;
+  home.packages = with pkgs; [
     noto-fonts
     noto-fonts-cjk
     noto-fonts-emoji
@@ -9,13 +10,14 @@
     fira-code
     fira-code-symbols
     mplus-outline-fonts.githubRelease
+    google-fonts
     dina-font
-    proggyfonts
-    nerdfonts
-#     (nerdfonts.override { fonts = [ 
-#       "FantasqueSansMono" 
-#       "FiraCode"
-#       "DroidSansMono"
-#     ]; })
+    #proggyfonts
+    #nerdfonts
+    (nerdfonts.override { fonts = [ 
+       "FantasqueSansMono" 
+       "FiraCode"
+       "DroidSansMono"
+     ]; })
   ];
 }

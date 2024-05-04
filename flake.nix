@@ -22,6 +22,11 @@
         inherit system;
         modules = [ ./configuration.nix ];
       };
+    #homeConfigurations."brian" = home-manager.lib.homeManagerConfiguration {
+        #inherit pkgs;
+        #modules = [ ./home-brian.nix ];
+      #};
+    #};
     homeConfigurations."biscotty" = home-manager.lib.homeManagerConfiguration {
         inherit pkgs;
         modules = [ ./home.nix ];

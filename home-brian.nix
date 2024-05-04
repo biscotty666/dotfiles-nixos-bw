@@ -22,8 +22,8 @@
     # (import "${nix-nvim}")
   ];
 
-  home.username = "biscotty";
-  home.homeDirectory = "/home/biscotty";
+  home.username = "brian";
+  home.homeDirectory = "/home/brian";
 
   home.stateVersion = "23.11"; # Please read the comment before changing.
 
@@ -63,7 +63,6 @@
   home.sessionVariables = {
     EDITOR = "vim";
     NIXPKGS_ALLOW_UNFREE = 1;
-    BARTIB_FILE="/home/biscotty/.local/bartib/activities.bartib";
   };
 
 

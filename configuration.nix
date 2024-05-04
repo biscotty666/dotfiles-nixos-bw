@@ -15,6 +15,7 @@
   boot.loader.efi.canTouchEfiVariables = true;
   systemd.oomd.enableUserSlices = true;
   environment.localBinInPath = true;
+  programs.zsh.enable = true;
 
   networking.hostName = "nixos"; # Define your hostname.
   networking.hosts = {
@@ -51,8 +52,17 @@
   services.xserver.enable = true;
 
   # Enable the GNOME Desktop Environment.
-  services.xserver.displayManager.gdm.enable = true;
+  services.displayManager.sddm = {
+    enable = true;
+    wayland.enable = true;
+  };
   services.xserver.desktopManager.gnome.enable = true;
+  services.desktopManager.plasma6 = {
+    enable = true;
+    # notoPackage = true;
+  };
+  programs.ssh.askPassword = pkgs.lib.mkForce "${pkgs.ksshaskpass.out}/bin/ksshaskpass";
+
 
   # Configure keymap in X11
   services.xserver.xkb = {
@@ -90,10 +100,23 @@
 
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
+  users.users.brian = {
+    isNormalUser = true;
+    description = "Brian";
+    extraGroups = [ "networkmanager" "wheel" ];
+    shell = pkgs.zsh;
+    packages = with pkgs; [
+      firefox
+      brave
+      alacritty
+    #  thunderbird
+    ];
+  };
   users.users.biscotty = {
     isNormalUser = true;
-    description = "Brian Carey";
+    description = "Biscotty";
     extraGroups = [ "networkmanager" "wheel" ];
+    shell = pkgs.zsh;
     packages = with pkgs; [
       firefox
     #  thunderbird
