@@ -5,6 +5,7 @@
   home.packages = with pkgs; [
     thunderbird
     bartib
+    inetutils
     chroma
     kitty
     ktimetracker

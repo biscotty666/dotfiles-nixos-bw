@@ -65,6 +65,8 @@
     EDITOR = "vim";
     NIXPKGS_ALLOW_UNFREE = 1;
     BARTIB_FILE="/home/biscotty/.local/bartib/activities.bartib";
+    RESTIC_REPOSITORY = "$HOME/easydata/backups/sb";
+    RESTIC_PASSWORD_FILE="$HOME/.config/restic/restpass";
   };
 
 
