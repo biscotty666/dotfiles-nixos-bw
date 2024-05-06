@@ -7,6 +7,7 @@ let
     lal = "ls -lah";
     cd = "z";
     ze = "zellij e";
+    bt = "bartib";
   };
 in
 {

@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ config, pkgs, inputs, ... }:
 
 # let
 #   # […]
@@ -14,9 +14,10 @@
     ./sh.nix
     ./packages.nix
     ./programs.nix
+    ./services.nix
+    ./hyprland.nix
     ./vim.nix
-#    ./kdec.nix
-    ./kdeconnect.nix
+    #./kdeconnect.nix
     ./fonts.nix
     #./neovim.nix
     # (import "${nix-nvim}")

@@ -3,10 +3,6 @@
 {
   programs = {
 
-    #kdeconnect = {
-      #enable = true;
-      #package = pkgs.plasma5Packages.kdeconnect-kde;
-    #};
     git = {
       enable = true;
       userName = "biscotty666";

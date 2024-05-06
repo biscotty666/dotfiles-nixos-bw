@@ -5,6 +5,11 @@
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     home-manager.url = "github:nix-community/home-manager/master";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
+    hyprland.url = "github:hyprwm/Hyprland";
+    hyprland-plugins = {
+      url = "github:hyprwm/hyprland-plugins";
+      inputs.hyprland.follows = "hyprland";
+    };
     #nixvim = {
       #url = "github:nix-community/nixvim";
 #
@@ -12,7 +17,8 @@
     #};
   };
 
-  outputs = { self, nixpkgs, home-manager, ... }: 
+  #outputs = { self, nixpkgs, home-manager, hyprland, ... } @inputs: 
+  outputs = { self, nixpkgs, home-manager, ... } @inputs: 
     let
       system = "x86_64-linux";
       lib = nixpkgs.lib;
@@ -20,6 +26,7 @@
     in {
     nixosConfigurations."nixos" = lib.nixosSystem {
         inherit system;
+        specialArgs = { inherit inputs; };
         modules = [ ./configuration.nix ];
       };
     #homeConfigurations."brian" = home-manager.lib.homeManagerConfiguration {
@@ -29,7 +36,12 @@
     #};
     homeConfigurations."biscotty" = home-manager.lib.homeManagerConfiguration {
         inherit pkgs;
-        modules = [ ./home.nix ];
+        extraSpecialArgs = { inherit inputs; };
+        modules = [ 
+          ./home.nix
+        #hyprland.homeManagerModules.default
+        #{wayland.windowManager.hyprland.enable = true;}
+        ];
       };
     };
 }

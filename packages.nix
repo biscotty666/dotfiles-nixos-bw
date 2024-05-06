@@ -6,13 +6,14 @@
     thunderbird
     bartib
     chroma
+    kitty
     ktimetracker
     thefuck
     catimg
     spotify
     unzip
-    todoist
-    todoist-electron
+    #todoist
+    #todoist-electron
     tldr
     # gnome.gnome-tweaks
     flatpak
@@ -26,7 +27,7 @@
     zsh-forgit
     zsh-fzf-history-search
     zsh-fzf-tab
-    qgis
+    #qgis
     libreoffice
     brave
     curl

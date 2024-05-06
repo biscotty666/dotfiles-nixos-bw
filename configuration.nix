@@ -2,7 +2,7 @@
 # your system.  Help is available in the configuration.nix(5) man page
 # and in the NixOS manual (accessible by running ‘nixos-help’).
 
-{ config, pkgs, ... }:
+{ config, pkgs, inputs, ... }:
 
 {
   imports =
@@ -16,6 +16,8 @@
   systemd.oomd.enableUserSlices = true;
   environment.localBinInPath = true;
   programs.zsh.enable = true;
+  programs.hyprland.enable = true;
+#  programs.hyprland.package = inputs.hyprland.packages."${pkgs.system}".hyprland;
 
   networking.hostName = "nixos"; # Define your hostname.
   networking.hosts = {
@@ -151,6 +153,10 @@
   virtualisation.containers.enable = true;
 
 
+  nix.settings = {
+    substituters = ["https://hyprland.cachix.org"];
+    trusted-public-keys = ["hyprland.cachix.org-1:a7pgxzMz7+chwVL3/pzj6jIBMioiJM7ypFP8PwtkuGc="];
+  };
   nix.settings.auto-optimise-store = true;
   nix.gc = {
     automatic = true;
