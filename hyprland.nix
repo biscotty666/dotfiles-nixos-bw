@@ -19,7 +19,6 @@ in
     package = pkgs.hyprland;
     plugins = [
 #      inputs.hyprland-plugins.packages.${pkgs.system}.hyprbars
-      #inputs.hyperbars."${pkgs.system}".default
     ];
 
     settings = {

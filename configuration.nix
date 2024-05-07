@@ -8,6 +8,7 @@
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
+      ./nextcloud.nix
     ];
 
   # Bootloader.
@@ -53,6 +54,7 @@
   # Enable the X11 windowing system.
   services.xserver.enable = true;
 
+  zramSwap.enable = true;
   # Enable the GNOME Desktop Environment.
   services.displayManager.sddm = {
     enable = true;
@@ -64,24 +66,6 @@
     # notoPackage = true;
   };
   programs.ssh.askPassword = pkgs.lib.mkForce "${pkgs.ksshaskpass.out}/bin/ksshaskpass";
-
-
-  environment.etc."nextcloud-admin-pass".text = "PWD";
-  services.nextcloud = {
-    enable = true;
-    package = pkgs.nextcloud28;
-    hostName = "localhost";
-    config.adminpassFile = "/etc/nextcloud-admin-pass";
-    extraApps = {
-      inherit (config.services.nextcloud.package.packages.apps) contacts calendar tasks;
-      #news = pkgs.fetchNextcloudApp {
-        #sha256 = "1g4fysq02r1kg6c4rlkcbrbyi4gwm60hhy4nxz5njsyxw1zvrylc";
-        #url = "https://github.com/nextcloud/news/archive/refs/heads/stable16.zip";
-        #license = "gpl3";
-      #};
-    };
-    extraAppsEnable = true;
-  };
 
   systemd.timers."restic-backup" = {
     wantedBy = [ "timers.target" ];
@@ -103,30 +87,6 @@
     };
   };
  
-
-#  services.postgresql = {
-#    enable = true;
-#    ensureDatabases = [ "mydatabase" ];
-#    enableTCPIP = true;
-#    port = 5432;
-#    authentication = pkgs.lib.mkForce ''
-#      #...
-#      #type 	database DBuser origin-address 	auth-method
-#      local	all	 all			trust
-#      # ipv4
-#      host  	all      all     127.0.0.1/32  	trust
-#      # ipv6
-#      host 	all      all     ::1/128        trust
-#    '';
-#    initialScript = pkgs.writeText "backend-initScript" ''
-#      CREATE ROLE nixcloud WITH LOGIN PASSWORD 'nixcloud' CREATEDB;
-#      CREATE DATABASE nixcloud;
-#      GRANT ALL PRIVILEGES ON DATABASE nixcloud TO nixcloud;
-#    '';
-#  };
-#
-#
-#}
 
   # Configure keymap in X11
   services.xserver.xkb = {
@@ -159,9 +119,6 @@
     user = "biscotty";
     configDir = "/home/biscotty/.config/syncthing";
   };
-  # Enable touchpad support (enabled default in most desktopManager).
-  # services.xserver.libinput.enable = true;
-
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.brian = {
@@ -176,6 +133,7 @@
     #  thunderbird
     ];
   };
+
   users.users.biscotty = {
     isNormalUser = true;
     description = "Biscotty";

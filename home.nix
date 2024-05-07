@@ -37,6 +37,7 @@
     #   echo "Hello, ${config.home.username}!"
     # '')
     # kdeconnect
+    cowsay
   ];
 
   programs = {
