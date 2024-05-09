@@ -4,11 +4,14 @@
   nixpkgs.config.allowUnfree = true;
   home.packages = with pkgs; [
     thunderbird
+    xclip
+    inkscape
     nextcloud-client
     bartib
     inetutils
     chroma
     kitty
+    fastfetch
     ktimetracker
     thefuck
     catimg
@@ -30,6 +33,7 @@
     zsh-fzf-history-search
     zsh-fzf-tab
     #qgis
+    gephi
     libreoffice
     brave
     curl
