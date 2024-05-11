@@ -34,7 +34,8 @@
     zsh-fzf-tab
     #qgis
     gephi
-    ripgrep
+    ripgrep-all
+    repgrep
     libreoffice
     brave
     curl
