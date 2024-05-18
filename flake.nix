@@ -5,13 +5,13 @@
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     home-manager.url = "github:nix-community/home-manager/master";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
-    hyprland.url = "github:vaxerski/Hyprland";
-    hyprland.inputs.nixpkgs.follows = "nixpkgs";
+#    hyprland.url = "github:vaxerski/Hyprland";
+#    hyprland.inputs.nixpkgs.follows = "nixpkgs";
     #hyprland.url = "github:hyprwm/Hyprland";
-    hyprland-plugins = {
-      url = "github:hyprwm/hyprland-plugins";
-      inputs.hyprland.follows = "hyprland";
-    };
+#    hyprland-plugins = {
+#      url = "github:hyprwm/hyprland-plugins";
+#      inputs.hyprland.follows = "hyprland";
+#    };
     #nixvim = {
       #url = "github:nix-community/nixvim";
 #
@@ -41,8 +41,8 @@
         extraSpecialArgs = { inherit inputs; };
         modules = [ 
           ./home.nix
-        #hyprland.homeManagerModules.default
-        #{wayland.windowManager.hyprland.enable = true;}
+        #hyprland.homeManagerModules.default ## already commented
+        #{wayland.windowManager.hyprland.enable = true;} ## already commented
         ];
       };
     };

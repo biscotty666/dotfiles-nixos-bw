@@ -8,6 +8,7 @@ let
     cd = "z";
     ze = "zellij e";
     bt = "bartib";
+    vif = "vim $(fzf)";
   };
 in
 {

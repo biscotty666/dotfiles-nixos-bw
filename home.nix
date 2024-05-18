@@ -15,7 +15,7 @@
     ./packages.nix
     ./programs.nix
     ./services.nix
-    ./hyprland.nix
+#    ./hyprland.nix
     ./vim.nix
     #./kdeconnect.nix
     ./fonts.nix
@@ -68,6 +68,7 @@
     BARTIB_FILE="/home/biscotty/.local/bartib/activities.bartib";
     RESTIC_REPOSITORY = "$HOME/easydata/backups/sb";
     RESTIC_PASSWORD_FILE="$HOME/.config/restic/restpass";
+    FZF_DEFAULT_OPTS="--preview 'bat --color=always {}'";
   };
 
 

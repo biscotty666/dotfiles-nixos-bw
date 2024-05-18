@@ -5,6 +5,7 @@
   home.packages = with pkgs; [
     thunderbird
     xclip
+    conda
     inkscape
     nextcloud-client
     bartib
@@ -35,7 +36,7 @@
     #qgis
     gephi
     ripgrep-all
-    repgrep
+    ripgrep
     libreoffice
     brave
     curl
