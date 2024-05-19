@@ -4,7 +4,14 @@
   nixpkgs.config.allowUnfree = true;
   home.packages = with pkgs; [
     thunderbird
+#    zeroadPackages.zeroad-data
+#    zeroadPackages.zeroad-unwrapped
     xclip
+    nushellFull
+    nushellPlugins.query
+    nushellPlugins.gstat
+    nushellPlugins.net
+    nushellPlugins.formats
     conda
     inkscape
     nextcloud-client

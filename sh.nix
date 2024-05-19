@@ -34,7 +34,8 @@ in
         "colored-man-pages"
         "colorize"
       ];
-      theme = "robbyrussell";
+      theme = "gnzh";
+      #theme = "arrow";
     };
     plugins = [
       {
