@@ -7,12 +7,12 @@
 #    zeroadPackages.zeroad-data
 #    zeroadPackages.zeroad-unwrapped
     xclip
-    nushellFull
-    nushellPlugins.query
-    nushellPlugins.gstat
-    nushellPlugins.net
-    nushellPlugins.formats
-    conda
+#     nushellFull
+#     nushellPlugins.query
+#     nushellPlugins.gstat
+#     nushellPlugins.net
+#     nushellPlugins.formats
+#     conda
     inkscape
     nextcloud-client
     bartib

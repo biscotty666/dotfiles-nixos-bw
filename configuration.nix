@@ -9,6 +9,7 @@
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
       ./nextcloud.nix
+      ./neovim.nix
     ];
 
   # Bootloader.
@@ -196,6 +197,11 @@
     dive
     podman
     podman-tui
+    nushellFull
+    nushellPlugins.query
+    nushellPlugins.gstat
+    nushellPlugins.net
+    nushellPlugins.formats
   #  wget
   ];
 

@@ -11,6 +11,7 @@
         vim-nerdtree-tabs
         vim-nerdtree-syntax-highlight
         awesome-vim-colorschemes
+        zoxide-vim
       ];
       settings = { ignorecase = true; };
       extraConfig = ''
