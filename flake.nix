@@ -8,6 +8,10 @@
 #    hyprland.url = "github:vaxerski/Hyprland";
 #    hyprland.inputs.nixpkgs.follows = "nixpkgs";
     #hyprland.url = "github:hyprwm/Hyprland";
+    #hyprbars = {
+        #url = "github:hyprwm/hyprland-plugins/hyprbars";
+        #inputs.hyprland.follows = "hyprland";
+    #};
 #    hyprland-plugins = {
 #      url = "github:hyprwm/hyprland-plugins";
 #      inputs.hyprland.follows = "hyprland";

@@ -15,7 +15,7 @@
     ./packages.nix
     ./programs.nix
     ./services.nix
-#    ./hyprland.nix
+    ./hyprland.nix
     ./vim.nix
     #./kdeconnect.nix
     ./fonts.nix
@@ -41,7 +41,7 @@
   ];
 
   programs = {
-    # kdeconnect.package = gnomeExtensions.gsconnect;
+    #kdeconnect.package = gnomeExtensions.gsconnect;
   };
 
   services = {
@@ -69,6 +69,7 @@
     RESTIC_REPOSITORY = "$HOME/easydata/backups/sb";
     RESTIC_PASSWORD_FILE="$HOME/.config/restic/restpass";
     FZF_DEFAULT_OPTS="--preview 'bat --color=always {}'";
+    NIXOS_OZONE_WL = "1";
   };
 
 

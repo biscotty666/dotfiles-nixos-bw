@@ -102,6 +102,7 @@
   sound.enable = true;
   hardware.pulseaudio.enable = false;
   security.rtkit.enable = true;
+  security.polkit.enable = true;
   services.pipewire = {
     enable = true;
     alsa.enable = true;
@@ -125,7 +126,7 @@
   users.users.brian = {
     isNormalUser = true;
     description = "Brian";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [ "networkmanager" "wheel" "input" ];
     shell = pkgs.zsh;
     packages = with pkgs; [
       firefox
@@ -138,7 +139,7 @@
   users.users.biscotty = {
     isNormalUser = true;
     description = "Biscotty";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [ "input" "networkmanager" "wheel" ];
     shell = pkgs.zsh;
     packages = with pkgs; [
       firefox

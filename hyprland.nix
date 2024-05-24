@@ -18,15 +18,17 @@ in
     xwayland.enable = true;
     package = pkgs.hyprland;
     plugins = [
+      #inputs.hyprbars.packages.${pkgs.system}.default
       #inputs.hyprland-plugins.packages.${pkgs.system}.hyprbars
     ];
 
     settings = {
-      exec-once = ''${startupScript}/bin/start'';
-      "$mod" = "SUPER";
+       exec-once = ''${startupScript}/bin/start'';
+           "$mod" = "SUPER";
     bind =
       [
         "$mod, F, exec, firefox"
+        "$mod, O, exec, obsidian"
         ", Print, exec, grimblast copy area"
       ]
       ++ (
@@ -45,22 +47,9 @@ in
           )
           10)
       );
-
-      #"plugin:borders-plus-plus" = {
-        #add_borders = 1; # 0 - 9
-#
-        # you can add up to 9 borders
-        #"col.border_1" = "rgb(ffffff)";
-        #"col.border_2" = "rgb(2222ff)";
-
-        # -1 means "default" as in the one defined in general:border_size
-        #border_size_1 = 10;
-        #border_size_2 = -1;
-
-        # makes outer edges match rounding of the parent. Turn on / off to better understand. Default = on.
-        #natural_rounding = "yes";
     };
   };
+
 
   home.file."~/.config/hypr/hyprland.conf".text = ''
     decoration {
@@ -74,5 +63,19 @@ in
     bindm = $mod, mouse:273, resizewindow
     bindm = $mod ALT, mouse:272, resizewindow
   '';
+
+
+    wayland.windowManager.sway = {
+    enable = true;
+    #config = rec {
+      #modifier = "Mod4";
+      # Use kitty as default terminal
+      #terminal = "kitty";
+      #startup = [
+        # Launch Firefox on start
+        #{command = "firefox";}
+      #];
+    #};
+  };
 }
 

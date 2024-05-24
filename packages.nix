@@ -13,6 +13,17 @@
 #     nushellPlugins.net
 #     nushellPlugins.formats
 #     conda
+# --- hyprland
+    swww
+    xdg-desktop-portal-gtk
+    xdg-desktop-portal-hyprland
+    meson
+    xwayland
+    wayland-protocols
+    wayland-utils
+    wl-clipboard
+    wlroots
+# --- hyprland
     inkscape
     nextcloud-client
     bartib
@@ -47,7 +58,7 @@
     libreoffice
     brave
     curl
-    btop
+    bottom
     zellij
     ranger
     w3m
