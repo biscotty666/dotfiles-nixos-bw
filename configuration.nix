@@ -198,11 +198,11 @@
     dive
     podman
     podman-tui
-    nushellFull
-    nushellPlugins.query
-    nushellPlugins.gstat
-    nushellPlugins.net
-    nushellPlugins.formats
+    #nushellFull
+    #nushellPlugins.query
+    #nushellPlugins.gstat
+    #nushellPlugins.net
+    #nushellPlugins.formats
   #  wget
   ];
 

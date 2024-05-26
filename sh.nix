@@ -22,6 +22,7 @@ in
       EDITOR = "vim";
       NIXPKGS_ALLOW_UNFREE = 1;
       BARTIB_FILE="/home/biscotty/.local/bartib/activities.bartib";
+      PATH="$PATH:/home/biscotty/.cargo/bin";
     };
     oh-my-zsh = {
       enable = true;

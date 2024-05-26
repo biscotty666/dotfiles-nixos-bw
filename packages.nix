@@ -7,11 +7,13 @@
 #    zeroadPackages.zeroad-data
 #    zeroadPackages.zeroad-unwrapped
     xclip
-#     nushellFull
-#     nushellPlugins.query
-#     nushellPlugins.gstat
-#     nushellPlugins.net
-#     nushellPlugins.formats
+     nushellFull
+     nushellPlugins.query
+     nushellPlugins.gstat
+     nushellPlugins.net
+     nushellPlugins.formats
+     cargo
+     gcc
 #     conda
 # --- hyprland
     swww
