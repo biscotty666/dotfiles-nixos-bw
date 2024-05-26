@@ -139,7 +139,7 @@
   users.users.biscotty = {
     isNormalUser = true;
     description = "Biscotty";
-    extraGroups = [ "input" "networkmanager" "wheel" ];
+    extraGroups = [ "networkmanager" "wheel" "input" ];
     shell = pkgs.zsh;
     packages = with pkgs; [
       firefox

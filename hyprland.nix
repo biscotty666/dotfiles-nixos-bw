@@ -28,7 +28,8 @@ in
     bind =
       [
         "$mod, F, exec, firefox"
-        "$mod, O, exec, obsidian"
+        "$mod SHIFT, O, exec, obsidian"
+        "$mod SHIFT, A, exec, alacritty"
         ", Print, exec, grimblast copy area"
       ]
       ++ (

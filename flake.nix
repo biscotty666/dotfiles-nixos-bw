@@ -5,6 +5,14 @@
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     home-manager.url = "github:nix-community/home-manager/master";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
+    snowfall-lib = {
+      url = "github:snowfallorg/lib";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+    neovim = {
+      url = "github:jakehamilton/neovim";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
 #    hyprland.url = "github:vaxerski/Hyprland";
 #    hyprland.inputs.nixpkgs.follows = "nixpkgs";
     #hyprland.url = "github:hyprwm/Hyprland";
