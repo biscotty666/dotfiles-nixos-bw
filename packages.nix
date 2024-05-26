@@ -6,6 +6,7 @@
     thunderbird
 #    zeroadPackages.zeroad-data
 #    zeroadPackages.zeroad-unwrapped
+    starship
     xclip
      nushellFull
      nushellPlugins.query
