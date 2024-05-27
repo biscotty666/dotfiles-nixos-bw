@@ -14,10 +14,10 @@
     ./sh.nix
     ./packages.nix
     ./programs.nix
-    ./services.nix
+#    ./services.nix
     ./hyprland.nix
     ./vim.nix
-    #./kdeconnect.nix
+    ./kdeconnect.nix
     ./fonts.nix
     #./neovim.nix
     # (import "${nix-nvim}")

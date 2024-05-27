@@ -11,8 +11,8 @@ with lib;
       `gnomeExtensions.gsconnect` as an alternative
       implementation if you use Gnome
     '');
-    #package = mkPackageOption pkgs [ "plasma6Packages" "kdeconnect-kde" ] {
-    package = mkPackageOption pkgs [ "plasma5Packages" "kdeconnect-kde" ] {
+    package = mkPackageOption pkgs [ "plasma6Packages" "kdeconnect-kde" ] {
+    #package = mkPackageOption pkgs [ "plasma5Packages" "kdeconnect-kde" ] {
       #example = literalExpression "pkgs.kdePackages.kdeconnect-kde";
       example = "gnomeExtensions.gsconnect";
     };
