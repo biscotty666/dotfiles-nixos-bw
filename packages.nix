@@ -7,6 +7,7 @@
 #    zeroadPackages.zeroad-data
 #    zeroadPackages.zeroad-unwrapped
     starship
+    lynx
     xclip
      nushellFull
      nushellPlugins.query
