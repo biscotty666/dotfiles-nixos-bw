@@ -4,6 +4,8 @@
   nixpkgs.config.allowUnfree = true;
   home.packages = with pkgs; [
     thunderbird
+    firefox
+    brave
 #    zeroadPackages.zeroad-data
 #    zeroadPackages.zeroad-unwrapped
     starship
