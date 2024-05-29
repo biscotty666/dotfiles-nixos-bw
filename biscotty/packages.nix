@@ -73,7 +73,7 @@
     pandoc
     gh
     zoxide
-    kdePackages.kdeconnect-kde
+#    kdePackages.kdeconnect-kde
     audacity
     distrobox
 #    obsidian

@@ -52,7 +52,7 @@
         inherit pkgs;
         extraSpecialArgs = { inherit inputs; };
         modules = [ 
-          ./home.nix
+          ./biscotty/home.nix
         #hyprland.homeManagerModules.default ## already commented
         #{wayland.windowManager.hyprland.enable = true;} ## already commented
         ];

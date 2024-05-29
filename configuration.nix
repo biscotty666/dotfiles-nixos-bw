@@ -8,8 +8,8 @@
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
-      ./nextcloud.nix
-      ./neovim.nix
+      ./nixos/nextcloud.nix
+      ./nixos/neovim.nix
     ];
 
   # Bootloader.
