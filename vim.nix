@@ -10,6 +10,7 @@
         gitgutter
         vim-nerdtree-tabs
         vim-nerdtree-syntax-highlight
+        vim-autoformat
         awesome-vim-colorschemes
         zoxide-vim
       ];
