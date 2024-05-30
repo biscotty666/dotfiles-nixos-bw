@@ -5,8 +5,9 @@
     ./sh.nix
     ./packages.nix
     ./programs.nix
+    ./gnome.nix
 #    ./services.nix
-    ./hyprland.nix
+#    ./hyprland.nix
     ./vim.nix
     ./kdeconnect.nix
     ./fonts.nix

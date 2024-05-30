@@ -14,8 +14,6 @@
   systemd.oomd.enableUserSlices = true;
   environment.localBinInPath = true;
   programs.zsh.enable = true;
-  programs.hyprland.enable = true;
-#  programs.hyprland.package = inputs.hyprland.packages."${pkgs.system}".hyprland;
 
   networking.hostName = "nixos"; # Define your hostname.
   networking.hosts = {
