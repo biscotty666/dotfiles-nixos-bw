@@ -24,20 +24,20 @@ in
       BARTIB_FILE="/home/biscotty/.local/bartib/activities.bartib";
       PATH="$PATH:/home/biscotty/.cargo/bin";
     };
-    oh-my-zsh = {
-      enable = true;
-      plugins = [
-        "git"
-        # "sudo"
-        "thefuck"
-        "web-search"
-        "catimg"
-        "colored-man-pages"
-        "colorize"
-      ];
-      theme = "gnzh";
+    #oh-my-zsh = {
+      #enable = true;
+      #plugins = [
+        #"git"
+        ## "sudo"
+        #"thefuck"
+        #"web-search"
+        #"catimg"
+        #"colored-man-pages"
+        #"colorize"
+      #];
+      #theme = "gnzh";
       #theme = "arrow";
-    };
+    #};
     plugins = [
       {
         name = "fzf-tab";
@@ -49,6 +49,11 @@ in
         };
       }
     ];
+  };
+
+  programs.starship = {
+    enable = true;
+    #presets = [ "nerd-font-symbols" ];
   };
 
   programs.bash = {
