@@ -4,6 +4,7 @@
   nixpkgs.config.allowUnfree = true;
   home.packages = with pkgs; [
     thunderbird
+    #vim-full
     firefox
     brave
 #    zeroadPackages.zeroad-data

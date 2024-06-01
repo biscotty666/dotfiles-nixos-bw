@@ -15,6 +15,11 @@
   environment.localBinInPath = true;
   programs.zsh.enable = true;
 
+  programs.hyprland = {
+    enable = true;
+    package = inputs.hyprland.packages.${pkgs.system}.hyprland;
+  };
+  
   networking.hostName = "nixos"; # Define your hostname.
   networking.hosts = {
     "192.168.0.238" = [ "rpi" ];
@@ -177,7 +182,7 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
-    vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
+    vim-full # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
     git
     alacritty
     restic

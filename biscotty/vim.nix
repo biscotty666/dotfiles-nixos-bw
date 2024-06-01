@@ -50,7 +50,7 @@
         set foldmethod=indent
         set foldlevel=99
 
-        set clipboard^=unnamedplus
+        set clipboard=unnamedplus
 
         nnoremap <space> za
 

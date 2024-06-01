@@ -8,6 +8,7 @@
     ./gnome.nix
 #    ./services.nix
 #    ./hyprland.nix
+    ./hprl.nix
     ./vim.nix
     ./kdeconnect.nix
     ./fonts.nix
