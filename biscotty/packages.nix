@@ -80,7 +80,7 @@
 #    kdePackages.kdeconnect-kde
     audacity
     distrobox
-#    obsidian
+    #obsidian
     bat
 #    (pkgs.nerdfonts.override { fonts = [ "FantasqueSansMono" ]; })
   ];
