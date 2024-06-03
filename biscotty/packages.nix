@@ -4,6 +4,7 @@
   nixpkgs.config.allowUnfree = true;
   home.packages = with pkgs; [
     thunderbird
+    ghc
     #vim-full
     firefox
     brave
