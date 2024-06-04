@@ -15,10 +15,10 @@
   environment.localBinInPath = true;
   programs.zsh.enable = true;
 
-  programs.hyprland = {
-    enable = true;
-    package = inputs.hyprland.packages.${pkgs.system}.hyprland;
-  };
+  #programs.hyprland = {
+    #enable = true;
+    #package = inputs.hyprland.packages.${pkgs.system}.hyprland;
+  #};
   
   networking.hostName = "nixos"; # Define your hostname.
   networking.hosts = {
