@@ -33,7 +33,7 @@
     wlroots
 # --- hyprland
     inkscape
-    nextcloud-client
+    #nextcloud-client
     bartib
     inetutils
     chroma
