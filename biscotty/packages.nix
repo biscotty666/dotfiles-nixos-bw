@@ -4,7 +4,12 @@
   nixpkgs.config.allowUnfree = true;
   home.packages = with pkgs; [
     thunderbird
+    # Haskell
     ghc
+    #haskellPackages.datasets
+    haskellPackages.hspec
+    haskellPackages.streaming-bytestring
+
     #vim-full
     firefox
     brave

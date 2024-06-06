@@ -154,8 +154,10 @@
   };
 
   # Allow unfree packages
-  nixpkgs.config.allowUnfree = true;
-
+  nixpkgs.config = { 
+    allowUnfree = true;
+    allowBroken = true;
+  };
   virtualisation = {
     libvirtd.enable = true;
     podman = {
