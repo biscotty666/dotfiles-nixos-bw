@@ -13,7 +13,7 @@
     #vim-full
     firefox
     brave
-#    zeroadPackages.zeroad-data
+    zeroadPackages.zeroad
 #    zeroadPackages.zeroad-unwrapped
     starship
     lynx
@@ -71,6 +71,7 @@
     libreoffice
     brave
     curl
+    btop
     bottom
     zellij
     ranger
