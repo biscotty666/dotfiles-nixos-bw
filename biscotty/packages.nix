@@ -18,7 +18,7 @@
     starship
     lynx
     xclip
-     nushellFull
+     nushell
      nushellPlugins.query
      nushellPlugins.gstat
      nushellPlugins.net
