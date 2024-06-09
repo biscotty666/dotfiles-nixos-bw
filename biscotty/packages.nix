@@ -19,14 +19,6 @@
     starship
     lynx
     xclip
-     nushell
-     nushellPlugins.query
-     nushellPlugins.gstat
-     nushellPlugins.net
-     nushellPlugins.formats
-     cargo
-     gcc
-#     conda
 # --- hyprland
     swww
     xdg-desktop-portal-gtk
@@ -62,9 +54,6 @@
 #    neovim
     imagemagick
     discord
-    zsh-forgit
-    zsh-fzf-history-search
-    zsh-fzf-tab
     #qgis
     gephi
     ripgrep-all

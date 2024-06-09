@@ -6,6 +6,8 @@
     ./packages.nix
     ./programs.nix
     ./gnome.nix
+    ./zsh.nix
+    ./nushell.nix
 #    ./services.nix
     ./vim.nix
     ./kdeconnect.nix
