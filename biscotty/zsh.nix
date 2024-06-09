@@ -5,6 +5,8 @@
     zsh-fzf-history-search
     zsh-fzf-tab
     zsh-autopair
-    zsh-syntax-highlighting
+    zsh-f-sy-h
+    zsh-clipboard
+    zsh-completions
   ];  # zsh
  }
