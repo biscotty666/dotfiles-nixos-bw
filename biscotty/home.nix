@@ -7,12 +7,11 @@
     ./programs.nix
     ./gnome.nix
 #    ./services.nix
-#    ./hyprland.nix
-#    ./hprl.nix
     ./vim.nix
     ./kdeconnect.nix
     ./fonts.nix
     #./neovim.nix
+    ./neovim/default.nix
     # (import "${nix-nvim}")
   ];
 
