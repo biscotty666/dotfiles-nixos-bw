@@ -179,7 +179,7 @@
   nix.gc = {
     automatic = true;
     dates = "daily";
-    options = "--delete-older-than 10d";
+    options = "--delete-older-than 2d";
   };
   # List packages installed in system profile. To search, run:
   # $ nix search wget
@@ -194,12 +194,6 @@
     dive
     podman
     podman-tui
-    #nushellFull
-    #nushellPlugins.query
-    #nushellPlugins.gstat
-    #nushellPlugins.net
-    #nushellPlugins.formats
-  #  wget
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
