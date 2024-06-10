@@ -18,8 +18,6 @@
     inetutils
     chroma
     kitty
-    ktimetracker
-    thefuck
     catimg
     gephi
     w3m

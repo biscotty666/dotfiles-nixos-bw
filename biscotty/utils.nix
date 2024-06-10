@@ -4,6 +4,7 @@
   home.packages = with pkgs; [
     lynx
     fastfetch
+    thefuck
     bartib
     unzip
     ripgrep-all
