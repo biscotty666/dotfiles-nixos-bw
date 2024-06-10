@@ -8,6 +8,7 @@
     ./gnome.nix
     ./zsh.nix
     ./nushell.nix
+    ./haskell.nix
 #    ./services.nix
     ./vim.nix
     ./kdeconnect.nix

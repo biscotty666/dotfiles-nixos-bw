@@ -4,34 +4,24 @@
   nixpkgs.config.allowUnfree = true;
   home.packages = with pkgs; [
     thunderbird
-    # Haskell
-    ghc
-    #haskellPackages.datasets
-    haskellPackages.hspec
-    haskellPackages.streaming-bytestring
     lua51Packages.haskell-tools-nvim
-
-    #vim-full
     firefox
     brave
     zeroadPackages.zeroad
-#    zeroadPackages.zeroad-unwrapped
     starship
     lynx
     xclip
 # --- hyprland
-    swww
+#    swww
     xdg-desktop-portal-gtk
-    xdg-desktop-portal-hyprland
-    meson
+#    xdg-desktop-portal-hyprland
+#    meson
     xwayland
     wayland-protocols
     wayland-utils
     wl-clipboard
     wlroots
-# --- hyprland
     inkscape
-    #nextcloud-client
     bartib
     inetutils
     chroma
@@ -42,16 +32,11 @@
     catimg
     spotify
     unzip
-    #todoist
-    #todoist-electron
     tldr
-    # gnome.gnome-tweaks
     flatpak
-#    quarto
-#    rPackages.quarto
+    #quarto
     fzf
     feh
-#    neovim
     imagemagick
     discord
     #qgis
@@ -62,6 +47,7 @@
     brave
     curl
     btop
+    wget
     bottom
     zellij
     ranger
@@ -76,7 +62,6 @@
 #    kdePackages.kdeconnect-kde
     audacity
     distrobox
-    #obsidian
     bat
 #    (pkgs.nerdfonts.override { fonts = [ "FantasqueSansMono" ]; })
   ];
