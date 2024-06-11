@@ -7,6 +7,7 @@
     nushellPlugins.gstat
     nushellPlugins.net
     nushellPlugins.formats
+    nushellPlugins.polars
     cargo
     gcc
   ];
