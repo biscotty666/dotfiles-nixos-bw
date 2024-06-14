@@ -13,6 +13,11 @@
         vim-autoformat
         awesome-vim-colorschemes
         zoxide-vim
+        # haskell stuff
+        ghcid
+        vim-stylish-haskell
+        vim-haskell-module-name
+        haskell-vim
       ];
       settings = { ignorecase = true; };
       extraConfig = ''
