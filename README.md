@@ -26,12 +26,6 @@ $ nix-env -iA nixgl.auto.nixGLDefault   # or replace `nixGLDefault` with your de
 12. In `dotfiles` run `home-manager switch --flake .`
 13. Log out an in once more
 
-## Set up a dev environment
-
-1. Create a directory for the project
-2. Copy the flake.nix, flake.lock and envrc into the directory
-3. Edit the flake to add/remove libraries. (Building all the ml and spatial libraries takes a long time.)
-4. Run `direnv allow`
 
 ## Notes
 
