@@ -3,7 +3,6 @@
 {
   home.packages = with pkgs; [
     w3m
-    mlocate
     fastfetch
     thefuck
     bartib

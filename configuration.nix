@@ -6,6 +6,7 @@
       ./hardware-configuration.nix
 #      ./nixos/nextcloud.nix
       ./nixos/neovim.nix
+      ./nixos/mlocate.nix
     ];
 
   # Bootloader.
@@ -140,7 +141,12 @@
   users.users.biscotty = {
     isNormalUser = true;
     description = "Biscotty";
-    extraGroups = [ "networkmanager" "wheel" "input" ];
+    extraGroups = [ 
+      "networkmanager" 
+      "wheel" 
+      "input"
+      "mlocate"
+    ];
     shell = pkgs.zsh;
     packages = with pkgs; [
     ];
@@ -199,6 +205,7 @@
     dive
     podman
     podman-tui
+    mlocate
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
