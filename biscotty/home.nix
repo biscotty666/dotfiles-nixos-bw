@@ -15,7 +15,7 @@
     ./vim.nix
     ./kdeconnect.nix
     ./fonts.nix
-    ./neovim.nix
+#    ./neovim.nix
     #./neovim/default.nix
     # (import "${nix-nvim}")
   ];
