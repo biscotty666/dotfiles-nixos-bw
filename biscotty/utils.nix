@@ -2,7 +2,8 @@
 
 {
   home.packages = with pkgs; [
-    lynx
+    w3m
+    mlocate
     fastfetch
     thefuck
     bartib

@@ -20,7 +20,6 @@
     kitty
     catimg
     gephi
-    w3m
     ueberzug
     texlive.combined.scheme-full
     pandoc
