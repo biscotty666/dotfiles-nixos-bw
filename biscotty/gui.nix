@@ -3,6 +3,7 @@
 {
   home.packages = with pkgs; [
     thunderbird
+    onlyoffice-bin
     jupyter
     audacity
     gimp
