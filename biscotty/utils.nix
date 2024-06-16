@@ -2,8 +2,9 @@
 
 {
   home.packages = with pkgs; [
-    w3m
     fastfetch
+    w3m
+    links2
     thefuck
     bartib
     unzip
