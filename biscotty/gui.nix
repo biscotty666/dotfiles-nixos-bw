@@ -4,6 +4,7 @@
   home.packages = with pkgs; [
     thunderbird
     jupyter
+    calibre
     audacity
     gimp
     vlc
