@@ -9,6 +9,7 @@ let
     ze = "zellij e";
     bt = "bartib";
     vif = "vim $(fzf)";
+    cat = "bat";
   };
 in
 {
