@@ -3,7 +3,6 @@
 {
   home.packages = with pkgs; [
     fastfetch
-    w3m
     links2
     thefuck
     bartib

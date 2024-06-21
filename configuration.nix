@@ -135,7 +135,6 @@
     ];
     shell = pkgs.zsh;
     packages = with pkgs; [
-      alacritty
     ];
   };
 
@@ -207,6 +206,7 @@
     podman
     podman-tui
     mlocate
+    w3m
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
