@@ -3,7 +3,11 @@
 {
   home.packages = with pkgs; [
     fastfetch
+    perl
     links2
+    stow
+    ddgr
+    surfraw
     thefuck
     bartib
     unzip

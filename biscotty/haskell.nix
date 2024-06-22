@@ -8,6 +8,7 @@
     haskellPackages.ghcid
     haskellPackages.hspec
     haskellPackages.streaming-bytestring
+    haskellPackages.random
     haskellPackages.gi-gtk
     haskellPackages.gtk
     haskellPackages.gi-glib
