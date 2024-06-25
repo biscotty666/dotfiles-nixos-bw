@@ -15,8 +15,9 @@
     haskellPackages.ihaskell
     stylish-haskell
     tree-sitter-grammars.tree-sitter-haskell
-#    haskellPackages.Cabal_3_10_3_0
-#    haskellPackages.cabal-install
+    haskellPackages.Cabal_3_10_3_0
+    haskellPackages.cabal-install
+    # haskellPackages.cabal
     gtk3
     pkg-config
     gobject-introspection

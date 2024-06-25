@@ -10,6 +10,7 @@ let
     bt = "bartib";
     vif = "vim $(fzf)";
     cat = "bat";
+    rh = "runhaskell";
   };
 in
 {
