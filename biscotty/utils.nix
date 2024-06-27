@@ -4,6 +4,7 @@
   home.packages = with pkgs; [
     fastfetch
     perl
+    gdu
     links2
     stow
     ddgr
