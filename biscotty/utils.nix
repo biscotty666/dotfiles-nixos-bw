@@ -4,6 +4,7 @@
   home.packages = with pkgs; [
     fastfetch
     perl
+    busybox
     gdu
     links2
     stow
