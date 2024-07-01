@@ -17,28 +17,15 @@
   environment.localBinInPath = true;
   programs.zsh.enable = true;
 
-  #programs.hyprland = {
-    #enable = true;
-    #package = inputs.hyprland.packages.${pkgs.system}.hyprland;
-  #};
-  
   networking.hostName = "nixos"; # Define your hostname.
   networking.hosts = {
     "192.168.0.238" = [ "rpi" ];
   };
-  # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
-  # Configure network proxy if necessary
-  # networking.proxy.default = "http://user:password@proxy:port/";
-  # networking.proxy.noProxy = "127.0.0.1,localhost,internal.domain";
-
-  # Enable networking
   networking.networkmanager.enable = true;
 
-  # Set your time zone.
   time.timeZone = "America/Denver";
 
-  # Select internationalisation properties.
   i18n.defaultLocale = "en_US.UTF-8";
 
   i18n.extraLocaleSettings = {
@@ -53,11 +40,10 @@
     LC_TIME = "en_US.UTF-8";
   };
 
-  # Enable the X11 windowing system.
   services.xserver.enable = true;
 
   zramSwap.enable = true;
-  # Enable the GNOME Desktop Environment.
+
   services.displayManager.sddm = {
     enable = true;
     wayland.enable = true;
@@ -65,7 +51,6 @@
   services.xserver.desktopManager.gnome.enable = true;
   services.desktopManager.plasma6 = {
     enable = true;
-    # notoPackage = true;
   };
   programs.ssh.askPassword = pkgs.lib.mkForce "${pkgs.ksshaskpass.out}/bin/ksshaskpass";
 
@@ -90,7 +75,6 @@
   };
  
 
-  # Configure keymap in X11
   services.xserver.xkb = {
     layout = "us";
     variant = "";
@@ -182,10 +166,6 @@
   virtualisation.containers.enable = true;
 
 
-  nix.settings = {
-    substituters = ["https://hyprland.cachix.org"];
-    trusted-public-keys = ["hyprland.cachix.org-1:a7pgxzMz7+chwVL3/pzj6jIBMioiJM7ypFP8PwtkuGc="];
-  };
   nix.settings.auto-optimise-store = true;
   nix.gc = {
     automatic = true;

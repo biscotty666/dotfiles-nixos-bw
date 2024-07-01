@@ -6,11 +6,7 @@
     ccl
     starship
     xclip
-# --- hyprland
-#    swww
     xdg-desktop-portal-gtk
-#    xdg-desktop-portal-hyprland
-#    meson
     xwayland
     wayland-protocols
     wayland-utils

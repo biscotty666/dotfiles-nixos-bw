@@ -11,9 +11,11 @@
     fira-code-symbols
     mplus-outline-fonts.githubRelease
     google-fonts
-    dina-font
-    #proggyfonts
-    #nerdfonts
+    #dina-font
+    font-awesome
+    ubuntu_font_family
+#    powerline-fonts
+    proggyfonts
     (nerdfonts.override { fonts = [ 
        "FantasqueSansMono" 
        "FiraCode"

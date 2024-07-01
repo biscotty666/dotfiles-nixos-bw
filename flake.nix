@@ -5,11 +5,7 @@
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     home-manager.url = "github:nix-community/home-manager/master";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
- # hyprland.url = "git+https://github.com/hyprwm/Hyprland?submodules=1";
- # hyprland-plugins = {
- #   url = "github:hyprwm/hyprland-plugins";
- #   inputs.hyprland.follows = "hyprland";
- # };
+
     snowfall-lib = {
       url = "github:snowfallorg/lib";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -41,8 +37,6 @@
         extraSpecialArgs = { inherit inputs; };
         modules = [ 
           ./biscotty/home.nix
-        #hyprland.homeManagerModules.default ## already commented
-        #{wayland.windowManager.hyprland.enable = true;} ## already commented
         ];
       };
     };
