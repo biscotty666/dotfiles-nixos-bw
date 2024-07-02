@@ -4,9 +4,9 @@
     package = pkgs.kdePackages.kdeconnect-kde;
     indicator = true;
   };
-  services.locate = {
-    enable = true;
-    locate = pkgs.mlocate;
-    interval = "hourly";
-  };
+  #services.locate = {
+    #enable = true;
+    #locate = pkgs.mlocate;
+    #interval = "hourly";
+  #};
 }

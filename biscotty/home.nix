@@ -11,9 +11,9 @@
     ./haskell.nix
     ./gui.nix
     ./utils.nix
-#    ./services.nix
+    ./services.nix
     ./vim.nix
-    ./kdeconnect.nix
+    #./kdeconnect.nix
     ./fonts.nix
 #    ./neovim.nix
     #./neovim/default.nix
