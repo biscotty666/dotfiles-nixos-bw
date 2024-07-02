@@ -16,6 +16,6 @@
     zeroadPackages.zeroad
     spotify
     discord
-    #qgis
+    qgis
   ];
 }
