@@ -73,6 +73,7 @@
         inoremap ( ()<Left>
         inoremap { {}<Left>
         inoremap " ""<Left>
+        inoremap < <><Left>
         inoremap ` ``<Left>
 
         set background=dark
