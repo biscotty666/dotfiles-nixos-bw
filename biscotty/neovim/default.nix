@@ -291,8 +291,8 @@ in {
         ${builtins.readFile config/options.lua}
       '';
       enable = true;
-      #viAlias = true;
-      #vimAlias = true;
+      viAlias = true;
+      vimAlias = true;
     };
   };
 }
