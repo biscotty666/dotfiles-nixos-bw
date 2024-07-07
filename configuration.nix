@@ -5,7 +5,6 @@
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
 #      ./nixos/nextcloud.nix
-      ./nixos/neovim.nix
       ./nixos/nvidia.nix
       ./nixos/mlocate.nix
     ];
@@ -181,6 +180,7 @@
     restic
     qemu
     quickemu
+    mlocate
     dive
     cachix
     podman

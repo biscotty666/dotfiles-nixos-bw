@@ -158,8 +158,8 @@ in {
             require("obsidian").setup({
               workspaces = {
                 {
-                  name = "notes",
-                  path = "~/dev/notes",
+                  name = "Brian2",
+                  path = "~/Obsidian/Brian2",
                 },
               },
             })
