@@ -74,8 +74,10 @@ in {
       plugins = [
         ## Theme
         {
-          plugin = pkgs.vimPlugins.tokyonight-nvim;
-          config = "vim.cmd[[colorscheme tokyonight-night]]";
+          # plugin = pkgs.vimPlugins.tokyonight-nvim;
+          # config = "vim.cmd[[colorscheme tokyonight-night]]";
+          plugin = pkgs.vimPlugins.molokai;
+          config = "vim.cmd[[colorscheme molokai]]";
           type = "lua";
         }
 
@@ -86,6 +88,15 @@ in {
           type = "lua";
         }
         pkgs.vimPlugins.nvim-treesitter.withAllGrammars
+        pkgs.vimPlugins.nvim-treesitter-parsers.haskell
+        pkgs.vimPlugins.nvim-treesitter-parsers.http
+        pkgs.vimPlugins.nvim-treesitter-parsers.svelte
+        pkgs.vimPlugins.nvim-treesitter-parsers.regex
+        pkgs.vimPlugins.nvim-treesitter-parsers.python
+        pkgs.vimPlugins.nvim-treesitter-parsers.nix
+        pkgs.vimPlugins.nvim-treesitter-parsers.r
+        pkgs.vimPlugins.nvim-treesitter-parsers.css
+        pkgs.vimPlugins.nvim-treesitter-parsers.javascript
         pkgs.vimPlugins.nvim-treesitter-textobjects
         {
           plugin = pkgs.vimPlugins.nvim-lspconfig;
@@ -202,7 +213,7 @@ in {
           config = ''
             require('lualine').setup {
                 options = {
-                    theme = 'tokyonight',
+                    theme = 'molokai',
                 }
             }
           '';
