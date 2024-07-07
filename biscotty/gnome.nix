@@ -5,5 +5,6 @@
     gnome-tweaks
     gnome.gnome-weather
     gnomeExtensions.openweather-refined
+    gnomeExtensions.gsconnect
   ];
 }

@@ -4,6 +4,8 @@
   home.packages = with pkgs; [
     fastfetch
     perl
+    w3m
+    mlocate
     mdcat
     busybox
     gdu
