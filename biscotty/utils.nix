@@ -4,6 +4,7 @@
   home.packages = with pkgs; [
     fastfetch
     perl
+    nh
     w3m
     mlocate
     mdcat
