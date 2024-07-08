@@ -55,27 +55,6 @@
   };
   programs.ssh.askPassword = pkgs.lib.mkForce "${pkgs.ksshaskpass.out}/bin/ksshaskpass";
 
-#   systemd.timers."restic-backup" = {
-#     wantedBy = [ "timers.target" ];
-#     timerConfig = {
-#       OnBootSec = "5m";
-#       OnUnitActiveSec = "24h";
-#       Unit = "restic-backup.service";
-#     };
-#   };
-# 
-#   systemd.services."restic-backup" = {
-#     script = ''
-#       set -eu
-#       /home/biscotty/.local/bin/restic-backup.sh
-#     '';
-#     serviceConfig = {
-#       Type = "oneshot";
-#       User = "biscotty";
-#     };
-#   };
- 
-
   services.xserver.xkb = {
     layout = "us";
     variant = "";
@@ -94,12 +73,6 @@
     alsa.enable = true;
     alsa.support32Bit = true;
     pulse.enable = true;
-    # If you want to use JACK applications, uncomment this
-    #jack.enable = true;
-
-    # use the example session manager (no others are packaged yet so this is enabled by default,
-    # no need to redefine it in your config for now)
-    #media-session.enable = true;
   };
 
   services.syncthing = {
@@ -137,17 +110,6 @@
     ];
   };
 
-  users.users.restic = {
-    isNormalUser = true;
-  };
-
-  security.wrappers.restic = {
-    source = "${pkgs.restic.out}/bin/restic";
-    owner = "restic";
-    group = "users";
-    permissions = "u=rwx,g=,o=";
-    capabilities = "cap_dac_read_search=+ep";
-  };
 
   # Allow unfree packages
   nixpkgs.config = { 
@@ -178,6 +140,7 @@
     vim-full # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
     git
     alacritty
+    wezterm
     restic
     qemu
     quickemu
