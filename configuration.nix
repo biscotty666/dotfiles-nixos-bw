@@ -7,6 +7,7 @@
 #      ./nixos/nextcloud.nix
       ./nixos/nvidia.nix
       ./nixos/mlocate.nix
+      ./nixos/restic.nix
     ];
 
   # Bootloader.
@@ -54,25 +55,25 @@
   };
   programs.ssh.askPassword = pkgs.lib.mkForce "${pkgs.ksshaskpass.out}/bin/ksshaskpass";
 
-  systemd.timers."restic-backup" = {
-    wantedBy = [ "timers.target" ];
-    timerConfig = {
-      OnBootSec = "5m";
-      OnUnitActiveSec = "24h";
-      Unit = "restic-backup.service";
-    };
-  };
-
-  systemd.services."restic-backup" = {
-    script = ''
-      set -eu
-      /home/biscotty/.local/bin/restic-backup.sh
-    '';
-    serviceConfig = {
-      Type = "oneshot";
-      User = "biscotty";
-    };
-  };
+#   systemd.timers."restic-backup" = {
+#     wantedBy = [ "timers.target" ];
+#     timerConfig = {
+#       OnBootSec = "5m";
+#       OnUnitActiveSec = "24h";
+#       Unit = "restic-backup.service";
+#     };
+#   };
+# 
+#   systemd.services."restic-backup" = {
+#     script = ''
+#       set -eu
+#       /home/biscotty/.local/bin/restic-backup.sh
+#     '';
+#     serviceConfig = {
+#       Type = "oneshot";
+#       User = "biscotty";
+#     };
+#   };
  
 
   services.xserver.xkb = {
