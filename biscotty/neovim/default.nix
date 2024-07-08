@@ -62,6 +62,8 @@ in {
         au BufRead, BufNewFile *.py,*.pyw *.c *.h match BadWhitespace /\s\+$/
 
         let g:ycm_autoclose_preview_window_after_completion=1
+        let g:loaded_netrwPlugin = 1
+        let g:loaded_netrw = 1
         map <leader>g  :YcmCompleter GoToDefinitionElseDeclaration<CR>
 
         nnoremap <C-J> <C-W><C-J>
@@ -98,6 +100,10 @@ in {
         pkgs.vimPlugins.nvim-treesitter-parsers.css
         pkgs.vimPlugins.nvim-treesitter-parsers.javascript
         pkgs.vimPlugins.nvim-treesitter-textobjects
+        pkgs.vimPlugins.nvim-tree-lua
+        # pkgs.luajitPackages.lua-utils-nvim
+        pkgs.lua54Packages.lua-utils-nvim
+        pkgs.vimPlugins.nvim-web-devicons 
         {
           plugin = pkgs.vimPlugins.nvim-lspconfig;
           config = builtins.readFile config/setup/lspconfig.lua;
