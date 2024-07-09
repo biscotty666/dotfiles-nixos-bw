@@ -71,6 +71,13 @@ in {
         nnoremap <C-L> <C-W><C-L>
         nnoremap <C-H> <C-W><C-H>
 
+        inoremap [ []<Left>
+        inoremap ( ()<Left>
+        inoremap { {}<Left>
+        inoremap " ""<Left>
+        inoremap < <><Left>
+        inoremap ` ``<Left>
+
 
       '';
       plugins = [
@@ -91,7 +98,7 @@ in {
         }
         pkgs.vimPlugins.nvim-treesitter.withAllGrammars
         pkgs.vimPlugins.nvim-treesitter-parsers.haskell
-        pkgs.vimPlugins.nvim-treesitter-parsers.http
+        pkgs.vimPlugins.nvim-treesitter-parsers.html
         pkgs.vimPlugins.nvim-treesitter-parsers.svelte
         pkgs.vimPlugins.nvim-treesitter-parsers.regex
         pkgs.vimPlugins.nvim-treesitter-parsers.python
@@ -99,6 +106,9 @@ in {
         pkgs.vimPlugins.nvim-treesitter-parsers.r
         pkgs.vimPlugins.nvim-treesitter-parsers.css
         pkgs.vimPlugins.nvim-treesitter-parsers.javascript
+        pkgs.vimPlugins.nvim-treesitter-parsers.markdown
+        pkgs.vimPlugins.markdown-preview-nvim
+        pkgs.vimPlugins.markdown-nvim
         pkgs.vimPlugins.nvim-treesitter-textobjects
         pkgs.vimPlugins.nvim-tree-lua
         # pkgs.luajitPackages.lua-utils-nvim
@@ -309,7 +319,7 @@ in {
       '';
       enable = true;
       viAlias = true;
-      vimAlias = true;
+      vimAlias = false;
     };
   };
 }
