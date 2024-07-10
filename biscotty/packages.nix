@@ -6,7 +6,6 @@
     ccl
     starship
     xclip
-    xdg-desktop-portal-gtk
     xwayland
     wayland-protocols
     wayland-utils

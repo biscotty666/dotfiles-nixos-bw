@@ -145,6 +145,8 @@
     alacritty
     wezterm
     restic
+    xdg-desktop-portal-gtk
+    xdg-utils
     qemu
     quickemu
     mlocate
