@@ -5,7 +5,7 @@
     ./sh.nix
     ./packages.nix
     ./programs.nix
-    ./gnome.nix
+#    ./gnome.nix
     ./zsh.nix
     ./nushell.nix
     ./haskell.nix
