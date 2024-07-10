@@ -27,10 +27,10 @@
     wget
     bottom
     zellij
-    ranger
     tldr
+    lf
+    yazi
     flatpak
-    #quarto
     fzf
     feh
     imagemagick
