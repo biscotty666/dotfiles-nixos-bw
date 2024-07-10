@@ -11,6 +11,7 @@
     ./haskell.nix
     ./gui.nix
     ./utils.nix
+    ./lf/lf.nix
     ./services.nix
     ./vim.nix
     #./kdeconnect.nix

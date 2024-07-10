@@ -28,7 +28,6 @@
     bottom
     zellij
     tldr
-    lf
     yazi
     ranger
     flatpak
