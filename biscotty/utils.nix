@@ -30,6 +30,7 @@
     tldr
     lf
     yazi
+    ranger
     flatpak
     fzf
     feh
