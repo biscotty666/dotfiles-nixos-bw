@@ -14,7 +14,7 @@
     stow
     ddgr
     surfraw
-    thefuck
+    #thefuck
     bartib
     unzip
     ripgrep-all

@@ -13,9 +13,9 @@
     firefox
     inkscape
     brave
-    zeroadPackages.zeroad
+    #zeroadPackages.zeroad
     spotify
     discord
-    qgis
+    #qgis
   ];
 }
