@@ -7,6 +7,7 @@
 #      ./nixos/nextcloud.nix
       ./nixos/nvidia.nix
       ./nixos/mlocate.nix
+      ./nixos/sops.nix
       ./nixos/restic.nix
     ];
 
@@ -154,6 +155,7 @@
     cachix
     podman
     podman-tui
+    sops
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
