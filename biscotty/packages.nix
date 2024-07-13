@@ -13,7 +13,12 @@
     wlroots
     inetutils
     chroma
+    # for kitty
     kitty
+    kitty-img
+    kitty-themes
+    pixcat
+    termpdfpy
     catimg
     gephi
     ueberzug

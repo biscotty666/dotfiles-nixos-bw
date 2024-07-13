@@ -47,7 +47,6 @@
     zellij
     tldr
     yazi
-    ranger
     flatpak
     fzf
     feh
