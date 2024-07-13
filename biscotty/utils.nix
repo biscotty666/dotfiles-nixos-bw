@@ -3,7 +3,7 @@
 {
   home.packages = with pkgs; [
     fastfetch
-
+    fd
     # Added for ranger previews
     mupdf
     poppler_utils
@@ -46,7 +46,7 @@
     bottom
     zellij
     tldr
-    yazi
+    #yazi
     flatpak
     fzf
     feh

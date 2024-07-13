@@ -3,6 +3,7 @@
 {
   imports = [
     ./sh.nix
+    ./yazi.nix
     ./packages.nix
     ./programs.nix
 #    ./gnome.nix

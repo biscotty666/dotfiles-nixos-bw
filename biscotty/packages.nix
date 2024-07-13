@@ -6,6 +6,7 @@
     ccl
     starship
     xclip
+    xsel
     xwayland
     wayland-protocols
     wayland-utils
@@ -21,7 +22,7 @@
     termpdfpy
     catimg
     gephi
-    ueberzug
+    ueberzugpp
     texlive.combined.scheme-full
     pandoc
     zoxide

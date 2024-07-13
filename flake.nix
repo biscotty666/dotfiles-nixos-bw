@@ -9,7 +9,7 @@
       url = "github:Mic92/sops-nix";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-
+    yazi.url = "github:sxyazi/yazi";
     snowfall-lib = {
       url = "github:snowfallorg/lib";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -20,7 +20,7 @@
     };
   };
 
-  outputs = { self, nixpkgs, home-manager, sops-nix, ... } @inputs: 
+  outputs = { self, nixpkgs, home-manager, sops-nix, yazi, ... } @inputs: 
     let
       system = "x86_64-linux";
       lib = nixpkgs.lib;
@@ -44,6 +44,9 @@
         extraSpecialArgs = { inherit inputs; };
         modules = [ 
           ./biscotty/home.nix
+          #({ pkgs, ... }: {
+            #home.packages = [ yazi.packages.${pkgs.system}.default ];
+          #})
         ];
       };
     };
