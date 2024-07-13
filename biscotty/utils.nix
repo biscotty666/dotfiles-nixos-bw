@@ -3,7 +3,25 @@
 {
   home.packages = with pkgs; [
     fastfetch
+
+    # Added for ranger previews
+    mupdf
+    poppler_utils
+    exiftool
+    atool
+    libarchive
+    p7zip
+    unrar
+    odt2txt
+    xlsx2csv
+    jq
+    mediainfo
+    librsvg
+    djvulibre
+    ffmpeg
+
     perl
+    ffmpegthumbnailer
     nh
     w3m
     mlocate
