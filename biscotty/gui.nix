@@ -5,7 +5,6 @@
     thunderbird
     jupyter
     calibre
-    audacity
     gimp
     vlc
     libreoffice
@@ -16,6 +15,6 @@
     #zeroadPackages.zeroad
     spotify
     discord
-    #qgis
+    qgis
   ];
 }

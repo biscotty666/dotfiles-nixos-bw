@@ -7,6 +7,7 @@
     ./packages.nix
     ./programs.nix
 #    ./gnome.nix
+    ./video.nix
     ./zsh.nix
     ./nushell.nix
     ./haskell.nix
