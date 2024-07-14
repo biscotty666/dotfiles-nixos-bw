@@ -13,6 +13,8 @@
         rev = rev;
       };
     };
+  vPlugs = pkgs.vimPlugins;
+  vPlugs-nvtsp = pkgs.vimPlugins.nvim-treesitter-parsers;
 in {
   home.packages = with pkgs; [
     vscode-extensions.ms-vscode.cpptools
@@ -96,9 +98,14 @@ in {
           config = builtins.readFile config/setup/treesitter.lua;
           type = "lua";
         }
+        {
+          plugin = vPlugs.obsidian-nvim;
+          config = builtins.readFile config/setup/obsidian.lua;
+          type = "lua";
+        }
         pkgs.vimPlugins.nvim-treesitter.withAllGrammars
-        pkgs.vimPlugins.nvim-treesitter-parsers.haskell
-        pkgs.vimPlugins.nvim-treesitter-parsers.html
+        vPlugs-nvtsp.html
+        vPlugs-nvtsp.haskell
         pkgs.vimPlugins.nvim-treesitter-parsers.svelte
         pkgs.vimPlugins.nvim-treesitter-parsers.regex
         pkgs.vimPlugins.nvim-treesitter-parsers.python
@@ -107,13 +114,13 @@ in {
         pkgs.vimPlugins.nvim-treesitter-parsers.css
         pkgs.vimPlugins.nvim-treesitter-parsers.javascript
         pkgs.vimPlugins.nvim-treesitter-parsers.markdown
-        pkgs.vimPlugins.markdown-preview-nvim
-        pkgs.vimPlugins.markdown-nvim
         pkgs.vimPlugins.nvim-treesitter-textobjects
-        pkgs.vimPlugins.nvim-tree-lua
+        vPlugs.markdown-preview-nvim
+        vPlugs.markdown-nvim
+        vPlugs.nvim-tree-lua
         # pkgs.luajitPackages.lua-utils-nvim
         pkgs.lua54Packages.lua-utils-nvim
-        pkgs.vimPlugins.nvim-web-devicons 
+        vPlugs.nvim-web-devicons 
         {
           plugin = pkgs.vimPlugins.nvim-lspconfig;
           config = builtins.readFile config/setup/lspconfig.lua;
