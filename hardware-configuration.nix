@@ -27,6 +27,7 @@
   fileSystems."/home/biscotty/easydata" =
     { device = "/dev/disk/by-uuid/88656ea6-30f2-43bf-9e67-842b5150f4b7";
       fsType = "btrfs";
+      options = [ "nofail" ];
     };
 
   fileSystems."/home/biscotty/Fedora" =
