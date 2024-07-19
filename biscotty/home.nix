@@ -8,6 +8,7 @@
     ./programs.nix
 #    ./gnome.nix
     ./video.nix
+    ./helix.nix
     ./zsh.nix
     ./nushell.nix
     ./haskell.nix

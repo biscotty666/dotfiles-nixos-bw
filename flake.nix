@@ -20,6 +20,7 @@
     };
   };
 
+
   outputs = { self, nixpkgs, home-manager, sops-nix, yazi, ... } @inputs: 
     let
       system = "x86_64-linux";
