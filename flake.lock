@@ -360,11 +360,11 @@
         "snowfall-lib": "snowfall-lib"
       },
       "locked": {
-        "lastModified": 1720928813,
-        "narHash": "sha256-g+PHeVIO3TsSUbHivMZynHg0yJAVf8axnHoKKNokmtY=",
+        "lastModified": 1721342907,
+        "narHash": "sha256-o3f5SvkirUuDkrxlQGPVisN3H6/3mlBtpL3KtYdeKFo=",
         "owner": "jakehamilton",
         "repo": "neovim",
-        "rev": "8f233d48ba57ca5bc9f79f535a784dcb87adbead",
+        "rev": "bdc8258706008004e08e1e8e84b0924591475ecb",
         "type": "github"
       },
       "original": {
@@ -397,11 +397,11 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1720957393,
-        "narHash": "sha256-oedh2RwpjEa+TNxhg5Je9Ch6d3W1NKi7DbRO1ziHemA=",
+        "lastModified": 1721138476,
+        "narHash": "sha256-+W5eZOhhemLQxelojLxETfbFbc19NWawsXBlapYpqIA=",
         "owner": "nixos",
         "repo": "nixpkgs",
-        "rev": "693bc46d169f5af9c992095736e82c3488bf7dbb",
+        "rev": "ad0b5eed1b6031efaed382844806550c3dcb4206",
         "type": "github"
       },
       "original": {
@@ -701,11 +701,11 @@
         "rust-overlay": "rust-overlay"
       },
       "locked": {
-        "lastModified": 1721127012,
-        "narHash": "sha256-o3l/vF68Oyn1iNHxpzQO4KX+RB42SdmFC54RsxWgUqI=",
+        "lastModified": 1721317262,
+        "narHash": "sha256-UWKv9Edg7iEH5TDWiTYvXk6cCElhtTtt016SE1Ofw9I=",
         "owner": "sxyazi",
         "repo": "yazi",
-        "rev": "ed6ae000d646f94d32f6a14aff246bd6c479a9b0",
+        "rev": "d6081fbe6f57c8fa4b577fb3fbe1d392c057d94e",
         "type": "github"
       },
       "original": {
