@@ -19,7 +19,7 @@
     ./vim.nix
     #./kdeconnect.nix
     ./fonts.nix
-    ./neovim
+    #./neovim
   ];
 
   home.username = "biscotty";
