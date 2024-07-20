@@ -14,19 +14,23 @@
 #      url = "github:snowfallorg/lib";
 #      inputs.nixpkgs.follows = "nixpkgs";
 #    };
-    nvim-ks = {
-      url = "github:biscotty666/nvim-ks";
-      inputs.nixpkgs.follows = "nixpkgs";
+#     nvim-ks = {
+#       url = "github:biscotty666/nvim-ks";
+#       inputs.nixpkgs.follows = "nixpkgs";
+#     };
+
+    nixvim = {
+        url = "github:nix-community/nixvim";
+        inputs.nixpkgs.follows = "nixpkgs";
     };
   };
 
-
-  outputs = { self, nvim-ks, nixpkgs, home-manager, sops-nix, yazi, ... } @inputs: 
+  outputs = { self, nixpkgs, home-manager, nixvim, sops-nix, yazi, ... } @inputs: 
     
     let
-      overlays = [
-        nvim-ks.overlays.default
-      ];
+#      overlays = [
+#        nvim-ks.overlays.default
+#      ];
       system = "x86_64-linux";
       lib = nixpkgs.lib;
       pkgs = nixpkgs.legacyPackages.${system};

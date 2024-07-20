@@ -19,7 +19,7 @@
     ./vim.nix
     #./kdeconnect.nix
     ./fonts.nix
-    #./neovim
+    ./neovim
   ];
 
   home.username = "biscotty";
@@ -52,7 +52,7 @@
   };
 
   home.sessionVariables = {
-    EDITOR = "vim";
+#    EDITOR = "vim";
     NIXPKGS_ALLOW_UNFREE = 1;
     BARTIB_FILE="/home/biscotty/.local/bartib/activities.bartib";
     RESTIC_REPOSITORY = "$HOME/easydata/backups/sb";
