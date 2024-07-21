@@ -21,6 +21,8 @@
       };
     };
 
+    treesitter-textobjects.enable = true;
+
     hmts.enable = true;
   };
 }
