@@ -20,6 +20,7 @@
     zellij
     ranger
     w3m
+    browsh
     ueberzug
     gh
     zoxide
