@@ -4,6 +4,7 @@
   home.packages = with pkgs; [
     fastfetch
     fd
+    mpv
     # Added for ranger previews
     mupdf
     poppler_utils
