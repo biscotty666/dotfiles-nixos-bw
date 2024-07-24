@@ -12,6 +12,9 @@
           path = "~/Obsidian/Brian2";
         }
       ];
+      notes_subdir = "Notes";
+      new_notes_location = "notes_subdir";
+      preferred_link_style = "wiki";
       mappings = {
         gf = {
           action = "require('obsidian').util.gf_passthrough";
