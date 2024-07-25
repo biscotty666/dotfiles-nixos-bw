@@ -3,6 +3,7 @@
 {
   home.packages = with pkgs; [
     thunderbird
+    freetube
     jupyter
     calibre
     gimp
