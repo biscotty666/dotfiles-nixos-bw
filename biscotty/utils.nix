@@ -3,6 +3,7 @@
 {
   home.packages = with pkgs; [
     fastfetch
+    zathura
     fd
     mpv
     # Added for ranger previews
