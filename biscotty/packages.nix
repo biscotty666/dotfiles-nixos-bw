@@ -4,6 +4,8 @@
   nixpkgs.config.allowUnfree = true;
   home.packages = with pkgs; [
     ccl
+    sqlite
+    sqlite-utils
     starship
     xclip
     xsel
