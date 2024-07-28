@@ -29,6 +29,7 @@
           opts.buffer = true;
         };
       };
+      disable_frontmatter=true;
       templates = {
         subdir = "~/Obsidian/Brian2/Templates";
         substitutions = {

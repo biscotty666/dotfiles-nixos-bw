@@ -48,6 +48,7 @@
 
   services.displayManager.sddm = {
     enable = true;
+    theme = "sugar_dark";
     wayland.enable = true;
   };
   # services.xserver.desktopManager.gnome.enable = true;
@@ -89,9 +90,9 @@
   users.users.brian = {
     isNormalUser = true;
     description = "Brian";
-    extraGroups = [ 
-      "networkmanager" 
-      "wheel" 
+    extraGroups = [
+      "networkmanager"
+      "wheel"
       "input"
       "mlocate"
     ];
@@ -103,9 +104,9 @@
   users.users.biscotty = {
     isNormalUser = true;
     description = "Biscotty";
-    extraGroups = [ 
-      "networkmanager" 
-      "wheel" 
+    extraGroups = [
+      "networkmanager"
+      "wheel"
       "input"
       "mlocate"
     ];
@@ -116,7 +117,7 @@
 
 
   # Allow unfree packages
-  nixpkgs.config = { 
+  nixpkgs.config = {
     allowUnfree = true;
     allowBroken = true;
   };
@@ -155,6 +156,8 @@
     cachix
     podman
     podman-tui
+    kdePackages.sddm
+    sddm-sugar-dark
     sops
   ];
 
@@ -176,10 +179,10 @@
   networking.firewall = {
     allowedTCPPorts = [ 8384 22000 ];
     allowedUDPPorts = [ 22000 21027 ];
-    allowedTCPPortRanges = [ 
+    allowedTCPPortRanges = [
       { from = 1714; to = 1764; }
     ];
-    allowedUDPPortRanges = [ 
+    allowedUDPPortRanges = [
       { from = 1714; to = 1764; }
     ];
   };
