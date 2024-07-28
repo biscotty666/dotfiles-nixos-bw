@@ -5,6 +5,7 @@
     fastfetch
     zathura
     fd
+    element-desktop
     mpv
     # Added for ranger previews
     mupdf
