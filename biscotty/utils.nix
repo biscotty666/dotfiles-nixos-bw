@@ -30,6 +30,7 @@
     mlocate
     mdcat
     busybox
+    tcpdump
     gdu
     links2
     stow
