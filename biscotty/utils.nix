@@ -8,23 +8,14 @@
     element-desktop
     discordo
     mpv
-    # Added for ranger previews
     mupdf
     poppler_utils
-    exiftool
     atool
-    libarchive
     p7zip
     unrar
-    odt2txt
-    xlsx2csv
-    jq
     mediainfo
-    librsvg
     djvulibre
     ffmpeg
-
-    perl
     ffmpegthumbnailer
     nh
     w3m
@@ -33,8 +24,6 @@
     busybox
     tcpdump
     gdu
-    links2
-    stow
     ddgr
     surfraw
     #thefuck

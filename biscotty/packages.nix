@@ -6,6 +6,13 @@
     ccl
     sqlite
     sqlite-utils
+    perl
+    exiftool
+    libarchive
+    odt2txt
+    librsvg
+    xlsx2csv
+    jq
     starship
     xclip
     xsel
