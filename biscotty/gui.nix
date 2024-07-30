@@ -9,7 +9,6 @@
     gimp
     vlc
     libreoffice
-    brave
     firefox
     inkscape
     brave
