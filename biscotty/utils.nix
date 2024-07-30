@@ -6,6 +6,7 @@
     zathura
     fd
     element-desktop
+    discordo
     mpv
     # Added for ranger previews
     mupdf
