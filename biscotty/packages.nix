@@ -28,7 +28,7 @@
     kitty-img
     kitty-themes
     pixcat
-    termpdfpy
+        #    termpdfpy
     catimg
     gephi
     ueberzugpp
