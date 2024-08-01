@@ -12,6 +12,9 @@ let
     rh = "runhaskell";
     cbc = "xsel --clipboard --input";
     cbp = "xsel --clipboard --output";
+    zb = "zellij a Base2";
+    zo = "zellij a Obsidian";
+    zs = "zellij a Scratch";
   };
 in
 {
