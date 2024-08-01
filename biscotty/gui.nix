@@ -15,6 +15,5 @@
     #zeroadPackages.zeroad
     spotify
     discord
-        #    qgis
   ];
 }
