@@ -11,6 +11,8 @@ let
     vif = "vim $(fzf)";
     cat = "bat";
     rh = "runhaskell";
+    cbc = "xsel --clipboard --input";
+    cbp = "xsel --clipboard --output";
   };
 in
 {
