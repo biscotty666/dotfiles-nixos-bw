@@ -3,13 +3,13 @@
 {
   home.packages = with pkgs; [
     thunderbird
+    onlyoffice-bin
     qgis
     freetube
     jupyter
     calibre
     gimp
     vlc
-    libreoffice
     firefox
     inkscape
     brave
