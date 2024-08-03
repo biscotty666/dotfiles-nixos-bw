@@ -4,6 +4,7 @@
   home.packages = with pkgs; [
     thunderbird
     onlyoffice-bin
+    libreoffice
     qgis
     freetube
     jupyter
@@ -13,7 +14,7 @@
     firefox
     inkscape
     brave
-    #zeroadPackages.zeroad
+    zeroadPackages.zeroad
     spotify
     discord
   ];
