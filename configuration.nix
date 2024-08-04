@@ -18,6 +18,11 @@
   systemd.extraConfig = "DefaultTimeoutStopSec=30s";
   environment.localBinInPath = true;
   programs.zsh.enable = true;
+  programs.nix-ld = {
+    enable = true;
+    libraries = [
+    ];
+  };
 
   networking.hostName = "nixos"; # Define your hostname.
   networking.hosts = {
