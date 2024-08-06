@@ -17,5 +17,6 @@
     zeroadPackages.zeroad
     spotify
     discord
+    tor-browser
   ];
 }
