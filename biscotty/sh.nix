@@ -15,6 +15,7 @@ let
     zb = "zellij a Base2";
     zo = "zellij a Obsidian";
     zs = "zellij a Scratch";
+    gac = "git add . && git commit";
   };
 in
 {
