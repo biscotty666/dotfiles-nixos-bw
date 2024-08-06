@@ -139,6 +139,10 @@
   virtualisation.containers.enable = true;
 
 
+  nix.optimise = {
+    automatic = true;
+    dates = [ "03:54"];
+  };
   nix.gc = {
     automatic = true;
     dates = "daily";
@@ -205,7 +209,7 @@
 
   nix.settings = {
     experimental-features = [ "nix-command" "flakes" ];
-    auto-optimise-store = true;
+        #auto-optimise-store = true;
     trusted-users = [ "root" "biscotty" ];
     trusted-public-keys = [
       "hydra.iohk.io:f/Ea+s+dFdN+3Y/G+FDgSq+a5NEWhJGzdjvKNGv0/EQ="
