@@ -3,6 +3,16 @@
 {
   programs = {
 
+    kitty = {
+      enable = true;
+      font = {
+        name = "FiraCode Nerd Font";
+        size = 12;
+      };
+      theme = "Monokai Soda";
+            #theme = "Molokai";
+    };
+
     git = {
       enable = true;
       userName = "biscotty666";
