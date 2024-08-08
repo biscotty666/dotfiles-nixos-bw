@@ -3,6 +3,15 @@
 {
   programs = {
 
+    nixvim = {
+      enable = true;
+      plugins.lightline.enable = true;
+      extraPlugins = with pkgs.vimPlugins; [
+            molokai
+      ];
+      colorscheme = "molokai";
+
+    };
     kitty = {
       enable = true;
       font = {

@@ -19,7 +19,7 @@
   ];
 
   programs.nixvim = {
-    colorschemes.tokyonight.enable = true;
+        #colorschemes.molokai.enable = true;
 
     plugins = {
 
