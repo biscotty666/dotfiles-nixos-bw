@@ -2,7 +2,7 @@
 
 {
   home.packages = with pkgs; [
-    openshot-qt
+        #openshot-qt
     obs-studio
     audacity
   ];
