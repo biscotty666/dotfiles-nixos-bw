@@ -5,6 +5,8 @@
   home.packages = with pkgs; [
     ccl
     sqlite
+    ghostscript
+    gv
     sqlite-utils
     perl
     exiftool
