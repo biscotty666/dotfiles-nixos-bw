@@ -4,6 +4,7 @@
   home.packages = with pkgs; [
     fastfetch
     zathura
+    encfs
     fd
     element-desktop
     discordo
