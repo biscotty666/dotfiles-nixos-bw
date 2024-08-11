@@ -10,23 +10,14 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     yazi.url = "github:sxyazi/yazi";
-#    snowfall-lib = {
-#      url = "github:snowfallorg/lib";
-#      inputs.nixpkgs.follows = "nixpkgs";
-#    };
-#     nvim-ks = {
-#       url = "github:biscotty666/nvim-ks";
-#       inputs.nixpkgs.follows = "nixpkgs";
-#     };
-
     nixvim = {
         url = "github:nix-community/nixvim";
         inputs.nixpkgs.follows = "nixpkgs";
     };
   };
 
-  outputs = { self, nixpkgs, home-manager, nixvim, sops-nix, yazi, ... } @inputs: 
-    
+  outputs = { self, nixpkgs, home-manager, nixvim, sops-nix, yazi, ... } @inputs:
+
     let
 #      overlays = [
 #        nvim-ks.overlays.default
@@ -38,8 +29,8 @@
     nixosConfigurations."nixos" = lib.nixosSystem {
         inherit system;
         specialArgs = { inherit inputs; };
-        modules = [ 
-          ./configuration.nix 
+        modules = [
+          ./configuration.nix
           sops-nix.nixosModules.sops
         ];
       };
@@ -51,7 +42,7 @@
     homeConfigurations."biscotty" = home-manager.lib.homeManagerConfiguration {
         inherit pkgs;
         extraSpecialArgs = { inherit inputs; };
-        modules = [ 
+        modules = [
           ./biscotty/home.nix
           #({ pkgs, ... }: {
             #home.packages = [ yazi.packages.${pkgs.system}.default ];
