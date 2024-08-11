@@ -16,7 +16,7 @@
     defaultEditor = true;
 
     viAlias = true;
-    vimAlias = true;
+    vimAlias = false;
 
     luaLoader.enable = true;
   };
