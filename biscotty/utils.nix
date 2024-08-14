@@ -4,7 +4,7 @@
   home.packages = with pkgs; [
     fastfetch
     zathura
-    encfs
+    gocryptfs
     fd
     dropbox
         #dropbox-cli
