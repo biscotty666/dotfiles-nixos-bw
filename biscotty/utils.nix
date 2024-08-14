@@ -6,6 +6,8 @@
     zathura
     encfs
     fd
+    dropbox
+        #dropbox-cli
     element-desktop
     discordo
     mpv
