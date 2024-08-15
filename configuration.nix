@@ -9,6 +9,7 @@
       ./nixos/mlocate.nix
       ./nixos/sops.nix
       ./nixos/restic.nix
+      ./nixos/cachix.nix
     ];
 
   # Bootloader.
