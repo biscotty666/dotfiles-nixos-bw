@@ -23,6 +23,6 @@
     pkg-config
     gobject-introspection
     #ihaskell
-    lua51Packages.haskell-tools-nvim
+        #    lua51Packages.haskell-tools-nvim
   ];
 }
