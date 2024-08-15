@@ -62,7 +62,7 @@
   services.desktopManager.plasma6 = {
     enable = true;
   };
-  programs.ssh.askPassword = pkgs.lib.mkForce "${pkgs.ksshaskpass.out}/bin/ksshaskpass";
+    #  programs.ssh.askPassword = pkgs.lib.mkForce "${pkgs.ksshaskpass.out}/bin/ksshaskpass";
 
   services.xserver.xkb = {
     layout = "us";
@@ -213,10 +213,10 @@
         #auto-optimise-store = true;
     trusted-users = [ "root" "biscotty" ];
     trusted-public-keys = [
-      "hydra.iohk.io:f/Ea+s+dFdN+3Y/G+FDgSq+a5NEWhJGzdjvKNGv0/EQ="
+            #"hydra.iohk.io:f/Ea+s+dFdN+3Y/G+FDgSq+a5NEWhJGzdjvKNGv0/EQ="
     ];
     substituters = [
-      "https://cache.iog.io"
+            #"https://cache.iog.io"
     ];
   };
 }
