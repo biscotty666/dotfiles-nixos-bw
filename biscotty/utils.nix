@@ -7,6 +7,7 @@
     gocryptfs
     fd
     dropbox
+    httpie-desktop
         #dropbox-cli
     element-desktop
     discordo
