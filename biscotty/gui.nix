@@ -4,6 +4,7 @@
   home.packages = with pkgs; [
     thunderbird
     onlyoffice-bin
+    protonvpn-gui
     libreoffice
     qgis
     freetube
