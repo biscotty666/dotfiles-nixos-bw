@@ -33,8 +33,8 @@
         #    termpdfpy
     catimg
     gephi
-    ueberzug
-        #ueberzugpp
+        #ueberzug
+    ueberzugpp
     texlive.combined.scheme-full
     pandoc
     zoxide
