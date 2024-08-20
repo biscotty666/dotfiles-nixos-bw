@@ -16,6 +16,7 @@ let
     zo = "zellij a Obsidian";
     zs = "zellij a Scratch";
     gac = "git add . && git commit";
+    tf = "fuck";
   };
 in
 {
