@@ -4,13 +4,10 @@
   home.packages = with pkgs; [
     fastfetch
     zathura
-    wezterm
     gocryptfs
     fd
     dropbox
     httpie-desktop
-        #dropbox-cli
-        #    element-desktop
     discordo
     mpv
     mupdf
@@ -31,7 +28,7 @@
     gdu
     ddgr
     surfraw
-    #thefuck
+    thefuck
     bartib
     unzip
     ripgrep-all
