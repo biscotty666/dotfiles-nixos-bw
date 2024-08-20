@@ -4,12 +4,13 @@
   home.packages = with pkgs; [
     fastfetch
     zathura
+    wezterm
     gocryptfs
     fd
     dropbox
     httpie-desktop
         #dropbox-cli
-    element-desktop
+        #    element-desktop
     discordo
     mpv
     mupdf
