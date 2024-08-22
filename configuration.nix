@@ -6,6 +6,7 @@
       ./hardware-configuration.nix
 #      ./nixos/nextcloud.nix
       ./nixos/nvidia.nix
+      ./nixos/vm.nix
       ./nixos/mlocate.nix
       ./nixos/sops.nix
       ./nixos/restic.nix
@@ -135,7 +136,7 @@
       defaultNetwork.settings.dns_enabled = true;
     };
   };
-  programs.virt-manager.enable = true;
+    # programs.virt-manager.enable = true;
 
   virtualisation.containers.enable = true;
 
