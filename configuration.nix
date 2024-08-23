@@ -158,7 +158,7 @@
     alacritty
         #wezterm
     restic
-    xdg-desktop-portal-kde
+    xdg-desktop-portal-gtk
     xdg-utils
     qemu
         #quickemu
