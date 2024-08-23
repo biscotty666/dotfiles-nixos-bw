@@ -17,7 +17,7 @@
     kitty = {
       enable = true;
       font = {
-        name = "FiraCode Nerd Font";
+        name = "FiraCode Nerd Font Reg";
         size = 12;
       };
       theme = "Monokai Soda";
