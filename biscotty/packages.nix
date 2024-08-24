@@ -35,7 +35,7 @@
     gephi
         #ueberzug
     ueberzugpp
-    texlive.combined.scheme-full
+        #    texlive.combined.scheme-full
     pandoc
     zoxide
     hunspellDicts.es_ANY
