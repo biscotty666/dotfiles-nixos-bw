@@ -14,7 +14,19 @@
       ];
       notes_subdir = "Notes";
       new_notes_location = "notes_subdir";
-      preferred_link_style = "wiki";
+      daily_notes = {
+    #-- Optional, if you keep daily notes in a separate directory.
+        folder = "Notes/Daily";
+    #-- Optional, if you want to change the date format for the ID of daily notes.
+        date_format = "%b %d, %Y";
+    #-- Optional, if you want to change the date format of the default alias of daily notes.
+        alias_format = "%B %-d, %Y";
+    #-- Optional, default tags to add to each new daily note created.
+        #default_tags = { "daily-notes" };
+                    #-- Optional, if you want to automatically insert a template from your template directory like 'daily.md'
+        template = "Daily Note";
+    };
+    preferred_link_style = "wiki";
       mappings = {
         gf = {
           action = "require('obsidian').util.gf_passthrough";
