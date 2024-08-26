@@ -3,6 +3,7 @@
 {
   home.packages = with pkgs; [
     fastfetch
+    libqalculate
     zathura
     gocryptfs
     fd
