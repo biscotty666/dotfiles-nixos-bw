@@ -156,6 +156,7 @@
     vim-full # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
     git
     alacritty
+    inputs.zen-browser.packages."${system}".specific
         #wezterm
     restic
     xdg-desktop-portal-gtk

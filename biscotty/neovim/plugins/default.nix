@@ -23,6 +23,8 @@
 
     plugins = {
 
+      cmp-emoji.enable = true;
+
       gitsigns = {
         enable = true;
         settings.signs = {
