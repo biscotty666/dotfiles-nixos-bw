@@ -5,13 +5,11 @@
   home.packages = with pkgs; [
     noto-fonts
     noto-fonts-cjk
-    noto-fonts-emoji
+    noto-fonts-color-emoji
     liberation_ttf
     fira-code
     fira-code-symbols
     mplus-outline-fonts.githubRelease
-    google-fonts
-    #dina-font
     font-awesome
     ubuntu_font_family
 #    powerline-fonts
