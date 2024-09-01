@@ -55,7 +55,8 @@
 
   services.displayManager.sddm = {
     enable = true;
-    theme = "sugar_dark";
+    theme = "sddm-chili-theme";
+        #theme = "sugar_dark";
     wayland.enable = true;
   };
   # services.xserver.desktopManager.gnome.enable = true;
@@ -166,6 +167,7 @@
     mlocate
     dive
     cachix
+    sddm-chili-theme
     podman
     podman-tui
     kdePackages.sddm
