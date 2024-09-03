@@ -12,13 +12,16 @@
     mplus-outline-fonts.githubRelease
     font-awesome
     ubuntu_font_family
-#    powerline-fonts
     proggyfonts
-        #(nerdfonts.override { fonts = [
-        #"FantasqueSansMono"
-        #"FiraCode"
-        #"DroidSansMono"
-        #]; })
-    nerdfonts
+        (nerdfonts.override { fonts = [
+        "FantasqueSansMono"
+        "FiraCode"
+        "FiraMono"
+        "Hack"
+        "Inconsolata"
+        "JetBrainsMono"
+        "DroidSansMono"
+        ]; })
+        #nerdfonts
   ];
 }
