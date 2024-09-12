@@ -3,7 +3,7 @@
 {
   imports = [
     ./sh.nix
-    ./emacs.nix
+        #    ./emacs.nix
     ./yazi.nix
     ./packages.nix
     ./programs.nix
