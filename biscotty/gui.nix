@@ -15,7 +15,7 @@
     firefox
     inkscape
     brave
-            zeroadPackages.zeroad
+    zeroadPackages.zeroad
     spotify
     discord
     tor-browser
