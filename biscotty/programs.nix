@@ -23,8 +23,7 @@
         name = "FiraCode Nerd Font Regular";
         size = 12;
       };
-      theme = "Monokai Soda";
-            #theme = "Molokai";
+      themeFile = "Molokai";
     };
 
     git = {
