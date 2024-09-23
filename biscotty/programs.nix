@@ -8,7 +8,9 @@
     nixvim = {
       enable = true;
       plugins.lightline.enable = true;
+      plugins.web-devicons.enable = true;
       extraPlugins = with pkgs.vimPlugins; [
+            nvim-web-devicons
             molokai
       ];
       colorscheme = "molokai";
