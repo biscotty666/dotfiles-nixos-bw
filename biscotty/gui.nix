@@ -6,7 +6,7 @@
     onlyoffice-bin
     protonvpn-gui
     libreoffice
-        #    qgis
+            qgis
     freetube
     jupyter
     calibre
@@ -18,6 +18,5 @@
     zeroadPackages.zeroad
     spotify
     discord
-    tor-browser
   ];
 }
