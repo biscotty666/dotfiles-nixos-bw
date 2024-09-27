@@ -6,6 +6,7 @@
       ./hardware-configuration.nix
 #      ./nixos/nextcloud.nix
       ./nixos/nvidia.nix
+            #./nixos/tex.nix
       ./nixos/vm.nix
       ./nixos/mlocate.nix
       ./nixos/sops.nix
