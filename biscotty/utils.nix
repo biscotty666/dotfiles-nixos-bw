@@ -24,7 +24,6 @@
     w3m
     mlocate
     mdcat
-    busybox
     tcpdump
     gdu
     ddgr
@@ -43,7 +42,6 @@
     bottom
     zellij
     tldr
-    #yazi
     flatpak
     fzf
     feh
