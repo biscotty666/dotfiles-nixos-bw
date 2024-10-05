@@ -29,11 +29,6 @@
       options = [ "fmask=0022" "dmask=0022" ];
     };
 
-  fileSystems."/home/biscotty/easydata" =
-    { device = "/dev/disk/by-uuid/88656ea6-30f2-43bf-9e67-842b5150f4b7";
-      fsType = "btrfs";
-    };
-
   fileSystems."/home/biscotty/seagate" =
     { device = "/dev/disk/by-uuid/068c4c55-56a8-48af-9485-5d2dd9aa7f94";
       fsType = "ext4";
