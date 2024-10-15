@@ -17,7 +17,7 @@
 
         # Show active language server
         {
-          name.__raw = ''
+          __unkeyed.__raw = ''
             function()
                 local msg = ""
                 local buf_ft = vim.api.nvim_buf_get_option(0, 'filetype')
