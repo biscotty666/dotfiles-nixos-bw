@@ -8,7 +8,7 @@
     [ (modulesPath + "/installer/scan/not-detected.nix")
     ];
 
-  boot.initrd.availableKernelModules = [ "vmd" "xhci_pci" "ahci" "nvme" "usbhid" "usb_storage" "uas" "sd_mod" ];
+  boot.initrd.availableKernelModules = [ "vmd" "xhci_pci" "ahci" "nvme" "usbhid" "uas" "sd_mod" ];
   boot.initrd.kernelModules = [ "dm-snapshot" ];
   boot.kernelModules = [ "kvm-intel" ];
   boot.extraModulePackages = [ ];
@@ -16,11 +16,6 @@
   fileSystems."/" =
     { device = "/dev/disk/by-uuid/c701e35a-9b19-4218-9ac3-b82471427f71";
       fsType = "ext4";
-    };
-
-  fileSystems."/home/biscotty/Fedora" =
-    { device = "/dev/disk/by-uuid/7c73e283-c77e-4c7d-a18e-5f4653ed86ea";
-      fsType = "btrfs";
     };
 
   fileSystems."/boot" =
