@@ -9,7 +9,7 @@
             qgis
     freetube
     jupyter
-    calibre
+        #calibre
     gimp
     vlc
     firefox
