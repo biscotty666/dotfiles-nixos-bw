@@ -42,7 +42,7 @@
     bottom
     zellij
     tldr
-    flatpak
+        #flatpak
     fzf
     feh
     imagemagick
