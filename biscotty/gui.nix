@@ -3,6 +3,7 @@
 {
   home.packages = with pkgs; [
     thunderbird
+    obsidian
     onlyoffice-bin
     protonvpn-gui
     libreoffice
