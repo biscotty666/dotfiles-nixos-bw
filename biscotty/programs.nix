@@ -24,6 +24,9 @@
         size = 12;
       };
       themeFile = "Molokai";
+      settings = {
+        cursor = "#adcb42";
+      };
     };
 
     git = {
