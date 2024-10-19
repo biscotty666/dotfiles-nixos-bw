@@ -41,7 +41,7 @@
           opts.buffer = true;
         };
       };
-      disable_frontmatter=true;
+      disable_frontmatter=false;
       attachments = {
         img_folder = "Extras/Images";
       };
