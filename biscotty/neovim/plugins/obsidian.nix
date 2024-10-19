@@ -42,6 +42,9 @@
         };
       };
       disable_frontmatter=true;
+      attachments = {
+        img_folder = "Extras/Images";
+      };
       templates = {
         subdir = "~/Obsidian/Brian2/Templates";
         substitutions = {
