@@ -25,7 +25,7 @@
       };
       themeFile = "Molokai";
       settings = {
-        cursor = "#adcb42";
+        cursor = "#caec4d";
       };
     };
 

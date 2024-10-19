@@ -3,6 +3,7 @@
 {
   home.packages = with pkgs; [
     fastfetch
+    pastel
     libqalculate
     zathura
     gocryptfs
