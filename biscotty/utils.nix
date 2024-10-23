@@ -2,6 +2,7 @@
 
 {
   home.packages = with pkgs; [
+    ihp-new
     fastfetch
     pastel
     libqalculate
