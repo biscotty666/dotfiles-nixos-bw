@@ -5,7 +5,7 @@
     nushell
     nushellPlugins.query
     nushellPlugins.gstat
-    nushellPlugins.net
+        #nushellPlugins.net
     nushellPlugins.formats
     nushellPlugins.polars
     cargo
