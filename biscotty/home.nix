@@ -5,6 +5,7 @@
     ./sh.nix
         #    ./emacs.nix
     ./yazi.nix
+    ./vault.nix
     ./packages.nix
     ./programs.nix
 #    ./gnome.nix
