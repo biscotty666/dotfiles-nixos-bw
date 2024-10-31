@@ -34,6 +34,7 @@
           texlab.enable = true;
           cssls.enable = true;
           emmet_ls.enable = true;
+          elmls.enable = true;
           jedi_language_server.enable = true;
           markdown_oxide.enable = true;
           tailwindcss.enable = true;
