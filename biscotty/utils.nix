@@ -3,6 +3,7 @@
 {
   home.packages = with pkgs; [
     ihp-new
+    stack
     fastfetch
     pastel
     libqalculate
