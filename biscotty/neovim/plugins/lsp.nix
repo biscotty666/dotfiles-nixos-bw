@@ -27,7 +27,7 @@
           html.enable = true;
           htmx.enable = true;
           jsonls.enable = true;
-          ltex.enable = true;
+                    #ltex.enable = true;
           nixd.enable = true;
           quick_lint_js.enable = true;
           lua_ls.enable = true;
