@@ -4,7 +4,7 @@
   imports = [
     ./sh.nix
         #    ./emacs.nix
-        #    ./yazi.nix
+    ./yazi.nix
     ./vault.nix
     ./packages.nix
     ./programs.nix
