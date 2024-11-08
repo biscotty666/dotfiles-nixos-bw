@@ -7,7 +7,7 @@
     onlyoffice-bin
     protonvpn-gui
     libreoffice
-        #qgis
+    qgis
     freetube
     jupyter
         #calibre
