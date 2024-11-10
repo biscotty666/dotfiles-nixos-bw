@@ -13,7 +13,7 @@
     ./helix.nix
     ./zsh.nix
     ./nushell.nix
-    ./haskell.nix
+        #    ./haskell.nix
     ./gui.nix
     ./utils.nix
     ./services.nix

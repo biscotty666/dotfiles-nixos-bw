@@ -12,6 +12,7 @@
     haskellPackages.gi-gtk
     haskellPackages.gtk
     haskellPackages.gi-glib
+    haskellPackages.http-conduit
     haskellPackages.ihaskell
     stylish-haskell
     tree-sitter-grammars.tree-sitter-haskell
