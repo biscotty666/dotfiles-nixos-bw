@@ -28,6 +28,11 @@
           htmx.enable = true;
           jsonls.enable = true;
                     #ltex.enable = true;
+          rust_analyzer = {
+            enable = true;
+            installRustc = true;
+            installCargo = true;
+          };
           nixd.enable = true;
           quick_lint_js.enable = true;
           lua_ls.enable = true;
