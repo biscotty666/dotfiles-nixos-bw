@@ -15,11 +15,17 @@
           select = "underline";
         };
       };
-      languages.language = [{
-        name = "nix";
-        auto-format = true;
-        formatter.command = "${pkgs.nixfmt-classic}/bin/nixfmt";
-      }];
+      languages.language = [
+        {
+          name = "nix";
+          auto-format = true;
+          formatter.command = "${pkgs.nixfmt-classic}/bin/nixfmt";
+        }
+        {
+          name = "rust";
+          auto-format = true;
+        }
+      ];
       themes = {
         autumn_night_transparent = {
           "inherits" = "autumn_night";
