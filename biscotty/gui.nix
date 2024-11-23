@@ -10,13 +10,13 @@
     qgis
     freetube
     jupyter
-        #calibre
+    calibre
     gimp
     vlc
     firefox
     inkscape
     brave
-        #zeroadPackages.zeroad
+    zeroadPackages.zeroad
     spotify
     discord
   ];
