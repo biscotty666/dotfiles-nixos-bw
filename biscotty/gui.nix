@@ -10,7 +10,6 @@
     qgis
     freetube
     jupyter
-    calibre
     gimp
     vlc
     firefox
