@@ -3,6 +3,7 @@
 {
   home.packages = with pkgs; [
     thunderbird
+    floorp
     obsidian
     onlyoffice-bin
     protonvpn-gui
