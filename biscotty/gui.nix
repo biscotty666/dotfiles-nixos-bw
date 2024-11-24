@@ -15,7 +15,6 @@
     vlc
     firefox
     inkscape
-    brave
     zeroadPackages.zeroad
     spotify
     discord

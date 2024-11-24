@@ -1,0 +1,103 @@
+console.warn: "CSK Init Completed"
+console.error: Region.sys.mjs: "Error fetching region" (new SyntaxError("JSON.parse: unexpected character at line 1 column 1 of the JSON data", ""))
+console.error: Region.sys.mjs: "Failed to fetch region" (new Error("NO_RESULT", "resource://gre/modules/Region.sys.mjs", 411))
+console.error: ({})
+JavaScript error: , line 0: NotFoundError: Could not open `/home/biscotty/.floorp/uhkkgcnb.default/floorp_notes_backup.json': file does not exist (NS_ERROR_FILE_NOT_FOUND)
+Missing chrome or resource URL: chrome://floorp/skin/designs/lepton/edit-active.svg
+console.error: ({})
+console.log: ({initialized:true})
+console.log: false
+JavaScript error: resource://gre/modules/PromiseWorker.sys.mjs, line 75: Error: Could not get children of `/home/biscotty/.floorp/uhkkgcnb.default/thumbnails': directory does not exist (NS_ERROR_FILE_NOT_FOUND)
+console.log: "blob:null/4557280d-0eaa-4c7f-8e28-571f6a9e4f65"
+console.log: "blob:null/95828c73-624b-470b-914a-62106833f879"
+console.log: "blob:null/836c767d-848a-4624-a4a6-96afead39a79"
+console.error: "No permissions for local state folder."
+console.error: "No permissions for local state folder."
+console.error: (new NotFoundError("Could not get children of `/home/biscotty/.config/google-chrome/Default/Extensions': directory does not exist (NS_ERROR_FILE_NOT_FOUND)", (void 0)))
+console.error: (new NotFoundError("Could not get children of `/home/biscotty/.config/google-chrome/Default/Extensions': directory does not exist (NS_ERROR_FILE_NOT_FOUND)", (void 0)))
+console.error: (new NotFoundError("Could not get children of `/home/biscotty/.config/google-chrome/Default/Extensions': directory does not exist (NS_ERROR_FILE_NOT_FOUND)", (void 0)))
+console.error: Region.sys.mjs: "Error fetching region" (new SyntaxError("JSON.parse: unexpected character at line 1 column 1 of the JSON data", ""))
+console.error: Region.sys.mjs: "Failed to fetch region" (new Error("NO_RESULT", "resource://gre/modules/Region.sys.mjs", 411))
+console.error: "update.locale" " file doesn't exist in either the application or GRE directories"
+console.error: "update.locale" " file doesn't exist in either the application or GRE directories"
+console.warn: "This Event is registered in System: [object KeyboardEvent]"
+console.warn: "This Event is registered in System: [object KeyboardEvent]"
+console.error: "Missing search l10n id \"colors-underline-links\""
+console.warn: "This Event is registered in System: [object KeyboardEvent]"
+console.warn: "This Event is registered in System: [object KeyboardEvent]"
+console.warn: "This Event is registered in System: [object KeyboardEvent]"
+console.warn: "This Event is registered in System: [object KeyboardEvent]"
+console.error: "No permissions for local state folder."
+console.error: "No permissions for local state folder."
+console.error: (new NotFoundError("Could not get children of `/home/biscotty/.config/google-chrome/Default/Extensions': directory does not exist (NS_ERROR_FILE_NOT_FOUND)", (void 0)))
+console.error: (new NotFoundError("Could not get children of `/home/biscotty/.config/google-chrome/Default/Extensions': directory does not exist (NS_ERROR_FILE_NOT_FOUND)", (void 0)))
+console.error: (new NotFoundError("Could not get children of `/home/biscotty/.config/google-chrome/Default/Extensions': directory does not exist (NS_ERROR_FILE_NOT_FOUND)", (void 0)))
+console.warn: "This Event is registered in System: [object KeyboardEvent]"
+Missing chrome or resource URL: chrome://floorp/skin/designs/lepton/edit-active.svg
+Missing chrome or resource URL: chrome://floorp/skin/designs/lepton/edit-active.svg
+Missing chrome or resource URL: chrome://floorp/skin/designs/lepton/edit-active.svg
+Missing chrome or resource URL: chrome://floorp/skin/designs/lepton/edit-active.svg
+Missing chrome or resource URL: chrome://floorp/skin/designs/lepton/edit-active.svg
+Missing chrome or resource URL: chrome://floorp/skin/designs/lepton/edit-active.svg
+console.warn: "This Event is registered in System: [object KeyboardEvent]"
+console.warn: "This Event is registered in System: [object KeyboardEvent]"
+console.warn: "This Event is registered in System: [object KeyboardEvent]"
+console.warn: "This Event is registered in System: [object KeyboardEvent]"
+console.warn: "This Event is registered in System: [object KeyboardEvent]"
+console.warn: "This Event is registered in System: [object KeyboardEvent]"
+console.warn: "This Event is registered in System: [object KeyboardEvent]"
+console.warn: "This Event is registered in System: [object KeyboardEvent]"
+console.warn: "This Event is registered in System: [object KeyboardEvent]"
+console.warn: "This Event is registered in System: [object KeyboardEvent]"
+console.warn: "This Event is registered in System: [object KeyboardEvent]"
+console.warn: "This Event is registered in System: [object KeyboardEvent]"
+console.warn: "This Event is registered in System: [object KeyboardEvent]"
+console.warn: "This Event is registered in System: [object KeyboardEvent]"
+console.warn: "This Event is registered in System: [object KeyboardEvent]"
+console.warn: "This Event is registered in System: [object KeyboardEvent]"
+console.warn: "This Event is registered in System: [object KeyboardEvent]"
+console.warn: "This Event is registered in System: [object KeyboardEvent]"
+console.warn: "This Event is registered in System: [object KeyboardEvent]"
+console.warn: "This Event is registered in System: [object KeyboardEvent]"
+console.warn: "This Event is registered in System: [object KeyboardEvent]"
+console.warn: "This Event is registered in System: [object KeyboardEvent]"
+console.warn: "This Event is registered in System: [object KeyboardEvent]"
+console.warn: "This Event is registered in System: [object KeyboardEvent]"
+console.warn: "This Event is registered in System: [object KeyboardEvent]"
+console.warn: "This Event is registered in System: [object KeyboardEvent]"
+console.warn: "This Event is registered in System: [object KeyboardEvent]"
+console.warn: "This Event is registered in System: [object KeyboardEvent]"
+console.warn: "This Event is registered in System: [object KeyboardEvent]"
+console.warn: "This Event is registered in System: [object KeyboardEvent]"
+console.warn: "This Event is registered in System: [object KeyboardEvent]"
+console.warn: "This Event is registered in System: [object KeyboardEvent]"
+console.warn: "This Event is registered in System: [object KeyboardEvent]"
+console.warn: "This Event is registered in System: [object KeyboardEvent]"
+console.warn: "This Event is registered in System: [object KeyboardEvent]"
+console.error: "getScreenshot(http://localhost:8000/Posts) failed:" (new Error("page-thumbnail:error", "resource://gre/modules/BackgroundPageThumbs.sys.mjs", 141))
+console.warn: "This Event is registered in System: [object KeyboardEvent]"
+console.warn: "This Event is registered in System: [object KeyboardEvent]"
+console.warn: "This Event is registered in System: [object KeyboardEvent]"
+console.warn: "This Event is registered in System: [object KeyboardEvent]"
+console.warn: "This Event is registered in System: [object KeyboardEvent]"
+console.warn: "This Event is registered in System: [object KeyboardEvent]"
+console.warn: "This Event is registered in System: [object KeyboardEvent]"
+JavaScript error: https://rgis.unm.edu/rgis6/, line 1328: TypeError: data is undefined
+JavaScript warning: https://www.google.com/js/th/B7USFwsz_nMovXHWu4UwQRY0Qlt3iq-mQpCYnZ8jj34.js line 2 > eval line 208 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.google.com/js/th/B7USFwsz_nMovXHWu4UwQRY0Qlt3iq-mQpCYnZ8jj34.js line 2 > eval line 1364 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015, line 1: Script terminated by timeout at:
+o@https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015:1:18291
+104/e.onLCP/</c<@https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015:1:18393
+104/T/<@https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015:1:11636
+t@hJavaScript warning: https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015, line 1: ttps://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015:1:11507
+
+Script terminated by timeout at:
+o@https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015:1:18291
+104/e.onLCP/</c<@https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015:1:18393
+104/T/<@https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015:1:11636
+t@https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015:1:11507
+
+JavaScript warning: https://addons.mozilla.org/static-frontend/amo-f59e4f2057dcc32030cb.js, line 7: Script terminated by timeout at:
+oo/<@https://addons.mozilla.org/static-frontend/amo-f59e4f2057dcc32030cb.js:7:5052
+t@https://addons.mozilla.org/static-frontend/amo-f59e4f2057dcc32030cb.js:7:4912
+
