@@ -1,7 +1,9 @@
-{ config, pkgs, ... }:
+{ pkgs, ... }:
 
 {
   home.packages = with pkgs; [
+    pycritty
+    alacritty-theme
     ihp-new
     stack
     fastfetch
