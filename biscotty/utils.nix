@@ -5,7 +5,6 @@
     pycritty
     alacritty-theme
     ihp-new
-    stack
     fastfetch
     pastel
     libqalculate
