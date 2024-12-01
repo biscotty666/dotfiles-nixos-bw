@@ -21,6 +21,7 @@
     nerd-fonts.hack
     nerd-fonts.droid-sans-mono
     nerd-fonts.mononoki
+    nerd-fonts.hasklug
         #        (nerdfonts.override { fonts = [
         #        "FantasqueSansMono"
         #        "FiraCode"
