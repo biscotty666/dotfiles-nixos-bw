@@ -18,6 +18,7 @@ let
     zs = "zellij a Scratch";
     za = "zellij attach";
     gac = "git add . && git commit";
+    ip = "ip -c";
     tf = "fuck";
   };
 in
