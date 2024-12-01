@@ -13,15 +13,23 @@
     font-awesome
     ubuntu_font_family
     proggyfonts
-        (nerdfonts.override { fonts = [
-        "FantasqueSansMono"
-        "FiraCode"
-        "FiraMono"
-        "Hack"
-        "Inconsolata"
-        "JetBrainsMono"
-        "DroidSansMono"
-        ]; })
-        #nerdfonts
+    nerd-fonts.inconsolata
+    nerd-fonts.fantasque-sans-mono
+    nerd-fonts.fira-code
+    nerd-fonts.fira-mono
+    nerd-fonts.jetbrains-mono
+    nerd-fonts.hack
+    nerd-fonts.droid-sans-mono
+    nerd-fonts.mononoki
+        #        (nerdfonts.override { fonts = [
+        #        "FantasqueSansMono"
+        #        "FiraCode"
+        #        "FiraMono"
+        #        "Hack"
+        #        "Inconsolata"
+        #        "JetBrainsMono"
+        #        "DroidSansMono"
+        #        ]; })
+        #        #nerdfonts
   ];
 }
