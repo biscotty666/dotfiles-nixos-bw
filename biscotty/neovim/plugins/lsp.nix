@@ -25,7 +25,6 @@
         servers = {
           clangd.enable = true;
           html.enable = true;
-          htmx.enable = true;
           jsonls.enable = true;
                     #ltex.enable = true;
           rust_analyzer = {
