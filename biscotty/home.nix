@@ -3,6 +3,7 @@
 {
   imports = [
     ./sh.nix
+    ./spell.nix
         #    ./emacs.nix
     ./yazi.nix
     ./vault.nix

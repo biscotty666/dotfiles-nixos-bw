@@ -21,8 +21,8 @@
         "latex"
         "markdown"
       ];
-      command = "setlocal spell spelllang=en";
-            #command = "setlocal spell spelllang=en,fr,es";
+            #command = "setlocal spell spelllang=en";
+            command = "setlocal spell spelllang=en,fr,es";
     }
   ];
 }
