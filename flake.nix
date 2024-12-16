@@ -44,7 +44,7 @@
         inherit pkgs;
         extraSpecialArgs = { inherit inputs; };
         modules = [
-          ./biscotty/home.nix
+          ./biscotty/home-mgr/home.nix
           #({ pkgs, ... }: {
             #home.packages = [ yazi.packages.${pkgs.system}.default ];
           #})
