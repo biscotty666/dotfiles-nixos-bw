@@ -3,6 +3,7 @@
 {
   home.packages = with pkgs; [
     pycritty
+    lazygit
     alacritty-theme
     ihp-new
     fastfetch
