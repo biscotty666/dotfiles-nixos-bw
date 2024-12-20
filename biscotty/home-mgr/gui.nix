@@ -8,7 +8,6 @@
     onlyoffice-bin
     protonvpn-gui
     libreoffice
-    qgis
     freetube
     jupyter
     gimp
