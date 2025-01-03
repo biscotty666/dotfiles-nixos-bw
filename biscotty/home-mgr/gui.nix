@@ -14,7 +14,7 @@
     vlc
     firefox
     inkscape
-    zeroadPackages.zeroad
+        #    zeroadPackages.zeroad
     spotify
     discord
   ];

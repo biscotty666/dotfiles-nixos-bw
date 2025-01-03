@@ -59,7 +59,7 @@
     enable = true;
     theme = "sddm-chili-theme";
         #theme = "sugar_dark";
-        #wayland.enable = true;
+        wayland.enable = false;
   };
   # services.xserver.desktopManager.gnome.enable = true;
     #  services.xserver.desktopManager.xfce.enable = true;
