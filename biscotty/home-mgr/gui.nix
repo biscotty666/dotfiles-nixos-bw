@@ -5,15 +5,16 @@
     thunderbird
     floorp
     obsidian
-    onlyoffice-bin
+        #    onlyoffice-bin
     protonvpn-gui
+    brave
     libreoffice
     freetube
     jupyter
     gimp
     vlc
     firefox
-    inkscape
+        #inkscape
         #    zeroadPackages.zeroad
     spotify
     discord

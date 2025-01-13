@@ -8,6 +8,7 @@
       ./nixos/nvidia.nix
             #./nixos/tex.nix
       ./nixos/vm.nix
+      ./nixos/nushell.nix
       ./nixos/mlocate.nix
       ./nixos/sops.nix
       ./nixos/restic.nix
@@ -78,7 +79,7 @@
 
   # Enable sound with pipewire.
   #sound.enable = true;
-  hardware.pulseaudio.enable = false;
+  services.pulseaudio.enable = false;
   hardware.bluetooth.enable = true;
   hardware.bluetooth.powerOnBoot = true;
   security.rtkit.enable = true;

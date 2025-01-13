@@ -10,10 +10,10 @@
     ./packages.nix
     ./programs.nix
 #    ./gnome.nix
-    ./video.nix
+        #    ./video.nix
     ./helix.nix
     ./zsh.nix
-    ./nushell.nix
+        #./nushell.nix
         #    ./haskell.nix
     ./gui.nix
     ./utils.nix
