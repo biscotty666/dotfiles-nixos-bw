@@ -172,10 +172,15 @@
     cachix
     sddm-chili-theme
     podman
+    helix
     podman-tui
     kdePackages.sddm
     sddm-sugar-dark
     sops
+    python312Packages.python-lsp-server
+    python312Packages.python-lsp-ruff
+    ruff
+    python312Packages.jedi-language-server
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
