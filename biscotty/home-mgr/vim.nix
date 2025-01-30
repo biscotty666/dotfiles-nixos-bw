@@ -3,7 +3,7 @@
 {
   programs.vim = {
       enable = true;
-      plugins = with pkgs.vimPlugins; [ 
+      plugins = with pkgs.vimPlugins; [
         vim-multiple-cursors
         lightline-vim
         nerdtree
@@ -35,7 +35,7 @@
         set listchars=eol:.,tab:>-,trail:~,extends:>,precedes:<
         set fileformat=unix
         set textwidth=79
-        
+
         set cursorline
         set number
         set relativenumber
@@ -68,7 +68,7 @@
         nnoremap <C-K> <C-W><C-K>
         nnoremap <C-L> <C-W><C-L>
         nnoremap <C-H> <C-W><C-H>
-        
+
         inoremap [ []<Left>
         inoremap ( ()<Left>
         inoremap { {}<Left>

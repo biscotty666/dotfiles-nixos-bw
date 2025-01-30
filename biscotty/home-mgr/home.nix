@@ -18,7 +18,7 @@
     ./gui.nix
     ./utils.nix
     ./services.nix
-    ./vim.nix
+        #    ./vim.nix
     ./fonts.nix
     ./neovim
   ];
