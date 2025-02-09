@@ -8,7 +8,7 @@
       ./nixos/nvidia.nix
             #./nixos/tex.nix
       ./nixos/vm.nix
-      ./nixos/nushell.nix
+            #      ./nixos/nushell.nix
       ./nixos/mlocate.nix
       ./nixos/sops.nix
       ./nixos/restic.nix
