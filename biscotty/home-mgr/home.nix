@@ -4,21 +4,21 @@
   imports = [
     ./sh.nix
     ./spell.nix
-        #    ./emacs.nix
+    #    ./emacs.nix
     ./yazi.nix
     ./vault.nix
     ./packages.nix
     ./programs.nix
-#    ./gnome.nix
-        #    ./video.nix
-    ./helix.nix
+    #    ./gnome.nix
+    #    ./video.nix
+    #    ./helix.nix
     ./zsh.nix
-        #./nushell.nix
-        #    ./haskell.nix
+    #./nushell.nix
+    #    ./haskell.nix
     ./gui.nix
     ./utils.nix
     ./services.nix
-        #    ./vim.nix
+    #    ./vim.nix
     ./fonts.nix
     ./neovim
   ];
@@ -28,9 +28,10 @@
 
   home.stateVersion = "23.11"; # Please read the comment before changing.
 
-  home.packages = with pkgs; [
+  home.packages = with pkgs;
+    [
 
-  ];
+    ];
 
   programs = {
 
@@ -53,15 +54,14 @@
   };
 
   home.sessionVariables = {
-#    EDITOR = "vim";
+    #    EDITOR = "vim";
     NIXPKGS_ALLOW_UNFREE = 1;
-    BARTIB_FILE="/home/biscotty/.local/bartib/activities.bartib";
+    BARTIB_FILE = "/home/biscotty/.local/bartib/activities.bartib";
     RESTIC_REPOSITORY = "$HOME/easydata/backups/sb";
-    RESTIC_PASSWORD_FILE="$HOME/.config/restic/restpass";
-    FZF_DEFAULT_OPTS="--preview 'bat --color=always {}'";
+    RESTIC_PASSWORD_FILE = "$HOME/.config/restic/restpass";
+    FZF_DEFAULT_OPTS = "--preview 'bat --color=always {}'";
     NIXOS_OZONE_WL = "1";
   };
-
 
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;

@@ -1,20 +1,20 @@
 { config, pkgs, inputs, ... }:
 
 {
-  imports =
-    [ # Include the results of the hardware scan.
-      ./hardware-configuration.nix
-#      ./nixos/nextcloud.nix
-      ./nixos/nvidia.nix
-            #./nixos/tex.nix
-      ./nixos/vm.nix
-            #      ./nixos/nushell.nix
-      ./nixos/mlocate.nix
-      ./nixos/sops.nix
-      ./nixos/restic.nix
-      ./nixos/cachix.nix
-      ./brian/modules/utils.nix
-    ];
+  imports = [ # Include the results of the hardware scan.
+    ./hardware-configuration.nix
+    #      ./nixos/nextcloud.nix
+    ./nixos/nvidia.nix
+    #./nixos/tex.nix
+    ./nixos/vm.nix
+    #      ./nixos/nushell.nix
+    ./nixos/mlocate.nix
+    ./nixos/programs.nix
+    ./nixos/sops.nix
+    ./nixos/restic.nix
+    ./nixos/cachix.nix
+    ./brian/modules/utils.nix
+  ];
 
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
@@ -25,14 +25,11 @@
   programs.zsh.enable = true;
   programs.nix-ld = {
     enable = true;
-    libraries = [
-    ];
+    libraries = [ ];
   };
 
   networking.hostName = "nixos"; # Define your hostname.
-  networking.hosts = {
-    "192.168.0.238" = [ "rpi" ];
-  };
+  networking.hosts = { "192.168.0.238" = [ "rpi" ]; };
 
   networking.networkmanager.enable = true;
 
@@ -59,15 +56,13 @@
   services.displayManager.sddm = {
     enable = true;
     theme = "sddm-chili-theme";
-        #theme = "sugar_dark";
-        wayland.enable = false;
+    #theme = "sugar_dark";
+    wayland.enable = false;
   };
   # services.xserver.desktopManager.gnome.enable = true;
-    #  services.xserver.desktopManager.xfce.enable = true;
-  services.desktopManager.plasma6 = {
-    enable = true;
-  };
-    #  programs.ssh.askPassword = pkgs.lib.mkForce "${pkgs.ksshaskpass.out}/bin/ksshaskpass";
+  #  services.xserver.desktopManager.xfce.enable = true;
+  services.desktopManager.plasma6 = { enable = true; };
+  #  programs.ssh.askPassword = pkgs.lib.mkForce "${pkgs.ksshaskpass.out}/bin/ksshaskpass";
 
   services.xserver.xkb = {
     layout = "us";
@@ -98,34 +93,27 @@
   };
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
-    #  users.users.brian = {
-    #    isNormalUser = true;
-    #    description = "Brian";
-    #    extraGroups = [
-    #      "networkmanager"
-    #      "wheel"
-    #      "input"
-    #      "mlocate"
-    #    ];
-    #    shell = pkgs.zsh;
-    #    packages = with pkgs; [
-    #    ];
-    #  };
+  #  users.users.brian = {
+  #    isNormalUser = true;
+  #    description = "Brian";
+  #    extraGroups = [
+  #      "networkmanager"
+  #      "wheel"
+  #      "input"
+  #      "mlocate"
+  #    ];
+  #    shell = pkgs.zsh;
+  #    packages = with pkgs; [
+  #    ];
+  #  };
 
   users.users.biscotty = {
     isNormalUser = true;
     description = "Biscotty";
-    extraGroups = [
-      "networkmanager"
-      "wheel"
-      "input"
-      "mlocate"
-    ];
+    extraGroups = [ "networkmanager" "wheel" "input" "mlocate" ];
     shell = pkgs.zsh;
-    packages = with pkgs; [
-    ];
+    packages = with pkgs; [ ];
   };
-
 
   # Allow unfree packages
   nixpkgs.config = {
@@ -140,14 +128,13 @@
       defaultNetwork.settings.dns_enabled = true;
     };
   };
-    # programs.virt-manager.enable = true;
+  # programs.virt-manager.enable = true;
 
   virtualisation.containers.enable = true;
 
-
   nix.optimise = {
     automatic = true;
-    dates = [ "03:54"];
+    dates = [ "03:54" ];
   };
   nix.gc = {
     automatic = true;
@@ -161,12 +148,12 @@
     git
     alacritty
     inputs.zen-browser.packages."${system}".specific
-        #wezterm
+    #wezterm
     restic
     xdg-desktop-portal-gtk
     xdg-utils
     qemu
-        #quickemu
+    #quickemu
     mlocate
     dive
     cachix
@@ -195,18 +182,20 @@
 
   # Enable the OpenSSH daemon.
   services.openssh.enable = true;
-    services.flatpak.enable = true;
+  services.flatpak.enable = true;
 
   # Open ports in the firewall.
   networking.firewall = {
     allowedTCPPorts = [ 8384 22000 ];
     allowedUDPPorts = [ 22000 21027 ];
-    allowedTCPPortRanges = [
-      { from = 1714; to = 1764; }
-    ];
-    allowedUDPPortRanges = [
-      { from = 1714; to = 1764; }
-    ];
+    allowedTCPPortRanges = [{
+      from = 1714;
+      to = 1764;
+    }];
+    allowedUDPPortRanges = [{
+      from = 1714;
+      to = 1764;
+    }];
   };
 
   # Or disable the firewall altogether.
@@ -222,13 +211,10 @@
 
   nix.settings = {
     experimental-features = [ "nix-command" "flakes" ];
-        #auto-optimise-store = true;
+    #auto-optimise-store = true;
     trusted-users = [ "root" "biscotty" ];
-    trusted-public-keys = [
-            "hydra.iohk.io:f/Ea+s+dFdN+3Y/G+FDgSq+a5NEWhJGzdjvKNGv0/EQ="
-    ];
-    substituters = [
-            "https://cache.iog.io"
-    ];
+    trusted-public-keys =
+      [ "hydra.iohk.io:f/Ea+s+dFdN+3Y/G+FDgSq+a5NEWhJGzdjvKNGv0/EQ=" ];
+    substituters = [ "https://cache.iog.io" ];
   };
 }
