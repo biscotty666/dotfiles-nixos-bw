@@ -16,7 +16,7 @@
     #./nushell.nix
     #    ./haskell.nix
     ./gui.nix
-    ./utils.nix
+#    ./utils.nix
     ./services.nix
     #    ./vim.nix
     ./fonts.nix
