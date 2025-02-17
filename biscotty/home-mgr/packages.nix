@@ -31,6 +31,7 @@
     kitty-img
     kitty-themes
     pixcat
+    gh
         #    termpdfpy
     catimg
     gephi

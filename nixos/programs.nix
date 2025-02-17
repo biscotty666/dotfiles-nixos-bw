@@ -38,7 +38,6 @@
     bartib
     unzip
     ripgrep-all
-    gh
     distrobox
     bat
     ripgrep
