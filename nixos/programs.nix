@@ -6,6 +6,7 @@
      pycritty
     lazygit
     alacritty-theme
+    opentabletdriver
     ihp-new
     fastfetch
     pastel

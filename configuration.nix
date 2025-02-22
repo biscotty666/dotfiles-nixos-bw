@@ -76,6 +76,8 @@
   #sound.enable = true;
   services.pulseaudio.enable = false;
   hardware.bluetooth.enable = true;
+  hardware.opentabletdriver.enable = true;
+  hardware.opentabletdriver.daemon.enable = true;
   hardware.bluetooth.powerOnBoot = true;
   security.rtkit.enable = true;
   security.polkit.enable = true;
