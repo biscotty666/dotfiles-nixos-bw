@@ -5,35 +5,6 @@
 
     thefuck.enable = true;
 
-    #    helix = {
-    #      enable = true;
-    #     settings = {
-    #theme = "autumn_night_transparent";
-    #editor.cursor-shape = {
-    #normal = "block";
-    #insert = "bar";
-    #select = "underline";
-    #};
-    #};
-    #languages.language = [
-    #{
-    #name = "nix";
-    #auto-format = true;
-    #formatter.command = "${pkgs.nixfmt-classic}/bin/nixfmt";
-    #}
-    #{
-    #name = "rust";
-    #auto-format = true;
-    #}
-    #];
-    #themes = {
-    #autumn_night_transparent = {
-    #"inherits" = "autumn_night";
-    #"ui.background" = { };
-    #};
-    #};
-    #};
-
     nixvim = {
       enable = true;
       plugins.lightline.enable = true;
@@ -65,8 +36,8 @@
       enableZshIntegration = true;
     };
 
-    vscode = {
-      enable = true;
+    vscode.enable = true;
+    vscode.profiles.default = {
       extensions = with pkgs.vscode-extensions; [ ecmel.vscode-html-css ];
       enableExtensionUpdateCheck = true;
     };
