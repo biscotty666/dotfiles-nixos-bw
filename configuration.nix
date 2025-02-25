@@ -3,16 +3,14 @@
 {
   imports = [ # Include the results of the hardware scan.
     ./hardware-configuration.nix
-    #      ./nixos/nextcloud.nix
     ./nixos/nvidia.nix
-    #./nixos/tex.nix
     ./nixos/vm.nix
-    #      ./nixos/nushell.nix
     ./nixos/mlocate.nix
     ./nixos/programs.nix
     ./nixos/sops.nix
     ./nixos/restic.nix
     ./nixos/cachix.nix
+    ./nixos/yazi.nix
     ./brian/modules/utils.nix
   ];
 

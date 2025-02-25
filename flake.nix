@@ -9,7 +9,7 @@
       url = "github:Mic92/sops-nix";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-        #    yazi.url = "github:sxyazi/yazi";
+    yazi.url = "github:sxyazi/yazi";
     nixvim = {
         url = "github:nix-community/nixvim";
         inputs.nixpkgs.follows = "nixpkgs";

@@ -4,6 +4,7 @@
 
   environment.systemPackages = with pkgs; [
      pycritty
+    yazi
     lazygit
     alacritty-theme
     opentabletdriver
@@ -68,6 +69,7 @@
     podman
     helix
     podman-tui
+    ueberzugpp
     kdePackages.sddm
     sddm-sugar-dark
     sops
