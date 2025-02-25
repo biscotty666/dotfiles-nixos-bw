@@ -13,16 +13,6 @@
       colorscheme = "molokai";
 
     };
-    kitty = {
-      enable = true;
-      font = {
-        #name = "NotoSansM Nerd Font Mono";
-        name = "FiraCode Nerd Font Regular";
-        size = 12;
-      };
-      themeFile = "Molokai";
-      settings = { cursor = "#caec4d"; };
-    };
 
     git = {
       enable = true;

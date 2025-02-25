@@ -26,18 +26,11 @@
     wlroots
     inetutils
     chroma
-    # for kitty
-    kitty
-    kitty-img
-    kitty-themes
     pixcat
     gh
-        #    termpdfpy
     catimg
     gephi
-        #ueberzug
     ueberzugpp
-        #    texlive.combined.scheme-full
     pandoc
     zoxide
     hunspellDicts.es_ANY

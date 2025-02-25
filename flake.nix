@@ -9,7 +9,7 @@
       url = "github:Mic92/sops-nix";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    yazi.url = "github:sxyazi/yazi";
+        #    yazi.url = "github:sxyazi/yazi";
     nixvim = {
         url = "github:nix-community/nixvim";
         inputs.nixpkgs.follows = "nixpkgs";
@@ -17,7 +17,7 @@
     zen-browser.url = "github:MarceColl/zen-browser-flake";
   };
 
-  outputs = { self, nixpkgs, home-manager, nixvim, sops-nix, yazi, ... } @inputs:
+  outputs = { self, nixpkgs, home-manager, nixvim, sops-nix, ... } @inputs:
 
     let
 #      overlays = [
@@ -45,9 +45,6 @@
         extraSpecialArgs = { inherit inputs; };
         modules = [
           ./biscotty/home-mgr/home.nix
-          #({ pkgs, ... }: {
-            #home.packages = [ yazi.packages.${pkgs.system}.default ];
-          #})
         ];
       };
     };
