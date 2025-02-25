@@ -1,0 +1,24 @@
+[general]
+import = [
+    "~/.config/alacritty/themes/themes/hyper.toml"
+]
+
+[window]
+
+opacity = 0.95
+dynamic_padding = true
+
+[font]
+normal = { family = "FiraCode Nerd Font"}
+
+size = 14.0
+
+[cursor]
+style = { shape = "Beam", blinking = "On" }
+blink_timeout = 15
+
+[colors.normal]
+
+red = "#fd6884"
+magenta = "#dd19e6"
+green = "#adda78"
