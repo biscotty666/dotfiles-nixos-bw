@@ -7,6 +7,7 @@
     yazi
     lazygit
     alacritty-theme
+    devenv
     opentabletdriver
     ihp-new
     fastfetch
