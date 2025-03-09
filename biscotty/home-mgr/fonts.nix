@@ -5,6 +5,9 @@
   home.packages = with pkgs; [
     noto-fonts
     noto-fonts-cjk-sans
+    noto-fonts-cjk-serif
+    arphic-uming
+    babelstone-han
     noto-fonts-color-emoji
     liberation_ttf
     fira-code
