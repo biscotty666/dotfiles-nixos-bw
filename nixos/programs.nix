@@ -6,6 +6,7 @@
      pycritty
     yazi
     lazygit
+    appimage-run
     alacritty-theme
     devenv
     opentabletdriver

@@ -21,10 +21,17 @@
   systemd.oomd.enableUserSlices = true;
   systemd.extraConfig = "DefaultTimeoutStopSec=30s";
   environment.localBinInPath = true;
-  programs.zsh.enable = true;
-  programs.nix-ld = {
-    enable = true;
-    libraries = [ ];
+  programs = {
+    zsh.enable = true;
+    nix-ld = {
+      enable = true;
+      libraries = [ ];
+    };
+    appimage = {
+      enable = true;
+      binfmt = true;
+    };
+    
   };
 
   networking.hostName = "nixos"; # Define your hostname.
