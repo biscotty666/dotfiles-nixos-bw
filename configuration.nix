@@ -127,6 +127,9 @@
   nixpkgs.config = {
     allowUnfree = true;
     allowBroken = true;
+    permittedInsecurePackages = [
+      "googleearth-pro-7.3.6.10201"
+    ];
   };
   virtualisation = {
     libvirtd.enable = true;
