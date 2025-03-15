@@ -4,7 +4,7 @@
   imports = [ # Include the results of the hardware scan.
     ./hardware-configuration.nix
     ./nixos/nvidia.nix
-    ./nixos/input.nix
+#    ./nixos/input.nix
     ./nixos/vm.nix
     ./nixos/mlocate.nix
     ./nixos/programs.nix
@@ -57,17 +57,25 @@
 
   i18n.inputMethod = {
     enable = true;
-    type = "fcitx5";
-    fcitx5 = {
-      waylandFrontend = true;
-      addons = with pkgs; [
-        fcitx5-chinese-addons
-        fcitx5-mozc
-        fcitx5-gtk
-        rime-data
-        fcitx5-rime
-      ];
-    };
+    #type = "fcitx5";
+    #fcitx5 = {
+      #waylandFrontend = true;
+      #addons = with pkgs; [
+        ##fcitx5-chinese-addons
+        #fcitx5-mozc
+        #fcitx5-gtk
+        #fcitx5-chewing
+        #rime-data
+        #fcitx5-rime
+      #];
+    #};
+    type = "ibus";
+    ibus.engines = with pkgs.ibus-engines; [
+      mozc
+      table-chinese
+      rime
+      pinyin
+    ];
   };
   
   services.xserver.enable = true;
