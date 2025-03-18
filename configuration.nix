@@ -75,6 +75,7 @@
       table-chinese
       rime
       pinyin
+      libpinyin
     ];
   };
   
