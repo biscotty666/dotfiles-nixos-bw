@@ -5,7 +5,6 @@
     ./comment.nix
     ./efm.nix
     ./floaterm.nix
-    ./harpoon.nix
     ./lsp.nix
     ./lualine.nix
     ./markdown-preview.nix
