@@ -4,21 +4,13 @@
   imports = [
     ./sh.nix
     ./spell.nix
-    #    ./emacs.nix
-#    ./yazi.nix
     ./vault.nix
+    ./kitty.nix
     ./packages.nix
     ./programs.nix
-    #    ./gnome.nix
-    #    ./video.nix
-    #    ./helix.nix
     ./zsh.nix
-    #./nushell.nix
-    #    ./haskell.nix
     ./gui.nix
-#    ./utils.nix
     ./services.nix
-    #    ./vim.nix
     ./fonts.nix
     ./neovim
   ];
