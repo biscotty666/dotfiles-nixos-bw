@@ -5,6 +5,7 @@
   environment.systemPackages = with pkgs; [
      pycritty
     yazi
+    kitty
     lazygit
     appimage-run
     alacritty-theme

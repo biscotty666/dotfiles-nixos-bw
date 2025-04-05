@@ -5,7 +5,7 @@
     ./sh.nix
     ./spell.nix
     ./vault.nix
-    ./kitty.nix
+#    ./kitty.nix
     ./packages.nix
     ./programs.nix
     ./zsh.nix
