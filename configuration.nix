@@ -12,6 +12,7 @@
     ./nixos/restic.nix
     ./nixos/cachix.nix
     ./nixos/yazi.nix
+    ./nixos/gui.nix
     ./brian/modules/utils.nix
   ];
 

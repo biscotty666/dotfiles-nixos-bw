@@ -82,6 +82,7 @@
     ruff
     python312Packages.jedi-language-server
     stow
+    vlc
  ];
 
 }

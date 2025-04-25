@@ -9,7 +9,7 @@
     ./packages.nix
     ./programs.nix
     ./zsh.nix
-    ./gui.nix
+#    ./gui.nix
     ./services.nix
     ./fonts.nix
     ./neovim

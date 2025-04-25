@@ -1,7 +1,9 @@
 { config, pkgs, ... }:
 
 {
-  home.packages = with pkgs; [
+
+  environment.systemPackages = with pkgs; [
+    vlc
     thunderbird
     floorp
     obsidian
@@ -13,4 +15,5 @@
     spotify
     discord
   ];
+
 }
