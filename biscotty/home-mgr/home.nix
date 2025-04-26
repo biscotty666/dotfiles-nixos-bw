@@ -5,11 +5,9 @@
     ./sh.nix
     ./spell.nix
     ./vault.nix
-#    ./kitty.nix
     ./packages.nix
     ./programs.nix
     ./zsh.nix
-#    ./gui.nix
     ./services.nix
     ./fonts.nix
     ./neovim

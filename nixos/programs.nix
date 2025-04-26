@@ -5,6 +5,30 @@
   environment.systemPackages = with pkgs; [
      pycritty
     yazi
+    ccl
+    kdePackages.kcolorchooser
+    sqlite
+    ghostscript
+    gv
+    sqlite-utils
+    perl
+    exiftool
+    libarchive
+    odt2txt
+    librsvg
+    xlsx2csv
+    jq
+    starship
+    xclip
+    xsel
+    xwayland
+    wayland-protocols
+    wayland-utils
+    wl-clipboard
+    wlroots
+    inetutils
+    chroma
+    pixcat
     kitty
     lazygit
     appimage-run
