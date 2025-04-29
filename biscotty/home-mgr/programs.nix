@@ -34,7 +34,6 @@
 
     lsd = {
       enable = true;
-      #      enableAliases = true;
     };
 
     zellij = {

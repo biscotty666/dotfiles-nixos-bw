@@ -2,8 +2,9 @@
 
 let
   myAliases = {
-    lal = "lsd -lah --header";
-    ls = "lsd --header";
+#    lal = "lsd -lah --header";
+#    ls = "lsd --header";
+    lal = "lsd -lah";
     cd = "z";
     ze = "zellij e";
     bt = "bartib";
