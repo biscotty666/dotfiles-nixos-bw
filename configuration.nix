@@ -73,7 +73,7 @@
     type = "ibus";
     ibus.engines = with pkgs.ibus-engines; [
       mozc
-      table-chinese
+      #table-chinese
       rime
       pinyin
       libpinyin
