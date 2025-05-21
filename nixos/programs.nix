@@ -33,7 +33,6 @@
     lazygit
     appimage-run
     alacritty-theme
-    aspell
     devenv
     opentabletdriver
     ihp-new
