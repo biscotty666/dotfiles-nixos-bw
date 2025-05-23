@@ -1,2 +1,3 @@
 nvim/.gitignore
 hardware-configuration.nix
+nohup.out
