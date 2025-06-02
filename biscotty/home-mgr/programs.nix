@@ -3,8 +3,6 @@
 {
   programs = {
 
-    thefuck.enable = true;
-
     nixvim = {
       enable = true;
       plugins.lightline.enable = true;

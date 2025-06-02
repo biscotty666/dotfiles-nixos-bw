@@ -64,7 +64,6 @@
     gdu
     ddgr
     surfraw
-    thefuck
     bartib
     unzip
     ripgrep-all

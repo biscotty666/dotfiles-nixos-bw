@@ -20,7 +20,6 @@ let
     za = "zellij attach";
     gac = "git add . && git commit";
     ip = "ip -c";
-    tf = "fuck";
   };
 in
 {
@@ -38,20 +37,6 @@ in
       PATH="$PATH:/home/biscotty/.cargo/bin";
       BROWSER = "w3m";
     };
-    #oh-my-zsh = {
-      #enable = true;
-      #plugins = [
-        #"git"
-        ## "sudo"
-        #"thefuck"
-        #"web-search"
-        #"catimg"
-        #"colored-man-pages"
-        #"colorize"
-      #];
-      #theme = "gnzh";
-      #theme = "arrow";
-    #};
     plugins = [
       {
         name = "fzf-tab";
