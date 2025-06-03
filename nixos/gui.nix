@@ -6,7 +6,6 @@
     vlc
     thunderbird
     floorp
-    obsidian
     protonvpn-gui
     brave
     libreoffice
