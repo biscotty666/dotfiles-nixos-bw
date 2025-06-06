@@ -24,11 +24,11 @@
       enableZshIntegration = true;
     };
 
-    vscode.enable = true;
-    vscode.profiles.default = {
-      extensions = with pkgs.vscode-extensions; [ ecmel.vscode-html-css ];
-      enableExtensionUpdateCheck = true;
-    };
+#    vscode.enable = true;
+ #   vscode.profiles.default = {
+  #    extensions = with pkgs.vscode-extensions; [ ecmel.vscode-html-css ];
+   #   enableExtensionUpdateCheck = true;
+    #};
 
     lsd = {
       enable = true;
