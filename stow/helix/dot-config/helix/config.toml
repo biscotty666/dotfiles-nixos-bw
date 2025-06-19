@@ -1,4 +1,4 @@
-theme = "heisenberg"
+theme = "iroaseta"
 
 [editor]
 line-number = "relative"
@@ -11,3 +11,6 @@ select = "underline"
 
 [editor.file-picker]
 hidden = false
+
+[editor.soft-wrap]
+enable = true

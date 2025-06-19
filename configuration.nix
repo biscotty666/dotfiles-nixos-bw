@@ -6,6 +6,7 @@
     ./nixos/nvidia.nix
 #    ./nixos/input.nix
     ./nixos/vm.nix
+#    ./nixos/typst.nix
     ./nixos/mlocate.nix
     ./nixos/programs.nix
     ./nixos/sops.nix
@@ -37,7 +38,7 @@
   };
 
   networking.hostName = "nixos"; # Define your hostname.
-  networking.hosts = { "192.168.0.238" = [ "rpi" ]; };
+  networking.hosts = { "10.0.0.72" = [ "rpi" ]; };
 
   networking.networkmanager.enable = true;
 

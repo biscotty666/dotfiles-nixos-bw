@@ -7,6 +7,8 @@
     yazi
     ccl
     kdePackages.kcolorchooser
+    kdePackages.kparts
+    libsForQt5.kparts
     sqlite
     ghostscript
     gv
