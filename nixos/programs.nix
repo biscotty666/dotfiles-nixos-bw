@@ -38,7 +38,7 @@
     devenv
     opentabletdriver
     ihp-new
-    googleearth-pro
+    #googleearth-pro
     fastfetch
     pastel
     libqalculate
