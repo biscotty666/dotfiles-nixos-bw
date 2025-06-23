@@ -7,6 +7,9 @@
     noto-fonts-cjk-sans
     noto-fonts-cjk-serif
     arphic-uming
+    roboto
+    roboto-mono
+    roboto-serif
     babelstone-han
     noto-fonts-color-emoji
     liberation_ttf
