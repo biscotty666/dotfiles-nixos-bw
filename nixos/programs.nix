@@ -33,6 +33,7 @@
     pixcat
     kitty
     lazygit
+    qalculate-qt
     appimage-run
     alacritty-theme
     devenv
