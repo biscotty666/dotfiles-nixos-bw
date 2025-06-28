@@ -27,20 +27,6 @@
         template = "Daily Note";
     };
     preferred_link_style = "wiki";
-      mappings = {
-        gf = {
-          action = "require('obsidian').util.gf_passthrough";
-          opts = {
-            noremap = false;
-            expr = true;
-            buffer = true;
-          };
-        };
-        "<leader>ch" = {
-          action = "require('obsidian').util.toggle_checkbox";
-          opts.buffer = true;
-        };
-      };
       disable_frontmatter=false;
       attachments = {
         img_folder = "Extras/Images";
