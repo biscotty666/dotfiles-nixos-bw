@@ -36,7 +36,7 @@
     qalculate-qt
     appimage-run
     alacritty-theme
-#    devenv
+    devenv
     opentabletdriver
     ihp-new
     #googleearth-pro
