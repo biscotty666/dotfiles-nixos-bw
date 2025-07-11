@@ -8,7 +8,6 @@
     ./programs.nix
     ./zsh.nix
     ./services.nix
-    ./fonts.nix
     ./neovim
   ];
 
