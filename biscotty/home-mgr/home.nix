@@ -7,7 +7,6 @@
     ./packages.nix
     ./programs.nix
     ./zsh.nix
-    ./services.nix
     ./neovim
   ];
 

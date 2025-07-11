@@ -16,6 +16,7 @@
     ./nixos/yazi.nix
     ./nixos/spell.nix
     ./nixos/gui.nix
+    ./nixos/options.nix
     ./brian/modules/utils.nix
   ];
 
@@ -35,7 +36,6 @@
       enable = true;
       binfmt = true;
     };
-    
   };
 
   networking.hostName = "nixos"; # Define your hostname.
