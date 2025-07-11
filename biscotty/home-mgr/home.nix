@@ -4,9 +4,7 @@
   imports = [
     ./sh.nix
     ./spell.nix
-#    ./packages.nix
     ./programs.nix
-#    ./zsh.nix
     ./neovim
   ];
 
