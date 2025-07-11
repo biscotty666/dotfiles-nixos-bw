@@ -4,7 +4,7 @@
   imports = [
     ./sh.nix
     ./spell.nix
-    ./packages.nix
+#    ./packages.nix
     ./programs.nix
 #    ./zsh.nix
     ./neovim

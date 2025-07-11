@@ -109,6 +109,12 @@
     python312Packages.jedi-language-server
     stow
     vlc
+    gh
+    catimg
+    gephi
+    ueberzugpp
+    pandoc
+    zoxide
  ];
 
 }
