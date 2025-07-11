@@ -1,6 +1,6 @@
-{ config, pkgs, ... }:
+{ pkgs, ... }:
 {
-  home.packages = with pkgs; [
+  environment.systemPackages = with pkgs; [
     zsh-forgit
     zsh-fzf-history-search
     zsh-fzf-tab

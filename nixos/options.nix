@@ -16,5 +16,10 @@
       enable = true;
       enableZshIntegration = true;
     };
+
+    fzf = {
+      fuzzyCompletion = true;
+      keybindings = true;
+    };
   };
 }

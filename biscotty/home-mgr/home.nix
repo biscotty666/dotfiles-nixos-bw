@@ -6,7 +6,7 @@
     ./spell.nix
     ./packages.nix
     ./programs.nix
-    ./zsh.nix
+#    ./zsh.nix
     ./neovim
   ];
 

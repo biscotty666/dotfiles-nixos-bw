@@ -19,17 +19,6 @@
       extraConfig = { push = { autoSetupRemote = true; }; };
     };
 
-    fzf = {
-      enable = true;
-      enableZshIntegration = true;
-    };
-
-#    vscode.enable = true;
- #   vscode.profiles.default = {
-  #    extensions = with pkgs.vscode-extensions; [ ecmel.vscode-html-css ];
-   #   enableExtensionUpdateCheck = true;
-    #};
-
     lsd = {
       enable = true;
     };

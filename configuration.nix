@@ -17,6 +17,7 @@
     ./nixos/spell.nix
     ./nixos/gui.nix
     ./nixos/options.nix
+    ./nixos/zsh.nix
     ./brian/modules/utils.nix
   ];
 
