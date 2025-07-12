@@ -35,7 +35,7 @@ in
       NIXPKGS_ALLOW_BROKEN = 1;
       BARTIB_FILE="/home/biscotty/.local/bartib/activities.bartib";
       PATH="$PATH:/home/biscotty/.cargo/bin";
-      BROWSER = "w3m";
+      BROWSER = "brave";
     };
     plugins = [
       {
