@@ -14,6 +14,7 @@
     gv
     sqlite-utils
     perl
+    protonvpn-cli
     exiftool
     libarchive
     odt2txt
