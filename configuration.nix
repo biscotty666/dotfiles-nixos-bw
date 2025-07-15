@@ -79,7 +79,7 @@
       mozc
       #table-chinese
       rime
-      pinyin
+      #pinyin
       libpinyin
     ];
   };
