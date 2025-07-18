@@ -1,18 +1,26 @@
-{ pkgs, lib, ... }:
-let
-  nixvim = import (builtins.fetchGit {
-    url = "https://github.com/nix-community/nixvim";
-    # If you are not running an unstable channel of nixpkgs, select the corresponding branch of nixvim.
-    # ref = "nixos-23.05";
-  });
-in
-{
+{inputs, ...}: {
   imports = [
-    # For home-manager
-    nixvim.homeManagerModules.nixvim
-    # For NixOS
-    nixvim.nixosModules.nixvim
-    # For nix-darwin
-    nixvim.nixDarwinModules.nixvim
+    inputs.nixvim.nixosModules.nixvim
+    #./autocommands.nix
+    #./completion.nix
+    #./keymappings.nix
+    #./options.nix
+    #./plugins
+    #./todo.nix
   ];
+
+
+  programs.nixvim = {
+    enable = true;
+    defaultEditor = true;
+
+    viAlias = true;
+    #vimAlias = true;
+
+    colorschemes.catppuccin.enable = true;
+    
+    plugins = {
+      lualine.enable = true;
+    };
+  };
 }
