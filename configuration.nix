@@ -44,7 +44,12 @@
   networking.hostName = "nixos"; # Define your hostname.
   networking.hosts = { "10.0.0.72" = [ "rpi" ]; };
 
-  networking.networkmanager.enable = true;
+  networking.networkmanager = {
+    enable = true;
+    plugins = with pkgs; [
+      networkmanager-openvpn
+    ];
+  };
 
   time.timeZone = "America/Denver";
 

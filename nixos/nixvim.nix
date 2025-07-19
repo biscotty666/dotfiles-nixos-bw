@@ -17,7 +17,7 @@
     viAlias = true;
     #vimAlias = true;
 
-    colorschemes.catppuccin.enable = true;
+    colorschemes.tokyonight.enable = true;
     
     plugins = {
       lualine.enable = true;
