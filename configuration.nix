@@ -27,7 +27,7 @@
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
   systemd.oomd.enableUserSlices = true;
-  systemd.extraConfig = "DefaultTimeoutStopSec=30s";
+#  systemd.settings.Manager = "DefaultTimeoutStopSec=30s";
   environment.localBinInPath = true;
   programs = {
     zsh.enable = true;
