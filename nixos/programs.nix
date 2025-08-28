@@ -107,7 +107,7 @@
     python312Packages.python-lsp-server
     python312Packages.python-lsp-ruff
     ruff
-    python312Packages.jedi-language-server
+    #python312Packages.jedi-language-server
     stow
     vlc
     gh
