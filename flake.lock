@@ -148,11 +148,11 @@
         "systems": "systems_2"
       },
       "locked": {
-        "lastModified": 1757145319,
-        "narHash": "sha256-F5islzaJ5zGXomXAGM7Kqi5skyGaNXOLD77atgmReZw=",
+        "lastModified": 1757176284,
+        "narHash": "sha256-j4SBmYsARwNG0DHljZ1uzZlGqCIU5fzCMA2g+GjD0xw=",
         "owner": "nix-community",
         "repo": "nixvim",
-        "rev": "a04b93fa7bf4160a9dc60d0713fff44c0fff9af6",
+        "rev": "7afdd40b96c9168aa4cb49b86fc67eccd441cae5",
         "type": "github"
       },
       "original": {
@@ -286,11 +286,11 @@
         "rust-overlay": "rust-overlay"
       },
       "locked": {
-        "lastModified": 1757090910,
-        "narHash": "sha256-L5HbviZfC1o26esDjtiso+o6AkSiMOXYmqAxXq42a4k=",
+        "lastModified": 1757173206,
+        "narHash": "sha256-JVQBWdOEb7P3RD1GiD8sim+OIcNPDKKzDYLw0R1gf3s=",
         "owner": "sxyazi",
         "repo": "yazi",
-        "rev": "021d86f0d1cbb14ae333152e00edba6fcc92ea5e",
+        "rev": "81a0cf4a1e0d5cfbe56dde7b8b36faf951cb9230",
         "type": "github"
       },
       "original": {
