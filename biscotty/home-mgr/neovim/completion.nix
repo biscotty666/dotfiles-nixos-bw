@@ -3,12 +3,14 @@
     opts.completeopt = ["menu" "menuone" "noselect"];
 
     plugins = {
+      web-devicons.enable = true;
+      
       luasnip.enable = true;
 
       lspkind = {
         enable = true;
 
-        cmp = {
+        settings.cmp = {
           enable = true;
           menu = {
             nvim_lsp = "[LSP]";
