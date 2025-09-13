@@ -4,8 +4,7 @@
   imports = [
     ./sh.nix
     ./spell.nix
-    ./programs.nix
-    ./neovim
+#    ./neovim
   ];
 
   home.username = "biscotty";
