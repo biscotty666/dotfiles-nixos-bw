@@ -5,7 +5,7 @@
   environment.systemPackages = with pkgs; [
     vlc
     thunderbird
-    floorp
+    floorp-bin
     protonvpn-gui
     protonvpn-cli
     brave
