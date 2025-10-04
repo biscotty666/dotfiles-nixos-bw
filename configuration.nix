@@ -233,6 +233,7 @@
   # (e.g. man configuration.nix or on https://nixos.org/nixos/options.html).
   system.stateVersion = "23.11"; # Did you read the comment?
 
+  environment.sessionVariables.NIXOS_OZONE_WL = "1";
   nix.settings = {
     experimental-features = [ "nix-command" "flakes" ];
     #auto-optimise-store = true;
@@ -240,5 +241,6 @@
     trusted-public-keys =
       [ "hydra.iohk.io:f/Ea+s+dFdN+3Y/G+FDgSq+a5NEWhJGzdjvKNGv0/EQ=" ];
     substituters = [ "https://cache.iog.io" ];
+    download-buffer-size = 524288000;
   };
 }
