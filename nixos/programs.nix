@@ -111,7 +111,7 @@
     stow
     vlc
     gh
-    catimg
+    #catimg
     gephi
     ueberzugpp
     pandoc

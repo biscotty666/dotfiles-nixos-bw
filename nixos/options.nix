@@ -21,5 +21,7 @@
       fuzzyCompletion = true;
       keybindings = true;
     };
+
+    virt-manager.enable = true;
   };
 }

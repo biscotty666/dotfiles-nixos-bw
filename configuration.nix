@@ -112,7 +112,7 @@
 
   # Enable CUPS to print documents.
   services.printing.enable = true;
-  services.printing.drivers = [ pkgs.brlaser ];
+  #services.printing.drivers = [ pkgs.brlaser ];
 
   # Enable sound with pipewire.
   #sound.enable = true;
@@ -168,14 +168,13 @@
     ];
   };
   virtualisation = {
-    libvirtd.enable = true;
+#    libvirtd.enable = true;
     podman = {
       enable = true;
       dockerCompat = true;
       defaultNetwork.settings.dns_enabled = true;
     };
   };
-  # programs.virt-manager.enable = true;
 
   virtualisation.containers.enable = true;
 
