@@ -18,6 +18,7 @@
     ./nixos/yazi.nix
     ./nixos/spell.nix
     ./nixos/gui.nix
+#    ./nixos/osrm.nix
     ./nixos/options.nix
     ./nixos/zsh.nix
     ./brian/modules/utils.nix
