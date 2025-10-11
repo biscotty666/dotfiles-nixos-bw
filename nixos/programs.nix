@@ -40,7 +40,7 @@
     devenv
     opentabletdriver
     ihp-new
-    #googleearth-pro
+    googleearth-pro
     fastfetch
     pastel
     libqalculate
@@ -111,7 +111,7 @@
     stow
     vlc
     gh
-    #catimg
+    catimg
     gephi
     ueberzugpp
     pandoc
