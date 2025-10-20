@@ -13,6 +13,7 @@
     babelstone-han
     noto-fonts-color-emoji
     liberation_ttf
+    fira-sans
     fira-code
     fira-code-symbols
     mplus-outline-fonts.githubRelease
