@@ -2,12 +2,12 @@
 
 {
   environment.systemPackages = with pkgs; [
-    osmium-tool libosmium
+    osrm-backend osmium-tool libosmium
   ];
-  services = {
-    osrm = {
-      enable = true;
-      dataFile = "/home/biscotty/.var/lib/osrm/new-mexico-latest.osm.pbf";
-    };
-  };
+  # services = {
+  #   osrm = {
+  #     enable = true;
+  #     dataFile = "/var/lib/osrm/new-mexico-latest.osm";
+  #   };
+  # };
 }
