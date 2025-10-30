@@ -14,7 +14,6 @@
     gv
     sqlite-utils
     perl
-    protonvpn-cli
     exiftool
     libarchive
     odt2txt
@@ -52,7 +51,7 @@
     discordo
     mpv
     mupdf
-    poppler_utils
+    poppler-utils
     atool
     p7zip
     unrar

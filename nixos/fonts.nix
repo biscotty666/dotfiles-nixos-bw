@@ -18,7 +18,7 @@
     fira-code-symbols
     mplus-outline-fonts.githubRelease
     font-awesome
-    ubuntu_font_family
+    ubuntu-classic
     proggyfonts
     nerd-fonts.inconsolata
     nerd-fonts.fantasque-sans-mono

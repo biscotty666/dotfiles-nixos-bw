@@ -7,7 +7,6 @@
     thunderbird
     floorp-bin
     protonvpn-gui
-    protonvpn-cli
     brave
     libreoffice
     freetube
