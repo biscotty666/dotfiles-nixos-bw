@@ -5,7 +5,7 @@
   environment.systemPackages = with pkgs; [
     vlc
     thunderbird
-    floorp-bin
+#    floorp-bin
     protonvpn-gui
     brave
     libreoffice
