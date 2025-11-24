@@ -10,7 +10,7 @@
     brave
     libreoffice
     freetube
-    firefox
+    #firefox
     spotify
     discord
   ];
