@@ -3,7 +3,7 @@
 {
   imports = [
     ./sh.nix
-    ./spell.nix
+#    ./spell.nix
 #    ./neovim
   ];
 

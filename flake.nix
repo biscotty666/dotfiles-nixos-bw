@@ -10,15 +10,15 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     yazi.url = "github:sxyazi/yazi";
-    nixvim = {
-        url = "github:nix-community/nixvim";
-        inputs.nixpkgs.follows = "nixpkgs";
-    };
+#    nixvim = {
+ #       url = "github:nix-community/nixvim";
+  #      inputs.nixpkgs.follows = "nixpkgs";
+   # };
 #    zen-browser.url = "github:MarceColl/zen-browser-flake";
   };
 
 
-  outputs = { self, nixpkgs, home-manager, nixvim, sops-nix, ... } @inputs:
+  outputs = { self, nixpkgs, home-manager, sops-nix, ... } @inputs:
 
     let
 #      overlays = [
