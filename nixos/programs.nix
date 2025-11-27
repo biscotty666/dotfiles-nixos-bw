@@ -6,6 +6,7 @@
      pycritty
     yazi
     ccl
+    neovim
     kdePackages.kcolorchooser
     kdePackages.kparts
     libsForQt5.kparts

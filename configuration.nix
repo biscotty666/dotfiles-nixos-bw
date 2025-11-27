@@ -9,7 +9,7 @@
 #    ./nixos/typst.nix
     ./nixos/mlocate.nix
     #./nixos/neovim.nix
-    ./nixos/nixvim.nix
+#    ./nixos/nixvim.nix
     ./nixos/fonts.nix
     ./nixos/programs.nix
     ./nixos/sops.nix
