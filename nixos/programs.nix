@@ -8,6 +8,7 @@
     ccl
     neovim
     kdePackages.kcolorchooser
+    ascii-image-converter
     kdePackages.kparts
     libsForQt5.kparts
     sqlite
