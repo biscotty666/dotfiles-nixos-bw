@@ -20,6 +20,7 @@ let
     za = "zellij attach";
     gac = "git add . && git commit";
     ip = "ip -c";
+    vi = "nvim";
   };
 in
 {
@@ -30,7 +31,7 @@ in
     syntaxHighlighting.enable = true;
     shellAliases = myAliases;
     sessionVariables = {
-      EDITOR = "vim";
+      EDITOR = "nvim";
       NIXPKGS_ALLOW_UNFREE = 1;
       NIXPKGS_ALLOW_BROKEN = 1;
       BARTIB_FILE="/home/biscotty/.local/bartib/activities.bartib";
