@@ -90,3 +90,11 @@ vim.keymap.set("n", "<leader>lx", function()
         underline = isLspDiagnosticsVisible
     })
 end, { desc = "Toggle LSP diagnostics" })
+
+-- vim.keymap.set("n", "<leader>tt", function()
+--   if vim.o.showtabline == 2 then
+-- 	vim.o.showtabline = 0
+--   else
+-- 	vim.o.showtabline = 2
+--   end
+-- end, { desc = "Toggle [t]abs" })

@@ -1,5 +1,6 @@
 return {
-    "williamboman/mason.nvim",
+    -- "williamboman/mason.nvim",
+    "mason-org/mason.nvim",
     lazy = false,
     dependencies = {
         "williamboman/mason-lspconfig.nvim",
