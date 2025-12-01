@@ -1,0 +1,20 @@
+layout {
+    pane size=1 borderless=true {
+        plugin location="zellij:tab-bar"
+    }
+    pane split_direction="vertical" {
+        pane command="btop"
+        pane stacked=true {
+            pane
+            pane command="flatpak" {
+                args "upgrade"
+            }
+            pane command="ssh" {
+                args "rpi" 
+            }
+        }
+    }
+    pane size=2 borderless=true {
+        plugin location="zellij:status-bar"
+    }
+}
