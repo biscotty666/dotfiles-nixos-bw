@@ -46,7 +46,7 @@ return {
                     -- presets options : "default" , "ivy" , "ivy-split" , "telescope" , "vscode", "select" , "sidebar"
                     -- override picker layout in keymaps function as a param below
                     preset = "telescope", -- defaults to this layout unless overidden
-                    cycle = false,
+                    cycle = true,
                 },
                 layouts = {
                     select = {
@@ -135,7 +135,7 @@ return {
                     { section = "startup" },
                     -- {
                     --     section = "terminal",
-                    --     cmd = "ascii-image-converter ~/.dotfiles/me.jpg -C -c",
+                    --     cmd = "ascii-image-converter ~/.dotfiles/tree.jpg -C -c",
                     --     random = 15,
                     --     pane = 2,
                     --     indent = 15,
@@ -150,6 +150,7 @@ return {
             { "<leader>gl", function() require("snacks").lazygit.log() end, desc = "Lazygit Logs" },
             { "<leader>rN", function() require("snacks").rename.rename_file() end, desc = "Fast Rename Current File" },
             { "<leader>dB", function() require("snacks").bufdelete() end, desc = "Delete or Close Buffer  (Confirm)" },
+            { "<leader>es", function() require("snacks").explorer() end, desc = "Open snacks explorer" },
 
             -- Snacks Picker
             { "<leader>pf", function() require("snacks").picker.files() end, desc = "Find Files (Snacks Picker)" },
