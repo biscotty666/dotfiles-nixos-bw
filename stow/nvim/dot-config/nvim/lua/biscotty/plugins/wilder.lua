@@ -20,7 +20,7 @@ return {
 				max_height = "15%", -- to set a fixed height, set max_height to the same value
 				reverse = 0, -- if 1, shows the candidates from bottom to top
 				highlighter = {
-					wilder.lua_pcre2_highlighter(), -- Requires luarocks install pcre2
+					-- wilder.lua_pcre2_highlighter(), -- Requires luarocks install pcre2
 					wilder.lua_fzy_highlighter(), -- Requires fzy-lua-native
 				},
 				highlights = {
