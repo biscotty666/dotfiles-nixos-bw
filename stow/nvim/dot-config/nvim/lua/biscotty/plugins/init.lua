@@ -1,4 +1,10 @@
 return {
+  {
+  "norcalli/nvim-colorizer.lua",
+  conf = function()
+      require('colorizer').setup()
+    end,
+  },
 	"nvim-lua/plenary.nvim", --lua functions that many plugins use
 --	"christoomey/vim-tmux-navigator", -- tmux & split window nav
     -- fixes the well know nvim bug
