@@ -1,5 +1,7 @@
 vim.cmd("let g:netrw_banner = 0")
 
+vim.g.python3_host_prog = '/nix/store/xffyqcyq8v0wa1vwhg2r36k2rlbdivh2-python3-3.12.7-env/bin/python'
+
 vim.opt.guicursor = "n-v-c:block-Cursor,i-ci-ve:ver25"
 vim.opt.nu = true
 vim.opt.relativenumber = true
