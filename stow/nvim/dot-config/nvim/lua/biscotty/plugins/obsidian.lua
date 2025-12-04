@@ -32,7 +32,7 @@ return {
     -- see below for full list of options 👇
   },
   notes_subdir = "Notes",
-  new_notes_location = "notes_subdir",
+  new_notes_location = "Notes",
   templates = {
     folder = "Templates",
     date_format = "%Y-%m-%d",
