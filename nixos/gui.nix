@@ -5,6 +5,7 @@
   environment.systemPackages = with pkgs; [
     vlc
     thunderbird
+    obsidian
     floorp-bin
     protonvpn-gui
     brave
