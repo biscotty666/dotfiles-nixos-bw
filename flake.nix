@@ -14,7 +14,7 @@
  #       url = "github:nix-community/nixvim";
   #      inputs.nixpkgs.follows = "nixpkgs";
    # };
-#    zen-browser.url = "github:MarceColl/zen-browser-flake";
+   zen-browser.url = "github:MarceColl/zen-browser-flake";
   };
 
 
