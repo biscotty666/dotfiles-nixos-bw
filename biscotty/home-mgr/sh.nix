@@ -21,6 +21,7 @@ let
     gac = "git add . && git commit";
     ip = "ip -c";
     vi = "nvim";
+    nhc = "sudo nh clean all -v --nogcroots --keep 2 --keep-since 5d";
   };
 in
 {
