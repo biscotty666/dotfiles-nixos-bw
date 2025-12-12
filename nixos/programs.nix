@@ -7,6 +7,7 @@
     yazi
     ccl
     neovim
+    net-tools
     kdePackages.kcolorchooser
     pcre2
     ascii-image-converter
