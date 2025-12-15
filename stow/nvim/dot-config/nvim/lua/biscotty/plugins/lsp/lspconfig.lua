@@ -196,6 +196,17 @@ return {
         })
         vim.lsp.enable("emmet_ls")
 
+        -- tinymist
+        vim.lsp.config["tinymist"] = {
+      cmd = { "tinymist" },
+      filetypes = { "typst" },
+      settings = {
+        formatterMode = "typstyle",
+        exportPdf = "onType",
+        semanticTokens = "disable"
+      }
+    }
+
         -- ts_ls (TypeScript/JavaScript)
         vim.lsp.config("ts_ls", {
             filetypes = {

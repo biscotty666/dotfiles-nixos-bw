@@ -47,6 +47,7 @@ return {
 				"jedi_language_server",
 				-- "eslint",
 				"marksman",
+        "tinymist"
 			},
 		})
 
