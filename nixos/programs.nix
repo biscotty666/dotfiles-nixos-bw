@@ -6,6 +6,8 @@
      pycritty
     yazi
     ccl
+    audible-cli
+    aaxtomp3
     neovim
     net-tools
     kdePackages.kcolorchooser
