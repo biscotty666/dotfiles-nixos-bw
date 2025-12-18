@@ -9,7 +9,7 @@
     floorp-bin
     protonvpn-gui
     brave
-    libreoffice
+    libreoffice-qt-fresh
     freetube
     #firefox
     spotify
