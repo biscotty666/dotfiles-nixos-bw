@@ -101,3 +101,7 @@ end, { desc = "Toggle LSP diagnostics" })
 -- 	vim.o.showtabline = 2
 --   end
 -- end, { desc = "Toggle [t]abs" })
+
+vim.keymap.set('n', '<leader>mc', '<cmd>MDHeadersCurrent<CR>', { silent = true })
+vim.keymap.set('n', '<leader>mh', '<cmd>MDHeaders<CR>', { silent = true })
+vim.keymap.set('n', '<leader>mq', '<cmd>MDHeadersQuickfix<CR>', { silent = true })
