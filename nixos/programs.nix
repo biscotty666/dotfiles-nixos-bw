@@ -6,6 +6,7 @@
      pycritty
     yazi
     ccl
+    lsd
     audible-cli
     aaxtomp3
     neovim
