@@ -4,7 +4,7 @@
   imports = [ # Include the results of the hardware scan.
     ./hardware-configuration.nix
     ./nixos/nvidia.nix
-#    ./nixos/input.nix
+    ./nixos/input.nix
     ./nixos/vm.nix
 #    ./nixos/typst.nix
     ./nixos/mlocate.nix
@@ -67,8 +67,8 @@
     LC_TIME = "en_US.UTF-8";
   };
 
-  i18n.inputMethod = {
-    enable = true;
+  # i18n.inputMethod = {
+  #   enable = true;
     #type = "fcitx5";
     #fcitx5 = {
       #waylandFrontend = true;
@@ -81,15 +81,15 @@
         #fcitx5-rime
       #];
     #};
-    type = "ibus";
-    ibus.engines = with pkgs.ibus-engines; [
-      mozc
-      #table-chinese
-      rime
-      #pinyin
-      libpinyin
-    ];
-  };
+    # type = "ibus";
+    # ibus.engines = with pkgs.ibus-engines; [
+    #   mozc
+    #   #table-chinese
+    #   rime
+    #   #pinyin
+    #   libpinyin
+    # ];
+  # };
   
   services.xserver.enable = true;
 
