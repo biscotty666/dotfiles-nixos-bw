@@ -107,7 +107,7 @@
     ueberzugpp
     kdePackages.sddm
     kdePackages.parley
-#    kdePackages.fcitx5-chinese-addons
+    kdePackages.fcitx5-with-addons
     sddm-sugar-dark
     sops
     python312Packages.python-lsp-server
