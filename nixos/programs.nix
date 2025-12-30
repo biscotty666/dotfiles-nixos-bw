@@ -3,8 +3,10 @@
 {
 
   environment.systemPackages = with pkgs; [
-     pycritty
+    pycritty
     yazi
+    air-formatter
+    nixfmt-rfc-style
     ccl
     lsd
     audible-cli
@@ -122,6 +124,6 @@
     ueberzugpp
     pandoc
     zoxide
- ];
+  ];
 
 }
