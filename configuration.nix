@@ -6,10 +6,7 @@
     ./nixos/nvidia.nix
     ./nixos/input.nix
     ./nixos/vm.nix
-#    ./nixos/typst.nix
     ./nixos/mlocate.nix
-    #./nixos/neovim.nix
-#    ./nixos/nixvim.nix
     ./nixos/fonts.nix
     ./nixos/programs.nix
     ./nixos/sops.nix
@@ -46,9 +43,7 @@
 
   networking.networkmanager = {
     enable = true;
-    plugins = with pkgs; [
-      networkmanager-openvpn
-    ];
+    plugins = with pkgs; [ networkmanager-openvpn ];
   };
 
   time.timeZone = "America/Denver";
@@ -67,30 +62,6 @@
     LC_TIME = "en_US.UTF-8";
   };
 
-  # i18n.inputMethod = {
-  #   enable = true;
-    #type = "fcitx5";
-    #fcitx5 = {
-      #waylandFrontend = true;
-      #addons = with pkgs; [
-        ##fcitx5-chinese-addons
-        #fcitx5-mozc
-        #fcitx5-gtk
-        #fcitx5-chewing
-        #rime-data
-        #fcitx5-rime
-      #];
-    #};
-    # type = "ibus";
-    # ibus.engines = with pkgs.ibus-engines; [
-    #   mozc
-    #   #table-chinese
-    #   rime
-    #   #pinyin
-    #   libpinyin
-    # ];
-  # };
-  
   services.xserver.enable = true;
 
   zramSwap.enable = true;
@@ -102,9 +73,9 @@
     wayland.enable = false;
   };
   # services.xserver.desktopManager.gnome.enable = true;
-  #  services.xserver.desktopManager.xfce.enable = true;
+  # services.xserver.desktopManager.xfce.enable = true;
   services.desktopManager.plasma6 = { enable = true; };
-  #  programs.ssh.askPassword = pkgs.lib.mkForce "${pkgs.ksshaskpass.out}/bin/ksshaskpass";
+  # programs.ssh.askPassword = pkgs.lib.mkForce "${pkgs.ksshaskpass.out}/bin/ksshaskpass";
 
   services.xserver.xkb = {
     layout = "us";
@@ -164,12 +135,10 @@
   nixpkgs.config = {
     allowUnfree = true;
     allowBroken = true;
-    permittedInsecurePackages = [
-      "googleearth-pro-7.3.6.10201"
-    ];
+    permittedInsecurePackages = [ "googleearth-pro-7.3.6.10201" ];
   };
   virtualisation = {
-#    libvirtd.enable = true;
+    #    libvirtd.enable = true;
     podman = {
       enable = true;
       dockerCompat = true;
@@ -190,9 +159,10 @@
   };
   # List packages installed in system profile. To search, run:
   # $ nix search wget
-  environment.systemPackages = with pkgs; [
-    inputs.zen-browser.packages."${pkgs.stdenv.hostPlatform.system}".specific
- ];
+  environment.systemPackages = with pkgs;
+    [
+      inputs.zen-browser.packages."${pkgs.stdenv.hostPlatform.system}".specific
+    ];
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.

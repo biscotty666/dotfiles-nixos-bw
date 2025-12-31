@@ -10,43 +10,38 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     yazi.url = "github:sxyazi/yazi";
-#    nixvim = {
- #       url = "github:nix-community/nixvim";
-  #      inputs.nixpkgs.follows = "nixpkgs";
-   # };
-   zen-browser.url = "github:MarceColl/zen-browser-flake";
+    #    nixvim = {
+    #       url = "github:nix-community/nixvim";
+    #      inputs.nixpkgs.follows = "nixpkgs";
+    # };
+    zen-browser.url = "github:MarceColl/zen-browser-flake";
   };
 
-
-  outputs = { self, nixpkgs, home-manager, sops-nix, ... } @inputs:
+  outputs = { self, nixpkgs, home-manager, sops-nix, ... }@inputs:
 
     let
-#      overlays = [
-#        nvim-ks.overlays.default
-#      ];
+      #      overlays = [
+      #        nvim-ks.overlays.default
+      #      ];
       system = "x86_64-linux";
       lib = nixpkgs.lib;
       pkgs = nixpkgs.legacyPackages.${system};
     in {
-    nixosConfigurations."nixos" = lib.nixosSystem {
+      nixosConfigurations."nixos" = lib.nixosSystem {
         inherit system;
         specialArgs = { inherit inputs; };
-        modules = [
-          ./configuration.nix
-          sops-nix.nixosModules.sops
-        ];
+        modules = [ ./configuration.nix sops-nix.nixosModules.sops ];
       };
-    #homeConfigurations."brian" = home-manager.lib.homeManagerConfiguration {
-        #inherit pkgs;
-        #modules = [ ./home-brian.nix ];
+      #homeConfigurations."brian" = home-manager.lib.homeManagerConfiguration {
+      #inherit pkgs;
+      #modules = [ ./home-brian.nix ];
       #};
-    #};
-    homeConfigurations."biscotty" = home-manager.lib.homeManagerConfiguration {
-        inherit pkgs;
-        extraSpecialArgs = { inherit inputs; };
-        modules = [
-          ./biscotty/home-mgr/home.nix
-        ];
-      };
+      #};
+      homeConfigurations."biscotty" =
+        home-manager.lib.homeManagerConfiguration {
+          inherit pkgs;
+          extraSpecialArgs = { inherit inputs; };
+          modules = [ ./biscotty/home-mgr/home.nix ];
+        };
     };
 }

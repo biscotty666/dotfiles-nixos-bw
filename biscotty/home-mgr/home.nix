@@ -3,8 +3,7 @@
 {
   imports = [
     ./sh.nix
-#    ./spell.nix
-#    ./neovim
+    ./nvim-spell.nix
   ];
 
   home.username = "biscotty";
