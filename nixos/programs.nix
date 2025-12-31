@@ -12,7 +12,6 @@
     audible-cli
     aaxtomp3
     neovim
-    net-tools
     kdePackages.kcolorchooser
     pcre2
     ascii-image-converter
@@ -37,7 +36,6 @@
     wayland-utils
     wl-clipboard
     wlroots
-    inetutils
     chroma
     pixcat
     kitty
@@ -72,7 +70,10 @@
     w3m
     mlocate
     mdcat
+    inetutils
+    net-tools
     tcpdump
+    nethogs
     gdu
     ddgr
     surfraw
