@@ -7,7 +7,7 @@
     yazi
     air-formatter
     nixfmt-rfc-style
-    ccl
+    #ccl
     lsd
     audible-cli
     aaxtomp3
