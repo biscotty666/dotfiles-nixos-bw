@@ -6,7 +6,7 @@
     pycritty
     yazi
     air-formatter
-    nixfmt-rfc-style
+    nixfmt
     ccl
     lsd
     audible-cli
