@@ -19,11 +19,13 @@
     ./nixos/options.nix
     ./nixos/zsh.nix
     ./brian/modules/utils.nix
+    ./containers/database.nix
   ];
 
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
+  boot.enableContainers = true;
   systemd.oomd.enableUserSlices = true;
   environment.localBinInPath = true;
   programs = {
