@@ -1,0 +1,13 @@
+
+new_tab
+layout fat
+enabled_layouts fat,grid,horizontal,splits,stack,tall,vertical
+set_layout_state {"main_bias": [0.7373887240356082, 0.2626112759643918], "biased_map": {}, "opts": {"full_size": 1, "bias": 50, "mirrored": "n"}, "class": "Fat", "all_windows": {"active_group_idx": 2, "active_group_history": [3, 1, 2], "window_groups": [{"id": 1, "window_ids": [1]}, {"id": 2, "window_ids": [2]}, {"id": 3, "window_ids": [3]}]}}
+cd /home/biscotty/Projects/ABQ
+
+launch 'kitty-unserialize-data={"id": 1}'
+launch 'kitty-unserialize-data={"id": 2}'
+launch 'kitty-unserialize-data={"id": 3}'
+focus
+
+focus_tab 0
