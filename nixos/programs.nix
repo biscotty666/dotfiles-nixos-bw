@@ -87,7 +87,6 @@
     btop
     wget
     bottom
-    zellij
     tldr
     flatpak
     fzf
@@ -95,7 +94,6 @@
     imagemagick
     vim-full # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
     git
-    alacritty
     restic
     xdg-desktop-portal-gtk
     xdg-utils
