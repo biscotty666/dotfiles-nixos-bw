@@ -163,7 +163,7 @@
   # $ nix search wget
   environment.systemPackages = with pkgs;
     [
-      inputs.zen-browser.packages."${pkgs.stdenv.hostPlatform.system}".specific
+      # inputs.zen-browser.packages."${pkgs.stdenv.hostPlatform.system}".specific
     ];
 
   # Some programs need SUID wrappers, can be configured further or are
