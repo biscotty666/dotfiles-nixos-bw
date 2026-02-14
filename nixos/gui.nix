@@ -10,8 +10,6 @@
     protonvpn-gui
     brave
     libreoffice-qt-fresh
-    freetube
-    #firefox
     spotify
     discord
   ];
