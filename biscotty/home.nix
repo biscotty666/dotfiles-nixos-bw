@@ -29,15 +29,15 @@
   };
   home.file = {
     ".local/bin/unlock-vaults.sh" = {
-      source = ../scripts/unlock-vaults.sh;
+      source = scripts/unlock-vaults.sh;
       executable = true;
     };
     ".local/bin/restic-backup.sh" = {
-      source = ../scripts/restic-backup.sh;
+      source = scripts/restic-backup.sh;
       executable = true;
     };
     ".local/bin/fix-enet.sh" = {
-      source = ../scripts/fix-enet.sh;
+      source = scripts/fix-enet.sh;
       executable = true;
     };
     # # You can also set the file content immediately.

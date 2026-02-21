@@ -41,7 +41,7 @@
         home-manager.lib.homeManagerConfiguration {
           inherit pkgs;
           extraSpecialArgs = { inherit inputs; };
-          modules = [ ./biscotty/home-mgr/home.nix ];
+          modules = [ ./biscotty/home.nix ];
         };
     };
 }
