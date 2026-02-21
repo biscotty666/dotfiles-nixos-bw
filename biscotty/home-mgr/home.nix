@@ -32,7 +32,11 @@
       source = ../scripts/unlock-vaults.sh;
       executable = true;
     };
-    ".local/bin/fix-enet-2.sh" = {
+    ".local/bin/restic-backup.sh" = {
+      source = ../scripts/restic-backup.sh;
+      executable = true;
+    };
+    ".local/bin/fix-enet.sh" = {
       source = ../scripts/fix-enet.sh;
       executable = true;
     };
