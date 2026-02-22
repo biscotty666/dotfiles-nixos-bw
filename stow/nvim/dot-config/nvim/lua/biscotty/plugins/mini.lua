@@ -38,6 +38,9 @@ return {
           go_out = "-",
           go_out_plus = "H",
         },
+        windows = {
+          preview = true,
+        },
       })
       vim.keymap.set("n", "<leader>ee", "<cmd>lua MiniFiles.open()<CR>", { desc = "Toggle mini file explorer" }) -- toggle file explorer
       vim.keymap.set("n", "<leader>ef", function()
