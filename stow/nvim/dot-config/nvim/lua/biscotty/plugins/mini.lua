@@ -33,13 +33,14 @@ return {
       local MiniFiles = require("mini.files")
       MiniFiles.setup({
         mappings = {
-          go_in = "<CR>", -- Map both Enter and L to enter directories or open files
+          go_in = "l", -- Map both Enter and L to enter directories or open files
           go_in_plus = "L",
           go_out = "-",
           go_out_plus = "H",
         },
         windows = {
           preview = true,
+          width_preview = 35,
         },
       })
       vim.keymap.set("n", "<leader>ee", "<cmd>lua MiniFiles.open()<CR>", { desc = "Toggle mini file explorer" }) -- toggle file explorer
