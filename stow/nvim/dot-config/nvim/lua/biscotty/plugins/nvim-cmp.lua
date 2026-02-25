@@ -232,6 +232,7 @@ return {
                 { name = "luasnip" }, -- snippets
                 { name = "lazydev" },
                 { name = "nvim_lsp"},
+                { name = "conjure"},
                 { name = "buffer" }, -- text within current buffer
                 { name = "path" }, -- file system paths
                 { name = "tailwindcss-colorizer-cmp" },

@@ -21,6 +21,7 @@ return {
 					"javascript",
 					"typescript",
 					"r",
+          "clojure",
 					"tsx",
 					"go",
 					"haskell",
