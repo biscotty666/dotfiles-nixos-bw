@@ -5,8 +5,8 @@ enabled_layouts fat,grid,horizontal,splits,stack,tall,vertical
 set_layout_state {"main_bias": [0.5943952802359882, 0.4056047197640118], "biased_map": {}, "opts": {"full_size": 1, "bias": 50, "mirrored": "n"}, "class": "Fat", "all_windows": {"active_group_idx": 1, "active_group_history": [1], "window_groups": [{"id": 1, "window_ids": [1]}, {"id": 2, "window_ids": [2]}]}}
 cd /home/biscotty
 
-launch 'kitty-unserialize-data={"id": 1, "cmd_at_shell_startup": ["/nix/store/q3snafhhxs563vb33h729p3rb556s7w1-btop-1.4.6/bin/btop"]}'
-launch 'kitty-unserialize-data={"id": 2, "cmd_at_shell_startup": ["/nix/store/rzw6wnxfmk5pm2yiybh6ld9nxmqwbk4b-sudo-1.9.17p2/bin/sudo", "nethogs", "-b"]}' --cwd=/proc/48584/cwd
+launch zsh -c 'btop'
+focus_tab 1
+launch zsh -c 'sudo nethogs -b'
 focus
 
-focus_tab 0
