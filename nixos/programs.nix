@@ -5,6 +5,7 @@
   environment.systemPackages = with pkgs; [
     pycritty
     bluez
+    nix-output-monitor
     yazi
     air-formatter
     nixfmt
