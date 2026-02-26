@@ -1,7 +1,13 @@
-{ config, pkgs, inputs, ... }:
+{
+  config,
+  pkgs,
+  inputs,
+  ...
+}:
 
 {
-  imports = [ # Include the results of the hardware scan.
+  imports = [
+    # Include the results of the hardware scan.
     ./hardware-configuration.nix
     ./nixos/nvidia.nix
     ./nixos/input.nix
@@ -15,7 +21,7 @@
     ./nixos/yazi.nix
     ./nixos/spell.nix
     ./nixos/gui.nix
-    #    ./nixos/osrm.nix
+    # ./nixos/osrm.nix
     ./nixos/options.nix
     ./nixos/zsh.nix
     ./brian/modules/utils.nix
@@ -41,7 +47,9 @@
   };
 
   networking.hostName = "nixos"; # Define your hostname.
-  networking.hosts = { "10.0.0.72" = [ "rpi" ]; };
+  networking.hosts = {
+    "10.0.0.72" = [ "rpi" ];
+  };
 
   networking.networkmanager = {
     enable = true;
@@ -76,7 +84,9 @@
   };
   # services.xserver.desktopManager.gnome.enable = true;
   # services.xserver.desktopManager.xfce.enable = true;
-  services.desktopManager.plasma6 = { enable = true; };
+  services.desktopManager.plasma6 = {
+    enable = true;
+  };
   # programs.ssh.askPassword = pkgs.lib.mkForce "${pkgs.ksshaskpass.out}/bin/ksshaskpass";
 
   services.xserver.xkb = {
@@ -128,7 +138,12 @@
   users.users.biscotty = {
     isNormalUser = true;
     description = "Biscotty";
-    extraGroups = [ "networkmanager" "wheel" "input" "mlocate" ];
+    extraGroups = [
+      "networkmanager"
+      "wheel"
+      "input"
+      "mlocate"
+    ];
     shell = pkgs.zsh;
     packages = with pkgs; [ ];
   };
@@ -161,10 +176,9 @@
   };
   # List packages installed in system profile. To search, run:
   # $ nix search wget
-  environment.systemPackages = with pkgs;
-    [
-      # inputs.zen-browser.packages."${pkgs.stdenv.hostPlatform.system}".specific
-    ];
+  environment.systemPackages = with pkgs; [
+    # inputs.zen-browser.packages."${pkgs.stdenv.hostPlatform.system}".specific
+  ];
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
@@ -182,16 +196,26 @@
 
   # Open ports in the firewall.
   networking.firewall = {
-    allowedTCPPorts = [ 8384 22000 ];
-    allowedUDPPorts = [ 22000 21027 ];
-    allowedTCPPortRanges = [{
-      from = 1714;
-      to = 1764;
-    }];
-    allowedUDPPortRanges = [{
-      from = 1714;
-      to = 1764;
-    }];
+    allowedTCPPorts = [
+      8384
+      22000
+    ];
+    allowedUDPPorts = [
+      22000
+      21027
+    ];
+    allowedTCPPortRanges = [
+      {
+        from = 1714;
+        to = 1764;
+      }
+    ];
+    allowedUDPPortRanges = [
+      {
+        from = 1714;
+        to = 1764;
+      }
+    ];
   };
 
   # Or disable the firewall altogether.
@@ -207,11 +231,16 @@
 
   environment.sessionVariables.NIXOS_OZONE_WL = "1";
   nix.settings = {
-    experimental-features = [ "nix-command" "flakes" ];
+    experimental-features = [
+      "nix-command"
+      "flakes"
+    ];
     #auto-optimise-store = true;
-    trusted-users = [ "root" "biscotty" ];
-    trusted-public-keys =
-      [ "hydra.iohk.io:f/Ea+s+dFdN+3Y/G+FDgSq+a5NEWhJGzdjvKNGv0/EQ=" ];
+    trusted-users = [
+      "root"
+      "biscotty"
+    ];
+    trusted-public-keys = [ "hydra.iohk.io:f/Ea+s+dFdN+3Y/G+FDgSq+a5NEWhJGzdjvKNGv0/EQ=" ];
     substituters = [ "https://cache.iog.io" ];
     download-buffer-size = 524288000;
   };
