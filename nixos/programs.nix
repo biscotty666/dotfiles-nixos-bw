@@ -111,7 +111,6 @@
     kdePackages.parley
     kdePackages.fcitx5-with-addons
     sddm-sugar-dark
-    sops
     python313Packages.python-lsp-server
     python313Packages.python-lsp-ruff
     ruff

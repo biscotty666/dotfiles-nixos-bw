@@ -13,7 +13,7 @@
     zen-browser.url = "github:MarceColl/zen-browser-flake";
   };
 
-  outputs = { self, nixpkgs, home-manager, sops-nix, ... }@inputs:
+  outputs = { self, nixpkgs, home-manager, ... }@inputs:
 
     let
       #      overlays = [
@@ -26,7 +26,8 @@
       nixosConfigurations."nixos" = lib.nixosSystem {
         inherit system;
         specialArgs = { inherit inputs; };
-        modules = [ ./configuration.nix sops-nix.nixosModules.sops ];
+        modules = [ ./configuration.nix ];
+        # modules = [ ./configuration.nix sops-nix.nixosModules.sops ];
       };
       #homeConfigurations."brian" = home-manager.lib.homeManagerConfiguration {
       #inherit pkgs;
