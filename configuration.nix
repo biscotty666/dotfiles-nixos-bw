@@ -21,6 +21,7 @@
     ./nixos/yazi.nix
     ./nixos/spell.nix
     ./nixos/gui.nix
+    ./nixos/nushell.nix
     # ./nixos/osrm.nix
     ./nixos/options.nix
     ./nixos/zsh.nix
