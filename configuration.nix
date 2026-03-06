@@ -83,7 +83,7 @@
     wayland.enable = false;
   };
   # services.xserver.desktopManager.gnome.enable = true;
-  # services.xserver.desktopManager.xfce.enable = true;
+  services.xserver.desktopManager.xfce.enable = true;
   services.desktopManager.plasma6 = {
     enable = true;
   };
