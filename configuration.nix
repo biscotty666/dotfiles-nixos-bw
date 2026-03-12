@@ -17,6 +17,7 @@
     ./nixos/programs.nix
     #./nixos/sops.nix
     ./nixos/restic.nix
+    ./nixos/nushell.nix
     ./nixos/cachix.nix
     ./nixos/yazi.nix
     ./nixos/spell.nix
