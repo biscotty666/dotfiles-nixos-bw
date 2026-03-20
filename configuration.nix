@@ -15,6 +15,7 @@
     ./nixos/mlocate.nix
     ./nixos/fonts.nix
     ./nixos/programs.nix
+    ./nixos/niri.nix
     #./nixos/sops.nix
     ./nixos/restic.nix
     ./nixos/nushell.nix
