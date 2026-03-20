@@ -3,7 +3,7 @@
 {
   programs = {
     niri.enable = true;
-    waybar.enable = true;
+    #    waybar.enable = true;
   };
 
   services.gnome.gnome-keyring.enable = true;
