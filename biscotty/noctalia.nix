@@ -8,7 +8,7 @@
   # configure options
   home.file.".cache/noctalia/wallpapers.json" = {
     text = builtins.toJSON {
-      defaultWallpaper = "~/.dotfiles/tree.jpg";
+      defaultWallpaper = "/home/biscotty/.dotfiles/tree.jpg";
     };
   };
   programs.noctalia-shell = {
@@ -57,7 +57,7 @@
       };
       colorSchemes.predefinedScheme = "Monochrome";
       general = {
-        avatarImage = "/home/drfoobar/.face";
+        # avatarImage = "/home/biscotty/Camera/Oily.png";
         radiusRatio = 0.2;
       };
       location = {

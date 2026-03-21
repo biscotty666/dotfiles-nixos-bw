@@ -17,6 +17,7 @@
     fuzzel
     swaylock
     mako
+    quickshell
     swayidle
     xwayland-satellite
   ];
