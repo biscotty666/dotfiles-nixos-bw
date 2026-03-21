@@ -11,9 +11,24 @@
     # };
     yazi.url = "github:sxyazi/yazi";
     zen-browser.url = "github:MarceColl/zen-browser-flake";
+    noctalia = {
+      url = "github:noctalia-dev/noctalia-shell";
+      inputs.nixpkgs.follows = "nixpkgs";
+      inputs.noctalia-qs.follows = "noctalia-qs";
+    };
+    noctalia-qs = {
+      url = "github:noctalia-dev/noctalia-qs";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
-  outputs = { self, nixpkgs, home-manager, ... }@inputs:
+  outputs =
+    {
+      self,
+      nixpkgs,
+      home-manager,
+      ...
+    }@inputs:
 
     let
       #      overlays = [
@@ -22,11 +37,14 @@
       system = "x86_64-linux";
       lib = nixpkgs.lib;
       pkgs = nixpkgs.legacyPackages.${system};
-    in {
+    in
+    {
       nixosConfigurations."nixos" = lib.nixosSystem {
         inherit system;
         specialArgs = { inherit inputs; };
-        modules = [ ./configuration.nix ];
+        modules = [
+          ./configuration.nix
+        ];
         # modules = [ ./configuration.nix sops-nix.nixosModules.sops ];
       };
       #homeConfigurations."brian" = home-manager.lib.homeManagerConfiguration {
@@ -34,11 +52,10 @@
       #modules = [ ./home-brian.nix ];
       #};
       #};
-      homeConfigurations."biscotty" =
-        home-manager.lib.homeManagerConfiguration {
-          inherit pkgs;
-          extraSpecialArgs = { inherit inputs; };
-          modules = [ ./biscotty/home.nix ];
-        };
+      homeConfigurations."biscotty" = home-manager.lib.homeManagerConfiguration {
+        inherit pkgs;
+        extraSpecialArgs = { inherit inputs; };
+        modules = [ ./biscotty/home.nix ];
+      };
     };
 }

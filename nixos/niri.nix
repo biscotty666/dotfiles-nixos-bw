@@ -3,7 +3,12 @@
 {
   programs.niri.enable = true;
 
-  services.gnome.gnome-keyring.enable = true;
+  services = {
+    gnome.gnome-keyring.enable = true;
+    power-profiles-daemon.enable = true;
+    upower.enable = true;
+  };
+
   security.pam.services.swaylock = { };
 
   environment.systemPackages = with pkgs; [

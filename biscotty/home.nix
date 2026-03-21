@@ -9,6 +9,7 @@
   imports = [
     ./sh.nix
     ./nvim-spell.nix
+    ./noctalia.nix
   ];
 
   home.username = "biscotty";
