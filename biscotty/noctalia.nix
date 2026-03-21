@@ -16,20 +16,14 @@
     settings = {
       # configure noctalia here
       bar = {
-        density = "compact";
-        position = "right";
+        density = "default";
+        position = "top";
         showCapsule = false;
         widgets = {
           left = [
             {
               id = "ControlCenter";
               useDistroLogo = true;
-            }
-            {
-              id = "Network";
-            }
-            {
-              id = "Bluetooth";
             }
           ];
           center = [
@@ -41,7 +35,19 @@
           ];
           right = [
             {
-              alwaysShowPercentage = false;
+              id = "plugin:clipper";
+            }
+            {
+              id = "plugin:kdeconnect";
+            }
+            {
+              id = "Network";
+            }
+            {
+              id = "Bluetooth";
+            }
+            {
+              alwaysShowPercentage = true;
               id = "Battery";
               warningThreshold = 30;
             }
@@ -54,6 +60,7 @@
             }
           ];
         };
+
       };
       colorSchemes.predefinedScheme = "Monochrome";
       general = {
@@ -62,9 +69,24 @@
       };
       location = {
         monthBeforeDay = true;
-        name = "Marseille, France";
+        name = "Albuquerque, NM";
       };
     };
-    # this may also be a string or a path to a JSON file.
-  };
+  # plugins = {
+  #   sources = [
+  #     {
+  #       enabled = true;
+  #       name = "Official Noctalia Plugins";
+  #       url = "https://github.com/noctalia-dev/noctalia-plugins";
+  #     }
+  #   ];
+  #   states = {
+  #     catwalk = {
+  #       enabled = true;
+  #       sourceUrl = "https://github.com/noctalia-dev/noctalia-plugins";
+  #     };
+  #   };
+  #   version = 2;
+  # };
+  }; # this may also be a string or a path to a JSON file.
 }
