@@ -38,7 +38,7 @@
               id = "plugin:clipper";
             }
             {
-              id = "plugin:kdeconnect";
+              id = "plugin:kde-connect";
             }
             {
               id = "Network";
