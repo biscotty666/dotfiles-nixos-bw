@@ -35,6 +35,16 @@
           ];
           right = [
             {
+              id = "plugin:weather-indicator";
+            }
+            {
+              formatHorizontal = "HH:mm";
+              formatVertical = "HH mm";
+              id = "Clock";
+              useMonospacedFont = true;
+              usePrimaryColor = true;
+            }
+            {
               id = "plugin:clipper";
             }
             {
@@ -50,13 +60,6 @@
               alwaysShowPercentage = true;
               id = "Battery";
               warningThreshold = 30;
-            }
-            {
-              formatHorizontal = "HH:mm";
-              formatVertical = "HH mm";
-              id = "Clock";
-              useMonospacedFont = true;
-              usePrimaryColor = true;
             }
           ];
         };
