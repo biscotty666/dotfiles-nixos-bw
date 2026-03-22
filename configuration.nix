@@ -78,10 +78,14 @@
 
   zramSwap.enable = true;
   
-  services.displayManager.gdm = {
-    enable = true;
-  };
+  # services.displayManager.gdm = {
+  #   enable = true;
+  # };
 
+  services.displayManager.dms-greeter = {
+    enable = true;
+    compositor.name = "niri";
+  };
   # services.displayManager.sddm = {
   #   enable = true;
   #   theme = "sddm-chili-theme";
