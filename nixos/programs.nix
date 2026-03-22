@@ -50,6 +50,7 @@
     kdePackages.kparts
     kdePackages.parley
     kdePackages.sddm
+    kooha
     kitty
     lazygit
     libarchive

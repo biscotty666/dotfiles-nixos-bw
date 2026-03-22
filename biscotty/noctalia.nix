@@ -18,22 +18,34 @@
       bar = {
         density = "default";
         position = "top";
-        showCapsule = false;
+        showCapsule = true;
         widgets = {
           left = [
             {
               id = "ControlCenter";
               useDistroLogo = true;
             }
-          ];
-          center = [
+            {
+              id = "SessionMenu";
+              onlyActiveWorkspaces = false;
+              showPinnedApps = true;
+            }
+            {
+              id = "Spacer";
+            }
             {
               hideUnoccupied = false;
               id = "Workspace";
               labelMode = "none";
             }
+            {
+              id = "Spacer";
+            }
+            {
+              id = "Taskbar";
+            }
           ];
-          right = [
+          center = [
             {
               id = "plugin:weather-indicator";
             }
@@ -44,14 +56,25 @@
               useMonospacedFont = true;
               usePrimaryColor = true;
             }
+          ];
+          right = [
             {
               id = "plugin:clipper";
+            }
+            {
+              id = "Volume";
+            }
+            {
+              id = "AudioVisualizer";
             }
             {
               id = "plugin:kde-connect";
             }
             {
               id = "Network";
+            }
+            {
+              id = "Tray";
             }
             {
               id = "Bluetooth";
@@ -65,7 +88,8 @@
         };
 
       };
-      colorSchemes.predefinedScheme = "Monochrome";
+      colorSchemes.predefinedScheme = "Tokyo Night";
+      # colorSchemes.predefinedScheme = "Monochrome";
       general = {
         # avatarImage = "/home/biscotty/Camera/Oily.png";
         radiusRatio = 0.2;
@@ -73,6 +97,16 @@
       location = {
         monthBeforeDay = true;
         name = "Albuquerque, NM";
+      };
+      appLauncher = {
+        enableClipboardHistory = true;
+        autoPasteClipboard = true;
+        pinnedApps = [
+          "thunderbird" "obsidian" "spotify"
+        ];
+      };
+      ui = {
+        fontDefault = "Roboto";
       };
     };
   # plugins = {

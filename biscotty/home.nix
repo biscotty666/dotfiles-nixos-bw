@@ -10,6 +10,7 @@
     ./sh.nix
     ./nvim-spell.nix
     ./noctalia.nix
+    # inputs.niri.homeModules.config
   ];
 
   home.username = "biscotty";
