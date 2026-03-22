@@ -27,8 +27,6 @@
             }
             {
               id = "SessionMenu";
-              onlyActiveWorkspaces = false;
-              showPinnedApps = true;
             }
             {
               id = "Spacer";
@@ -43,6 +41,8 @@
             }
             {
               id = "Taskbar";
+              onlyActiveWorkspaces = false;
+              showPinnedApps = true;
             }
           ];
           center = [
@@ -88,7 +88,8 @@
         };
 
       };
-      colorSchemes.predefinedScheme = "Tokyo Night";
+      # colorSchemes.predefinedScheme = "Tokyo Night";
+      colorShemes.useWallpaperColors = true;
       # colorSchemes.predefinedScheme = "Monochrome";
       general = {
         # avatarImage = "/home/biscotty/Camera/Oily.png";
@@ -107,6 +108,12 @@
       };
       ui = {
         fontDefault = "Roboto";
+      };
+      dock = {
+        enabled = true;
+        pinnedApps = [
+          "thunderbird" "obsidian" "spotify"
+        ];
       };
     };
   # plugins = {
