@@ -77,13 +77,17 @@
   services.xserver.enable = true;
 
   zramSwap.enable = true;
-
-  services.displayManager.sddm = {
+  
+  services.displayManager.gdm = {
     enable = true;
-    theme = "sddm-chili-theme";
-    #theme = "sugar_dark";
-    wayland.enable = false;
   };
+
+  # services.displayManager.sddm = {
+  #   enable = true;
+  #   theme = "sddm-chili-theme";
+  #   #theme = "sugar_dark";
+  #   wayland.enable = false;
+  # };
   # services.xserver.desktopManager.gnome.enable = true;
   services.xserver.desktopManager.xfce.enable = true;
   services.desktopManager.plasma6 = {
