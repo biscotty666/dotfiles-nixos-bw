@@ -22,5 +22,6 @@
     quickshell
     swayidle
     xwayland-satellite
+    xdg-desktop-portal-gnome
   ];
 }

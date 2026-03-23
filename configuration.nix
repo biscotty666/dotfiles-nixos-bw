@@ -92,8 +92,8 @@
   #   #theme = "sugar_dark";
   #   wayland.enable = false;
   # };
-  # services.desktopManager.gnome.enable = true;
-  # programs.ssh.askPassword = pkgs.lib.mkForce "${pkgs.kdePackages.ksshaskpass.out}/bin/ksshaskpass";
+  services.desktopManager.gnome.enable = true;
+  programs.ssh.askPassword = pkgs.lib.mkForce "${pkgs.kdePackages.ksshaskpass.out}/bin/ksshaskpass";
   # services.xserver.desktopManager.xfce.enable = true;
   services.desktopManager.plasma6 = {
     enable = true;
