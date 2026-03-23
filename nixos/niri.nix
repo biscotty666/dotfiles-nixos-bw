@@ -9,6 +9,13 @@
     gnome.gnome-keyring.enable = true;
     power-profiles-daemon.enable = true;
     upower.enable = true;
+    niri-session-manager = {
+      enable = true;
+      # settings = {
+      #   save-interval = 30;
+      #   max-backup-count = 3;
+      # };
+    };
   };
 
   security.pam.services.swaylock = { };

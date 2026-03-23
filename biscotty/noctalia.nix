@@ -16,9 +16,11 @@
     settings = {
       # configure noctalia here
       bar = {
-        density = "default";
+        barType = "floating";
+        density = "comfortable";
         position = "top";
-        showCapsule = true;
+        fontScale = 1.2;
+        showCapsule = false;
         widgets = {
           left = [
             {
@@ -94,10 +96,14 @@
       general = {
         # avatarImage = "/home/biscotty/Camera/Oily.png";
         radiusRatio = 0.2;
+        showHibernateOnLockScreen = true;
+        enableLockScreenMediaControls = true;
+        lockScreenBlur = 0.5;
       };
       location = {
         monthBeforeDay = true;
         name = "Albuquerque, NM";
+        useFahrenheit = true;
       };
       appLauncher = {
         enableClipboardHistory = true;
