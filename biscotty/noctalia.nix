@@ -82,6 +82,9 @@
               id = "Bluetooth";
             }
             {
+              id = "SystemMonitor";
+            }
+            {
               alwaysShowPercentage = true;
               id = "Battery";
               warningThreshold = 30;
@@ -92,6 +95,9 @@
       };
       # colorSchemes.predefinedScheme = "Tokyo Night";
       colorShemes.useWallpaperColors = true;
+      wallpaper = {
+        overviewEnabled = true;
+      };
       # colorSchemes.predefinedScheme = "Monochrome";
       general = {
         # avatarImage = "/home/biscotty/Camera/Oily.png";
@@ -120,6 +126,7 @@
         pinnedApps = [
           "thunderbird" "obsidian" "spotify"
         ];
+        groupApps = true;
       };
     };
   # plugins = {
