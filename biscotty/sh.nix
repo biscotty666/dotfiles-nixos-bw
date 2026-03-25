@@ -16,6 +16,7 @@ let
     ip = "ip -c";
     vi = "nvim";
     nhc = "sudo nh clean all -v --nogcroots --keep 2 --keep-since 5d";
+    zen = "flatpak run app.zen_browser.zen";
   };
 in
 {
@@ -33,6 +34,9 @@ in
       PATH="$PATH:/home/biscotty/.cargo/bin";
       BROWSER = "brave";
     };
+    loginExtra = ''
+      /home/biscotty/.local/bin/unlock-vaults.sh
+      '';
     plugins = [
       {
         name = "fzf-tab";
