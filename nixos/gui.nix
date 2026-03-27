@@ -7,7 +7,7 @@
     thunderbird
     obsidian
     floorp-bin
-    protonvpn-gui
+    proton-vpn
     brave
     libreoffice-qt-fresh
     spotify
