@@ -45,12 +45,6 @@
     imagemagick
     inetutils
     jq
-    kdePackages.fcitx5-with-addons
-    kdePackages.kcolorchooser
-    kdePackages.kparts
-    kdePackages.parley
-    kdePackages.sddm
-    kooha
     kitty
     lazygit
     libarchive
@@ -118,6 +112,12 @@
     yazi
     zathura
     zoxide
+    kdePackages.fcitx5-with-addons
+    kdePackages.karousel
+    kdePackages.kcolorchooser
+    kdePackages.kparts
+    kdePackages.parley
+    kdePackages.sddm
   ];
 
 }
