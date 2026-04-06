@@ -78,20 +78,20 @@
 
   zramSwap.enable = true;
   
-  # services.displayManager.gdm = {
-  #   enable = true;
-  # };
+  services.displayManager.gdm = {
+    enable = true;
+  };
 
   # services.displayManager.dms-greeter = {
   #   enable = true;
   #   compositor.name = "niri";
   # };
-  services.displayManager.sddm = {
-    enable = true;
-    theme = "sddm-chili-theme";
-    #theme = "sugar_dark";
-    wayland.enable = false;
-  };
+  # services.displayManager.sddm = {
+  #   enable = true;
+  #   theme = "${pkgs.sddm-chili-theme}/share/sddm/themes/chili";
+  #   #theme = "sugar_dark";
+  #   # wayland.enable = false;
+  # };
   services.desktopManager.gnome.enable = true;
   programs.ssh.askPassword = pkgs.lib.mkForce "${pkgs.kdePackages.ksshaskpass.out}/bin/ksshaskpass";
   # services.xserver.desktopManager.xfce.enable = true;
