@@ -83,8 +83,7 @@
     ripgrep
     ripgrep-all
     ruff
-    sddm-chili-theme
-    sddm-sugar-dark
+    sddm-astronaut
     sqlite
     sqlite-utils
     starship

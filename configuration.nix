@@ -77,27 +77,40 @@
   services.xserver.enable = true;
 
   zramSwap.enable = true;
-  
-  services.displayManager.gdm = {
-    enable = true;
-  };
 
+  # services.displayManager.gdm.enable = true;
+
+  # services.xserver.displayManager.lightdm = {
+  #   enable = true;
+  #   # greeters.lomiri.enable = true;
+  #   # greeters.enso = {
+  #   #   enable = true;
+  #   #   blur = true;
+  #   # };
+  #   greeters.slick.enable = true;
+  # };
   # services.displayManager.dms-greeter = {
   #   enable = true;
   #   compositor.name = "niri";
   # };
-  # services.displayManager.sddm = {
-  #   enable = true;
-  #   theme = "${pkgs.sddm-chili-theme}/share/sddm/themes/chili";
-  #   #theme = "sugar_dark";
-  #   # wayland.enable = false;
-  # };
-  services.desktopManager.gnome.enable = true;
+  services.displayManager.sddm = {
+    enable = true;
+    theme = "sddm-astronaut-theme";
+    wayland.enable = true;
+    wayland.compositor = "weston";
+    extraPackages = [
+      pkgs.sddm-astronaut
+      pkgs.kdePackages.qtsvg
+      pkgs.kdePackages.qtmultimedia
+      pkgs.kdePackages.qtvirtualkeyboard
+    ];
+  };
   programs.ssh.askPassword = pkgs.lib.mkForce "${pkgs.kdePackages.ksshaskpass.out}/bin/ksshaskpass";
   # services.xserver.desktopManager.xfce.enable = true;
   services.desktopManager.plasma6 = {
     enable = true;
   };
+  services.desktopManager.gnome.enable = true;
   # programs.ssh.askPassword = pkgs.lib.mkForce "${pkgs.ksshaskpass.out}/bin/ksshaskpass";
 
   services.xserver.xkb = {
