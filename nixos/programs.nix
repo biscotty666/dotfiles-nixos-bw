@@ -3,6 +3,8 @@
 {
 
   environment.systemPackages = with pkgs; [
+    kdePackages.qtmultimedia
+    sddm-astronaut
     aaxtomp3
     air-formatter
     appimage-run
