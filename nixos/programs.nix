@@ -3,6 +3,10 @@
 {
 
   environment.systemPackages = with pkgs; [
+    (catppuccin-sddm.override {
+      flavor = "mocha";
+      accent = "mauve";
+    })
     kdePackages.qtmultimedia
     sddm-astronaut
     aaxtomp3

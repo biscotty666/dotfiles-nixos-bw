@@ -93,17 +93,21 @@
   #   enable = true;
   #   compositor.name = "niri";
   # };
+  services.xserver.displayManager.setupCommands = "
+    xrandr --output eDP-1 --mode 1920x1080 --pos 0x0 --rotate normal --output HDMI-A-1 --mode 1920x1080 --pos 0x0 --rotate normal
+    ";
   services.displayManager.sddm = {
     enable = true;
-    theme = "sddm-astronaut-theme";
+    # theme = "sddm-astronaut-theme";
+    theme = "catppuccin-mocha-mauve";
     wayland.enable = true;
     wayland.compositor = "weston";
-    extraPackages = [
-      pkgs.sddm-astronaut
-      pkgs.kdePackages.qtsvg
-      pkgs.kdePackages.qtmultimedia
-      pkgs.kdePackages.qtvirtualkeyboard
-    ];
+    # extraPackages = [
+    #   pkgs.sddm-astronaut
+    #   pkgs.kdePackages.qtsvg
+    #   pkgs.kdePackages.qtmultimedia
+    #   pkgs.kdePackages.qtvirtualkeyboard
+    # ];
   };
   programs.ssh.askPassword = pkgs.lib.mkForce "${pkgs.kdePackages.ksshaskpass.out}/bin/ksshaskpass";
   # services.xserver.desktopManager.xfce.enable = true;
