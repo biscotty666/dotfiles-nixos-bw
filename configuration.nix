@@ -20,6 +20,7 @@
     ./nixos/restic.nix
     ./nixos/nushell.nix
     ./nixos/cachix.nix
+    ./nixos/dm.nix
     ./nixos/yazi.nix
     ./nixos/spell.nix
     ./nixos/gui.nix
@@ -82,33 +83,27 @@
 
   # services.xserver.displayManager.lightdm = {
   #   enable = true;
-  #   # greeters.lomiri.enable = true;
+  #   greeters.lomiri.enable = true;
   #   # greeters.enso = {
   #   #   enable = true;
   #   #   blur = true;
   #   # };
-  #   greeters.slick.enable = true;
+  #   # greeters.slick.enable = true;
   # };
   # services.displayManager.dms-greeter = {
   #   enable = true;
   #   compositor.name = "niri";
   # };
-  services.xserver.displayManager.setupCommands = "
-    xrandr --output eDP-1 --mode 1920x1080 --pos 0x0 --rotate normal --output HDMI-A-1 --mode 1920x1080 --pos 0x0 --rotate normal
-    ";
-  services.displayManager.sddm = {
-    enable = true;
-    # theme = "sddm-astronaut-theme";
-    theme = "catppuccin-mocha-mauve";
-    wayland.enable = true;
-    wayland.compositor = "weston";
-    # extraPackages = [
-    #   pkgs.sddm-astronaut
-    #   pkgs.kdePackages.qtsvg
-    #   pkgs.kdePackages.qtmultimedia
-    #   pkgs.kdePackages.qtvirtualkeyboard
-    # ];
-  };
+  # services.xserver.displayManager.setupCommands = "
+  #   xrandr --output eDP-1 --auto --primary
+  #   xrandr --output HDMI-A-1 --auto --noprimary
+  #   ";
+  # services.displayManager.sddm = {
+  #   enable = true;
+  #   theme = "catppuccin-mocha-mauve";
+  #   wayland.enable = true;
+  #   wayland.compositor = "weston";
+  # };
   programs.ssh.askPassword = pkgs.lib.mkForce "${pkgs.kdePackages.ksshaskpass.out}/bin/ksshaskpass";
   # services.xserver.desktopManager.xfce.enable = true;
   services.desktopManager.plasma6 = {
