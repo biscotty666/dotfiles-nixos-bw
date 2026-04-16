@@ -4,6 +4,7 @@
 
   environment.systemPackages = with pkgs; [
     aaxtomp3
+    libva
     air-formatter
     appimage-run
     ascii-image-converter
