@@ -18,6 +18,7 @@
     ./nixos/niri.nix
     #./nixos/sops.nix
     ./nixos/restic.nix
+    ./nixos/kde.nix
     ./nixos/nushell.nix
     ./nixos/cachix.nix
     ./nixos/dm.nix

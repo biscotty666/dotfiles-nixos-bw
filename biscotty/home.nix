@@ -10,6 +10,7 @@
     ./sh.nix
     ./nvim-spell.nix
     ./noctalia.nix
+    ./plasma.nix
     # inputs.niri.homeModules.config
   ];
 
