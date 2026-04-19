@@ -1,5 +1,13 @@
-{ config, lib, pkgs, ... }:
+{
+  config,
+  lib,
+  pkgs,
+  ...
+}:
 
+let
+  theUser = "biscotty";
+in
 {
   systemd.timers."restic-backup" = {
     wantedBy = [ "timers.target" ];
@@ -13,11 +21,12 @@
   systemd.services."restic-backup" = {
     script = ''
       set -eu
-      /home/biscotty/.local/bin/restic-backup.sh
+      ${config.users.users.${theUser}.home}/.local/bin/restic-backup.sh
+      # /home/biscotty/.local/bin/restic-backup.sh
     '';
     serviceConfig = {
       Type = "oneshot";
-      User = "biscotty";
+      User = theUser;
     };
   };
 
@@ -33,5 +42,4 @@
     capabilities = "cap_dac_read_search=+ep";
   };
 
- }
-
+}

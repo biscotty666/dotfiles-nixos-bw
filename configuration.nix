@@ -20,6 +20,7 @@
     ./nixos/restic.nix
     ./nixos/kde.nix
     ./nixos/nushell.nix
+    ./nixos/syncthing.nix
     ./nixos/cachix.nix
     ./nixos/dm.nix
     ./nixos/yazi.nix
@@ -113,11 +114,11 @@
     pulse.enable = true;
   };
 
-  services.syncthing = {
-    enable = true;
-    user = "biscotty";
-    configDir = "/home/biscotty/.config/syncthing";
-  };
+  # services.syncthing = {
+  #   enable = true;
+  #   user = "biscotty";
+  #   configDir = "/home/biscotty/.config/syncthing";
+  # };
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
   #  users.users.brian = {
