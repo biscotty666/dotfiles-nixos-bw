@@ -114,27 +114,6 @@
     pulse.enable = true;
   };
 
-  # services.syncthing = {
-  #   enable = true;
-  #   user = "biscotty";
-  #   configDir = "/home/biscotty/.config/syncthing";
-  # };
-
-  # Define a user account. Don't forget to set a password with ‘passwd’.
-  #  users.users.brian = {
-  #    isNormalUser = true;
-  #    description = "Brian";
-  #    extraGroups = [
-  #      "networkmanager"
-  #      "wheel"
-  #      "input"
-  #      "mlocate"
-  #    ];
-  #    shell = pkgs.zsh;
-  #    packages = with pkgs; [
-  #    ];
-  #  };
-
   users.users.biscotty = {
     isNormalUser = true;
     description = "Biscotty";

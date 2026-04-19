@@ -30,13 +30,13 @@ in
       EDITOR = "nvim";
       NIXPKGS_ALLOW_UNFREE = 1;
       NIXPKGS_ALLOW_BROKEN = 1;
-      BARTIB_FILE="/home/biscotty/.local/bartib/activities.bartib";
-      PATH="$PATH:/home/biscotty/.cargo/bin";
+      BARTIB_FILE = "${config.home.homeDirectory}/.local/bartib/activities.bartib";
+      PATH = "$PATH:${config.home.homeDirectory}/.cargo/bin";
       BROWSER = "brave";
     };
     loginExtra = ''
-      /home/biscotty/.local/bin/unlock-vaults.sh
-      '';
+      ${config.home.homeDirectory}/.local/bin/unlock-vaults.sh
+    '';
     plugins = [
       {
         name = "fzf-tab";

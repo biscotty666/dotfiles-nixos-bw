@@ -1,4 +1,9 @@
-{ pkgs, inputs, ... }:
+{
+  pkgs,
+  inputs,
+  config,
+  ...
+}:
 {
   # import the home manager module
   imports = [
@@ -8,7 +13,7 @@
   # configure options
   home.file.".cache/noctalia/wallpapers.json" = {
     text = builtins.toJSON {
-      defaultWallpaper = "/home/biscotty/.dotfiles/tree.jpg";
+      defaultWallpaper = "${config.home.homeDirectory}/.dotfiles/tree.jpg";
     };
   };
   programs.noctalia-shell = {
@@ -115,7 +120,9 @@
         enableClipboardHistory = true;
         autoPasteClipboard = true;
         pinnedApps = [
-          "thunderbird" "obsidian" "spotify"
+          "thunderbird"
+          "obsidian"
+          "spotify"
         ];
       };
       ui = {
@@ -124,26 +131,28 @@
       dock = {
         enabled = true;
         pinnedApps = [
-          "thunderbird" "obsidian" "spotify"
+          "thunderbird"
+          "obsidian"
+          "spotify"
         ];
         groupApps = true;
       };
     };
-  # plugins = {
-  #   sources = [
-  #     {
-  #       enabled = true;
-  #       name = "Official Noctalia Plugins";
-  #       url = "https://github.com/noctalia-dev/noctalia-plugins";
-  #     }
-  #   ];
-  #   states = {
-  #     catwalk = {
-  #       enabled = true;
-  #       sourceUrl = "https://github.com/noctalia-dev/noctalia-plugins";
-  #     };
-  #   };
-  #   version = 2;
-  # };
+    # plugins = {
+    #   sources = [
+    #     {
+    #       enabled = true;
+    #       name = "Official Noctalia Plugins";
+    #       url = "https://github.com/noctalia-dev/noctalia-plugins";
+    #     }
+    #   ];
+    #   states = {
+    #     catwalk = {
+    #       enabled = true;
+    #       sourceUrl = "https://github.com/noctalia-dev/noctalia-plugins";
+    #     };
+    #   };
+    #   version = 2;
+    # };
   }; # this may also be a string or a path to a JSON file.
 }

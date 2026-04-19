@@ -22,7 +22,6 @@ in
     script = ''
       set -eu
       ${config.users.users.${theUser}.home}/.local/bin/restic-backup.sh
-      # /home/biscotty/.local/bin/restic-backup.sh
     '';
     serviceConfig = {
       Type = "oneshot";
