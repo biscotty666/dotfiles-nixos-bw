@@ -1,6 +1,11 @@
 { config, lib, pkgs, ... }:
 {
 
+  environment.systemPackages = with pkgs; [
+    libva
+    libva-utils
+  ];
+
   hardware.graphics = {
     enable = true;
   };
@@ -9,7 +14,7 @@
 
   hardware.nvidia = {
     modesetting.enable = true;
-    open = false;
+    open = true;
 
     nvidiaSettings = true;
 
