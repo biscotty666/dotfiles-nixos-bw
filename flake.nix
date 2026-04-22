@@ -16,16 +16,16 @@
     };
     yazi.url = "github:sxyazi/yazi";
     zen-browser.url = "github:MarceColl/zen-browser-flake";
-    noctalia = {
-      url = "github:noctalia-dev/noctalia-shell";
-      inputs.nixpkgs.follows = "nixpkgs";
-      inputs.noctalia-qs.follows = "noctalia-qs";
-    };
-    noctalia-qs = {
-      url = "github:noctalia-dev/noctalia-qs";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-    niri-session-manager.url = "github:MTeaHead/niri-session-manager";
+    # noctalia = {
+    #   url = "github:noctalia-dev/noctalia-shell";
+    #   inputs.nixpkgs.follows = "nixpkgs";
+    #   inputs.noctalia-qs.follows = "noctalia-qs";
+    # };
+    # noctalia-qs = {
+    #   url = "github:noctalia-dev/noctalia-qs";
+    #   inputs.nixpkgs.follows = "nixpkgs";
+    # };
+    # niri-session-manager.url = "github:MTeaHead/niri-session-manager";
   };
 
   outputs =
@@ -34,7 +34,7 @@
       nixpkgs,
       home-manager,
       plasma-manager,
-      niri-session-manager,
+      # niri-session-manager,
       ...
     }@inputs:
 
@@ -52,7 +52,7 @@
         specialArgs = { inherit inputs; };
         modules = [
           ./configuration.nix
-          niri-session-manager.nixosModules.niri-session-manager
+          # niri-session-manager.nixosModules.niri-session-manager
         ];
         # modules = [ ./configuration.nix sops-nix.nixosModules.sops ];
       };

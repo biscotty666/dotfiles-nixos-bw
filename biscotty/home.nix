@@ -9,7 +9,7 @@
   imports = [
     ./sh.nix
     ./nvim-spell.nix
-    ./noctalia.nix
+    # ./noctalia.nix
     ./plasma.nix
     # inputs.niri.homeModules.config
   ];
