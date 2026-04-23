@@ -63,6 +63,7 @@
     nh
     nix-output-monitor
     nixfmt
+    obs-studio
     odt2txt
     opentabletdriver
     p7zip
