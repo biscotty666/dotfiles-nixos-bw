@@ -80,6 +80,7 @@
     python313Packages.python-lsp-server
     qalculate-qt
     qemu
+    quickemu
     restic
     ripgrep
     ripgrep-all

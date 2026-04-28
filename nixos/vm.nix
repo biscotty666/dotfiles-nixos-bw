@@ -22,11 +22,11 @@
   # Manage the virtualisation services
   virtualisation = {
     libvirtd = {
-            #enable = true;
+            enable = true;
       qemu = {
         swtpm.enable = true;
-        ovmf.enable = true;
-        ovmf.packages = [ pkgs.OVMFFull.fd ];
+        # ovmf.enable = true;
+        # ovmf.packages = [ pkgs.OVMFFull.fd ];
       };
     };
     spiceUSBRedirection.enable = true;
