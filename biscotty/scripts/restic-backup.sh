@@ -1,4 +1,6 @@
-#!/bin/sh
+#! /usr/bin/env nix-shell
+#! nix-shell -i bash -p bash
+
 /run/current-system/sw/bin/restic backup -r /home/biscotty/seagate/backups/sb -p /home/biscotty/.config/restic/restpass /home/biscotty/Obsidian --tag Obsidian
 /run/current-system/sw/bin/restic backup -r /home/biscotty/seagate/backups/sb -p /home/biscotty/.config/restic/restpass /home/biscotty/Learning --tag Learning
 /run/current-system/sw/bin/restic backup -r /home/biscotty/seagate/backups/sb -p /home/biscotty/.config/restic/restpass /home/biscotty/Camera --tag Camera

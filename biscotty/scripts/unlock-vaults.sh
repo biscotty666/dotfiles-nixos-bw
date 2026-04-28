@@ -1,4 +1,6 @@
-#!/home/biscotty/.nix-profile/bin/bash
+#! /usr/bin/env nix-shell
+#! nix-shell -i bash -p bash
+
 if [ -z "$(ls -A $HOME/DropOpen)" ];
     then
         echo "Empty Directory ";

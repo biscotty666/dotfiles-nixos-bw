@@ -11,6 +11,7 @@
     ./nvim-spell.nix
     # ./noctalia.nix
     ./plasma.nix
+    ./scripts/scripts.nix
     # inputs.niri.homeModules.config
   ];
 
@@ -29,25 +30,6 @@
 
   services = {
 
-  };
-  home.file = {
-    ".local/bin/unlock-vaults.sh" = {
-      source = scripts/unlock-vaults.sh;
-      executable = true;
-    };
-    ".local/bin/restic-backup.sh" = {
-      source = scripts/restic-backup.sh;
-      executable = true;
-    };
-    ".local/bin/fix-enet.sh" = {
-      source = scripts/fix-enet.sh;
-      executable = true;
-    };
-    # # You can also set the file content immediately.
-    # ".gradle/gradle.properties".text = ''
-    #   org.gradle.console=verbose
-    #   org.gradle.daemon.idletimeout=3600000
-    # '';
   };
 
   home.sessionVariables = {
