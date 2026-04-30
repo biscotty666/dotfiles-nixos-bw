@@ -9,11 +9,11 @@
     #   url = "github:Mic92/sops-nix";
     #   inputs.nixpkgs.follows = "nixpkgs";
     # };
-    plasma-manager = {
-      url = "github:nix-community/plasma-manager";
-      inputs.nixpkgs.follows = "nixpkgs";
-      inputs.home-manager.follows = "home-manager";
-    };
+    # plasma-manager = {
+    #   url = "github:nix-community/plasma-manager";
+    #   inputs.nixpkgs.follows = "nixpkgs";
+    #   inputs.home-manager.follows = "home-manager";
+    # };
     yazi.url = "github:sxyazi/yazi";
     zen-browser.url = "github:MarceColl/zen-browser-flake";
     # noctalia = {
@@ -33,7 +33,7 @@
       self,
       nixpkgs,
       home-manager,
-      plasma-manager,
+      # plasma-manager,
       # niri-session-manager,
       ...
     }@inputs:
@@ -65,7 +65,7 @@
         inherit pkgs;
         extraSpecialArgs = { inherit inputs; };
         modules = [ 
-          inputs.plasma-manager.homeModules.plasma-manager
+          # inputs.plasma-manager.homeModules.plasma-manager
           ./biscotty/home.nix ];
       };
     };
