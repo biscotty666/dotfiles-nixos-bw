@@ -14,10 +14,10 @@
     ./nixos/vm.nix
     ./nixos/mlocate.nix
     ./nixos/fonts.nix
-    ./nixos/programs.nix
-    # ./nixos/niri.nix
+    ./nixos/utilities.nix
     #./nixos/sops.nix
     ./nixos/restic.nix
+    ./nixos/neovim.nix
     ./nixos/kde.nix
     ./nixos/nushell.nix
     ./nixos/syncthing.nix

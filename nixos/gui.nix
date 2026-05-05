@@ -12,6 +12,7 @@
     libreoffice-qt-fresh
     spotify
     discord
+    obs-studio
   ];
 
 }
