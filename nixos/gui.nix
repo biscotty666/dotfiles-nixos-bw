@@ -10,6 +10,7 @@
     proton-vpn
     brave
     libreoffice-qt-fresh
+    slack
     spotify
     discord
     obs-studio
