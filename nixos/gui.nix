@@ -11,7 +11,7 @@
     brave
     libreoffice-qt-fresh
     slack
-    # spotify
+    spotify
     discord
     obs-studio
   ];
