@@ -5,6 +5,7 @@
   environment.systemPackages = with pkgs; [
     aaxtomp3
     air-formatter
+    age
     appimage-run
     ascii-image-converter
     atool
@@ -50,7 +51,6 @@
     libarchive
     libqalculate
     librsvg
-    libsForQt5.kparts
     lsd
     mdcat
     mediainfo
