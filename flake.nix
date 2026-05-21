@@ -53,7 +53,7 @@
         specialArgs = { inherit inputs; };
         modules = [
           ./configuration.nix
-          sops-nix.nixosModules.sops
+          # sops-nix.nixosModules.sops
           # niri-session-manager.nixosModules.niri-session-manager
         ];
       };
