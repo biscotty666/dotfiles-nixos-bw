@@ -15,11 +15,11 @@
       generateKey = true;
     };
 
-    secrets = {
-      restic-password = {
-        owner = biscotty.name;
-      };
-    };
+    # secrets = {
+    #   restic-password = {
+    #     owner = biscotty.name;
+    #   };
+    # };
 
   };
 }

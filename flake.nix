@@ -33,6 +33,7 @@
       self,
       nixpkgs,
       home-manager,
+      # sops-nix,
       # plasma-manager,
       # niri-session-manager,
       ...
@@ -52,9 +53,9 @@
         specialArgs = { inherit inputs; };
         modules = [
           ./configuration.nix
+          sops-nix.nixosModules.sops
           # niri-session-manager.nixosModules.niri-session-manager
         ];
-        # modules = [ ./configuration.nix sops-nix.nixosModules.sops ];
       };
       #homeConfigurations."brian" = home-manager.lib.homeManagerConfiguration {
       #inherit pkgs;
@@ -64,9 +65,10 @@
       homeConfigurations."biscotty" = home-manager.lib.homeManagerConfiguration {
         inherit pkgs;
         extraSpecialArgs = { inherit inputs; };
-        modules = [ 
+        modules = [
           # inputs.plasma-manager.homeModules.plasma-manager
-          ./biscotty/home.nix ];
+          ./biscotty/home.nix
+        ];
       };
     };
 }
