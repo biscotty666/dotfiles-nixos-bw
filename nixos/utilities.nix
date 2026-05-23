@@ -75,8 +75,6 @@
     podman-tui
     poppler-utils
     pycritty
-    python313Packages.python-lsp-ruff
-    python313Packages.python-lsp-server
     qalculate-qt
     qemu
     quickemu
