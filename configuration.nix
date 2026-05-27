@@ -15,6 +15,7 @@
     ./nixos/mlocate.nix
     ./nixos/fonts.nix
     ./nixos/utilities.nix
+    ./nixos/steam.nix
     #./nixos/sops.nix
     ./nixos/restic.nix
     ./nixos/neovim.nix
