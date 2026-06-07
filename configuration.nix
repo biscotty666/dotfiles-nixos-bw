@@ -35,7 +35,19 @@
   ];
 
   # Bootloader.
-  boot.loader.limine.enable = true;
+  boot.loader.limine = {
+    enable = true;
+    style = {
+      wallpapers = [
+        pkgs.nixos-artwork.wallpapers.simple-dark-gray-bootloader.gnomeFilePath
+        pkgs.nixos-artwork.wallpapers.dracula.gnomeFilePath
+        pkgs.nixos-artwork.wallpapers.mosaic-blue.gnomeFilePath
+        pkgs.nixos-artwork.wallpapers.waterfall.gnomeFilePath
+        pkgs.nixos-artwork.wallpapers.watersplash.gnomeFilePath
+        pkgs.nixos-artwork.wallpapers.nineish-catppuccin-macchiato.gnomeFilePath
+      ];
+    };
+  };
   # boot.loader.grub = {
   #   enable = true;
   #   efiSupport = true;
