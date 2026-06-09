@@ -11,11 +11,15 @@
     sddm-astronaut
   ];
 
-  services.displayManager.sddm = {
+  # services.displayManager.sddm = {
+  #   enable = true;
+  #   theme = "catppuccin-mocha-mauve";
+  #   wayland.enable = true;
+  #   wayland.compositor = "weston";
+  # };
+
+  services.displayManager.plasma-login-manager = {
     enable = true;
-    theme = "catppuccin-mocha-mauve";
-    wayland.enable = true;
-    wayland.compositor = "weston";
   };
 
   services.xserver.displayManager.setupCommands = "

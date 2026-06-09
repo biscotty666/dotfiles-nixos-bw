@@ -70,6 +70,8 @@
     };
   };
 
+  documentation.dev.enable = true;
+
   networking.hostName = "nixos"; # Define your hostname.
   networking.hosts = {
     "10.0.0.72" = [ "rpi" ];
