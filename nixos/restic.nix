@@ -13,7 +13,7 @@ in
     wantedBy = [ "timers.target" ];
     timerConfig = {
       OnBootSec = "5m";
-      OnUnitActiveSec = "24h";
+      OnUnitActiveSec = "12h";
       Unit = "restic-backup.service";
     };
   };
