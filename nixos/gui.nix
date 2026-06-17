@@ -14,6 +14,7 @@
     spotify
     discord
     obs-studio
+    gimagereader-qt
   ];
 
 }
