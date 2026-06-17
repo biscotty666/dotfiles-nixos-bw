@@ -9,10 +9,8 @@
     konversation # IRC client
     kpat # Solitaire
     ksudoku
-    ktorrent
   ];
   environment.systemPackages = with pkgs.kdePackages; [
-
     fcitx5-with-addons
     karousel
     kcolorchooser

@@ -89,6 +89,7 @@
     stow
     surfraw
     tcpdump
+    tesseract
     tldr
     ueberzugpp
     unrar
