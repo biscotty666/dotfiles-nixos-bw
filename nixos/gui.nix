@@ -15,6 +15,8 @@
     discord
     obs-studio
     gimagereader-qt
+    helix
+    zed-editor
   ];
 
 }

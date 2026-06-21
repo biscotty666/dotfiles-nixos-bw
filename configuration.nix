@@ -26,6 +26,7 @@
     ./nixos/dm.nix
     ./nixos/yazi.nix
     ./nixos/spell.nix
+    ./nixos/lsp.nix
     ./nixos/gui.nix
     # ./nixos/osrm.nix
     ./nixos/options.nix
