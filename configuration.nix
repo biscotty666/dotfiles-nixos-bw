@@ -31,31 +31,29 @@
     # ./nixos/osrm.nix
     ./nixos/options.nix
     ./nixos/zsh.nix
+    ./nixos/bootloader.nix
     ./brian/modules/utils.nix
     ./containers/database.nix
   ];
 
-  # Bootloader.
-  boot.loader.limine = {
-    enable = true;
-    style = {
-      wallpapers = [
-        pkgs.nixos-artwork.wallpapers.simple-dark-gray-bootloader.gnomeFilePath
-        pkgs.nixos-artwork.wallpapers.dracula.gnomeFilePath
-        pkgs.nixos-artwork.wallpapers.mosaic-blue.gnomeFilePath
-        pkgs.nixos-artwork.wallpapers.waterfall.gnomeFilePath
-        pkgs.nixos-artwork.wallpapers.watersplash.gnomeFilePath
-        pkgs.nixos-artwork.wallpapers.nineish-catppuccin-macchiato.gnomeFilePath
-      ];
-    };
-  };
-  # boot.loader.grub = {
-  #   enable = true;
-  #   efiSupport = true;
-  #   device = "nodev";
+  # # Bootloader.
+  # boot.loader = {
+  #   systemd-boot.enable = false;
+  #   efi.canTouchEfiVariables = true;
+  #   limine = {
+  #     enable = true;
+  #     style = {
+  #       wallpapers = [
+  #         pkgs.nixos-artwork.wallpapers.dracula.gnomeFilePath
+  #         pkgs.nixos-artwork.wallpapers.mosaic-blue.gnomeFilePath
+  #         pkgs.nixos-artwork.wallpapers.waterfall.gnomeFilePath
+  #         pkgs.nixos-artwork.wallpapers.watersplash.gnomeFilePath
+  #         pkgs.nixos-artwork.wallpapers.nineish-catppuccin-macchiato.gnomeFilePath
+  #       ];
+  #     };
+  #
+  #   };
   # };
-  boot.loader.systemd-boot.enable = false;
-  boot.loader.efi.canTouchEfiVariables = true;
   boot.enableContainers = true;
   systemd.oomd.enableUserSlices = true;
   environment.localBinInPath = true;
