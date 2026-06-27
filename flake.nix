@@ -26,6 +26,7 @@
     #   inputs.nixpkgs.follows = "nixpkgs";
     # };
     # niri-session-manager.url = "github:MTeaHead/niri-session-manager";
+    nix-flatpak.url = "github:gmodena/nix-flatpak/?ref=latest";
   };
 
   outputs =
@@ -33,6 +34,7 @@
       self,
       nixpkgs,
       home-manager,
+    nix-flatpak,
       # sops-nix,
       # plasma-manager,
       # niri-session-manager,
@@ -53,6 +55,7 @@
         specialArgs = { inherit inputs; };
         modules = [
           ./configuration.nix
+          nix-flatpak.nixosModules.nix-flatpak
           # sops-nix.nixosModules.sops
           # niri-session-manager.nixosModules.niri-session-manager
         ];

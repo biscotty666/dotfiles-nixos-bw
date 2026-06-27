@@ -10,6 +10,7 @@
     # Include the results of the hardware scan.
     ./hardware-configuration.nix
     ./nixos/nvidia.nix
+    ./nixos/flatpak.nix
     #    ./nixos/input.nix
     ./nixos/vm.nix
     ./nixos/mlocate.nix
@@ -191,7 +192,6 @@
 
   # Enable the OpenSSH daemon.
   services.openssh.enable = true;
-  services.flatpak.enable = true;
 
   # Open ports in the firewall.
   networking.firewall = {
