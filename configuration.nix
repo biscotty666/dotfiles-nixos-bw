@@ -10,7 +10,7 @@
     # Include the results of the hardware scan.
     ./hardware-configuration.nix
     ./nixos/nvidia.nix
-    ./nixos/input.nix
+    #    ./nixos/input.nix
     ./nixos/vm.nix
     ./nixos/mlocate.nix
     ./nixos/fonts.nix

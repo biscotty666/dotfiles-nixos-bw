@@ -11,7 +11,7 @@
     ksudoku
   ];
   environment.systemPackages = with pkgs.kdePackages; [
-    fcitx5-with-addons
+    # fcitx5-with-addons
     karousel
     kcolorchooser
     kparts
