@@ -46,6 +46,7 @@
     imagemagick
     inetutils
     jq
+    jujutsu
     kitty
     lazygit
     libarchive
