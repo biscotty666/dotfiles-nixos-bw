@@ -9,6 +9,7 @@
     floorp-bin
     proton-vpn
     brave
+    calibre
     libreoffice-qt-fresh
     slack
     spotify
@@ -16,7 +17,7 @@
     obs-studio
     gimagereader-qt
     helix
-    zed-editor
+    zed-editor-fhs
   ];
 
 }

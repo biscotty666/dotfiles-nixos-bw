@@ -95,6 +95,7 @@
     ueberzugpp
     unrar
     unzip
+    usbutils
     vim-full # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
     w3m
     wayland-protocols
