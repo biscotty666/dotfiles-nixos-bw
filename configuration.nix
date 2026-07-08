@@ -74,7 +74,7 @@
 
   networking.hostName = "nixos"; # Define your hostname.
   networking.hosts = {
-    "10.0.0.72" = [ "rpi" ];
+    "192.168.4.30" = [ "rpi" ];
   };
 
   networking.networkmanager = {
