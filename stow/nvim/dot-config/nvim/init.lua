@@ -1,3 +1,2 @@
-require("biscotty.core")
-require("biscotty.lazy")
-require("current-theme")
+-- bootstrap lazy.nvim, LazyVim and your plugins
+require("config.lazy")
