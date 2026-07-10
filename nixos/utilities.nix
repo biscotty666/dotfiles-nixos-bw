@@ -83,7 +83,6 @@
     ripgrep
     ripgrep-all
     ruff
-    sddm-astronaut
     sqlite
     sqlite-utils
     starship

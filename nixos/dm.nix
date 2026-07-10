@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ pkgs, ... }:
 
 {
 
@@ -8,7 +8,6 @@
       accent = "mauve";
     })
     kdePackages.qtmultimedia
-    sddm-astronaut
   ];
 
   # services.displayManager.sddm = {
