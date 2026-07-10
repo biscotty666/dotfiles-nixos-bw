@@ -1,7 +1,5 @@
 {
-  config,
   pkgs,
-  inputs,
   ...
 }:
 
@@ -17,6 +15,7 @@
     ./nixos/fonts.nix
     ./nixos/utilities.nix
     ./nixos/steam.nix
+    ./nixos/langs.nix
     #./nixos/sops.nix
     ./nixos/restic.nix
     ./nixos/neovim.nix
