@@ -10,6 +10,7 @@
     proton-vpn
     brave
     calibre
+    wike
     libreoffice-qt-fresh
     slack
     spotify
