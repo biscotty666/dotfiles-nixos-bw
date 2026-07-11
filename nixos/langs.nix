@@ -5,6 +5,8 @@
     nodejs
     python3
     gcc
+    ghc
+    haskell-language-server
   ];
 
 }
