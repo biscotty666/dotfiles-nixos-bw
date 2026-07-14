@@ -34,7 +34,7 @@
       self,
       nixpkgs,
       home-manager,
-    nix-flatpak,
+      nix-flatpak,
       # sops-nix,
       # plasma-manager,
       # niri-session-manager,
@@ -46,11 +46,10 @@
       #        nvim-ks.overlays.default
       #      ];
       system = "x86_64-linux";
-      lib = nixpkgs.lib;
       pkgs = nixpkgs.legacyPackages.${system};
     in
     {
-      nixosConfigurations."nixos" = lib.nixosSystem {
+      nixosConfigurations."nixos" = nixpkgs.lib.nixosSystem {
         inherit system;
         specialArgs = { inherit inputs; };
         modules = [
