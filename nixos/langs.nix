@@ -7,6 +7,7 @@
     gcc
     ghc
     haskell-language-server
+    statix
   ];
 
 }
