@@ -11,6 +11,7 @@
     brave
     calibre
     wike
+    mastodon
     libreoffice-qt-fresh
     slack
     spotify
