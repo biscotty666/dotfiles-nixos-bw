@@ -11,7 +11,7 @@
     brave
     calibre
     wike
-    mastodon
+    kdePackages.tokodon
     libreoffice-qt-fresh
     slack
     spotify
