@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ pkgs, ... }:
 
 {
   fonts.fontconfig.enable = true;
@@ -6,6 +6,8 @@
     noto-fonts
     noto-fonts-cjk-sans
     noto-fonts-cjk-serif
+    dejavu_fonts
+    corefonts
     arphic-uming
     roboto
     roboto-mono
