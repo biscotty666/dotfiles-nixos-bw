@@ -36,24 +36,6 @@
     ./containers/database.nix
   ];
 
-  # # Bootloader.
-  # boot.loader = {
-  #   systemd-boot.enable = false;
-  #   efi.canTouchEfiVariables = true;
-  #   limine = {
-  #     enable = true;
-  #     style = {
-  #       wallpapers = [
-  #         pkgs.nixos-artwork.wallpapers.dracula.gnomeFilePath
-  #         pkgs.nixos-artwork.wallpapers.mosaic-blue.gnomeFilePath
-  #         pkgs.nixos-artwork.wallpapers.waterfall.gnomeFilePath
-  #         pkgs.nixos-artwork.wallpapers.watersplash.gnomeFilePath
-  #         pkgs.nixos-artwork.wallpapers.nineish-catppuccin-macchiato.gnomeFilePath
-  #       ];
-  #     };
-  #
-  #   };
-  # };
   boot.enableContainers = true;
   systemd.oomd.enableUserSlices = true;
   environment.localBinInPath = true;
@@ -71,14 +53,16 @@
 
   documentation.dev.enable = true;
 
-  networking.hostName = "nixos"; # Define your hostname.
-  networking.hosts = {
-    "192.168.4.30" = [ "rpi" ];
-  };
+  networking = {
+    hostName = "nixos"; # Define your hostname.
+    hosts = {
+      "192.168.4.30" = [ "rpi" ];
+    };
 
-  networking.networkmanager = {
-    enable = true;
-    plugins = with pkgs; [ networkmanager-openvpn ];
+    networkmanager = {
+      enable = true;
+      plugins = with pkgs; [ networkmanager-openvpn ];
+    };
   };
 
   time.timeZone = "America/Denver";
@@ -97,44 +81,48 @@
     LC_TIME = "en_US.UTF-8";
   };
 
-  services.xserver.enable = true;
-
   zramSwap.enable = true;
 
   programs.ssh.askPassword = pkgs.lib.mkForce "${pkgs.kdePackages.ksshaskpass.out}/bin/ksshaskpass";
-  # services.xserver.desktopManager.xfce.enable = true;
-  services.desktopManager.plasma6 = {
-    enable = true;
-  };
-  services.desktopManager.gnome.enable = true;
-  # programs.ssh.askPassword = pkgs.lib.mkForce "${pkgs.ksshaskpass.out}/bin/ksshaskpass";
-
-  services.xserver.xkb = {
-    layout = "us";
-    variant = "";
-  };
-
-  # Enable CUPS to print documents.
-  services.printing = {
-    enable = true;
-    drivers = [ pkgs.brlaser ];
-  };
-  # Enable sound with pipewire.
-  #sound.enable = true;
-  services.pulseaudio.enable = false;
-  hardware.bluetooth.enable = true;
-  hardware.opentabletdriver.enable = true;
-  hardware.opentabletdriver.daemon.enable = true;
-  hardware.bluetooth.powerOnBoot = true;
-  security.rtkit.enable = true;
-  security.polkit.enable = true;
-  services.pipewire = {
-    enable = true;
-    alsa.enable = true;
-    alsa.support32Bit = true;
-    pulse.enable = true;
+  services = {
+    xserver = {
+      enable = true;
+      xkb = {
+        layout = "us";
+        variant = "";
+      };
+    };
+    desktopManager.plasma6 = {
+      enable = true;
+    };
+    pulseaudio.enable = false;
+    pipewire = {
+      enable = true;
+      alsa.enable = true;
+      alsa.support32Bit = true;
+      pulse.enable = true;
+    };
+    printing = {
+      enable = true;
+      drivers = [ pkgs.brlaser ];
+    };
+    openssh.enable = true;
   };
 
+  hardware = {
+    bluetooth = {
+      enable = true;
+      powerOnBoot = true;
+    };
+    opentabletdriver = {
+      enable = true;
+      daemon.enable = true;
+    };
+  };
+  security = {
+    rtkit.enable = true;
+    polkit.enable = true;
+  };
   users.users.biscotty = {
     isNormalUser = true;
     description = "Biscotty";
@@ -165,33 +153,17 @@
 
   virtualisation.containers.enable = true;
 
-  nix.optimise = {
-    automatic = true;
-    dates = [ "03:54" ];
+  nix = {
+    optimise = {
+      automatic = true;
+      dates = [ "03:54" ];
+    };
+    gc = {
+      automatic = true;
+      dates = "daily";
+      options = "--delete-older-than 2d";
+    };
   };
-  nix.gc = {
-    automatic = true;
-    dates = "daily";
-    options = "--delete-older-than 2d";
-  };
-  # List packages installed in system profile. To search, run:
-  # $ nix search wget
-  environment.systemPackages = with pkgs; [
-    # inputs.zen-browser.packages."${pkgs.stdenv.hostPlatform.system}".specific
-  ];
-
-  # Some programs need SUID wrappers, can be configured further or are
-  # started in user sessions.
-  # programs.mtr.enable = true;
-  # programs.gnupg.agent = {
-  #   enable = true;
-  #   enableSSHSupport = true;
-  # };
-
-  # List services that you want to enable:
-
-  # Enable the OpenSSH daemon.
-  services.openssh.enable = true;
 
   # Open ports in the firewall.
   networking.firewall = {
