@@ -5,7 +5,6 @@
 
 {
   imports = [
-    # Include the results of the hardware scan.
     ./hardware-configuration.nix
     ./nixos/nvidia.nix
     ./nixos/flatpak.nix
@@ -133,25 +132,22 @@
       "mlocate"
     ];
     shell = pkgs.zsh;
-    packages = with pkgs; [ ];
+    # packages = with pkgs; [ ];
   };
 
-  # Allow unfree packages
   nixpkgs.config = {
     allowUnfree = true;
     allowBroken = true;
     permittedInsecurePackages = [ "googleearth-pro-7.3.6.10201" ];
   };
   virtualisation = {
-    #    libvirtd.enable = true;
     podman = {
       enable = true;
       dockerCompat = true;
       defaultNetwork.settings.dns_enabled = true;
     };
+    containers.enable = true;
   };
-
-  virtualisation.containers.enable = true;
 
   nix = {
     optimise = {
@@ -159,7 +155,7 @@
       dates = [ "03:54" ];
     };
     gc = {
-      automatic = true;
+      automatic = false;
       dates = "daily";
       options = "--delete-older-than 2d";
     };
