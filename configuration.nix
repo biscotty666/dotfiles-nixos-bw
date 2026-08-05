@@ -33,6 +33,7 @@
     ./nixos/bootloader.nix
     ./brian/modules/utils.nix
     ./containers/database.nix
+    # ./nixos/zen.nix
   ];
 
   boot.enableContainers = true;

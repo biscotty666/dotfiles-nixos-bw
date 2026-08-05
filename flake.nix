@@ -15,7 +15,10 @@
     #   inputs.home-manager.follows = "home-manager";
     # };
     yazi.url = "github:sxyazi/yazi";
-    zen-browser.url = "github:MarceColl/zen-browser-flake";
+    # zen-browser = {
+    #   url = "github:youwen5/zen-browser-flake";
+    #   inputs.nixpkgs.follows = "nixpkgs";
+    # };
     # noctalia = {
     #   url = "github:noctalia-dev/noctalia-shell";
     #   inputs.nixpkgs.follows = "nixpkgs";
@@ -42,9 +45,6 @@
     }@inputs:
 
     let
-      #      overlays = [
-      #        nvim-ks.overlays.default
-      #      ];
       system = "x86_64-linux";
       pkgs = nixpkgs.legacyPackages.${system};
     in
