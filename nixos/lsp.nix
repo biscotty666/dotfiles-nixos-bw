@@ -5,7 +5,7 @@
     markdown-oxide
     ruff
     rPackages.lintr
-    # rPackages.languageserver
+    rPackages.languageserver
     typescript-language-server
     luaPackages.tree-sitter-cli
     nil
