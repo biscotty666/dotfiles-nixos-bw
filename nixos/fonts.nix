@@ -1,36 +1,70 @@
 { pkgs, ... }:
 
 {
-  fonts.fontconfig.enable = true;
-  environment.systemPackages = with pkgs; [
-    noto-fonts
-    noto-fonts-cjk-sans
-    noto-fonts-cjk-serif
-    dejavu_fonts
-    corefonts
-    arphic-uming
-    roboto
-    roboto-mono
-    roboto-serif
-    babelstone-han
-    noto-fonts-color-emoji
-    liberation_ttf
-    fira-sans
-    fira-code
-    fira-code-symbols
-    mplus-outline-fonts.githubRelease
-    font-awesome
-    font-awesome_6
-    ubuntu-classic
-    proggyfonts
-    nerd-fonts.inconsolata
-    nerd-fonts.fantasque-sans-mono
-    nerd-fonts.fira-code
-    nerd-fonts.fira-mono
-    nerd-fonts.jetbrains-mono
-    nerd-fonts.hack
-    nerd-fonts.droid-sans-mono
-    nerd-fonts.mononoki
-    nerd-fonts.hasklug
-  ];
+  fonts = {
+    fontconfig.enable = true;
+    enableDefaultPackages = true;
+    packages = with pkgs; [
+      noto-fonts
+      noto-fonts-cjk-sans
+      noto-fonts-cjk-serif
+      dejavu_fonts
+      corefonts
+      arphic-uming
+      roboto
+      roboto-mono
+      roboto-serif
+      babelstone-han
+      noto-fonts-color-emoji
+      liberation_ttf
+      fira-sans
+      fira-code
+      fira-code-symbols
+      mplus-outline-fonts.githubRelease
+      font-awesome
+      font-awesome_6
+      ubuntu-classic
+      proggyfonts
+      nerd-fonts.inconsolata
+      nerd-fonts.fantasque-sans-mono
+      nerd-fonts.fira-code
+      nerd-fonts.fira-mono
+      nerd-fonts.jetbrains-mono
+      nerd-fonts.hack
+      nerd-fonts.droid-sans-mono
+      nerd-fonts.mononoki
+      nerd-fonts.hasklug
+    ];
+  };
+  # environment.systemPackages = with pkgs; [
+  #   noto-fonts
+  #   noto-fonts-cjk-sans
+  #   noto-fonts-cjk-serif
+  #   dejavu_fonts
+  #   corefonts
+  #   arphic-uming
+  #   roboto
+  #   roboto-mono
+  #   roboto-serif
+  #   babelstone-han
+  #   noto-fonts-color-emoji
+  #   liberation_ttf
+  #   fira-sans
+  #   fira-code
+  #   fira-code-symbols
+  #   mplus-outline-fonts.githubRelease
+  #   font-awesome
+  #   font-awesome_6
+  #   ubuntu-classic
+  #   proggyfonts
+  #   nerd-fonts.inconsolata
+  #   nerd-fonts.fantasque-sans-mono
+  #   nerd-fonts.fira-code
+  #   nerd-fonts.fira-mono
+  #   nerd-fonts.jetbrains-mono
+  #   nerd-fonts.hack
+  #   nerd-fonts.droid-sans-mono
+  #   nerd-fonts.mononoki
+  #   nerd-fonts.hasklug
+  # ];
 }
