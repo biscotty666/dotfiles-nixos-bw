@@ -55,7 +55,6 @@
     lsd
     mdcat
     mediainfo
-    mlocate
     mpv
     mupdf
     neovim

@@ -10,7 +10,6 @@
     ./nixos/flatpak.nix
     #    ./nixos/input.nix
     ./nixos/vm.nix
-    ./nixos/mlocate.nix
     ./nixos/fonts.nix
     ./nixos/utilities.nix
     ./nixos/steam.nix
