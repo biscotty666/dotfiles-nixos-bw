@@ -12,7 +12,7 @@
     calibre
     wike
     kdePackages.tokodon
-    libreoffice-qt-fresh
+    libreoffice-qt-stable
     slack
     spotify
     discord
