@@ -94,7 +94,7 @@
     desktopManager.plasma6 = {
       enable = true;
     };
-    xserver.desktopManager.xfce.enable = true;
+    # xserver.desktopManager.xfce.enable = true;
     desktopManager.gnome.enable = true;
     pulseaudio.enable = false;
     pipewire = {
