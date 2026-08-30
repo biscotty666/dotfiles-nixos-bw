@@ -18,7 +18,7 @@
     ./nixos/restic.nix
     ./nixos/neovim.nix
     ./nixos/kde.nix
-    ./nixos/nushell.nix
+    # ./nixos/nushell.nix
     ./nixos/syncthing.nix
     ./nixos/cachix.nix
     ./nixos/dm.nix
@@ -210,7 +210,10 @@
       "biscotty"
     ];
     trusted-public-keys = [ "hydra.iohk.io:f/Ea+s+dFdN+3Y/G+FDgSq+a5NEWhJGzdjvKNGv0/EQ=" ];
-    substituters = [ "https://cache.iog.io" ];
+    substituters = [
+      "https://cache.iog.io"
+      "https://nixos-cache-proxy.cofob.dev"
+    ];
     download-buffer-size = 524288000;
   };
 }
