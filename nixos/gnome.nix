@@ -1,0 +1,26 @@
+{ pkgs, ... }:
+
+{
+  services = {
+    desktopManager.gnome.enable = true;
+
+    # To disable installing GNOME's suite of applications
+    # and only be left with GNOME shell.
+    gnome = {
+      core-apps.enable = false;
+      core-developer-tools.enable = false;
+      games.enable = false;
+    };
+  };
+  environment.gnome.excludePackages = with pkgs; [
+    gnome-tour
+    gnome-user-docs
+  ];
+
+  environment.systemPackages = with pkgs; [
+    gnomeExtensions.blur-my-shell
+    gnomeExtensions.just-perfection
+    gnomeExtensions.arc-menu
+    gnomeExtensions.appindicator
+  ];
+}

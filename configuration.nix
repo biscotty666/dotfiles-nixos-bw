@@ -18,6 +18,7 @@
     ./nixos/restic.nix
     ./nixos/neovim.nix
     ./nixos/kde.nix
+    ./nixos/gnome.nix
     # ./nixos/nushell.nix
     ./nixos/syncthing.nix
     ./nixos/cachix.nix
@@ -91,11 +92,7 @@
         variant = "";
       };
     };
-    desktopManager.plasma6 = {
-      enable = true;
-    };
     # xserver.desktopManager.xfce.enable = true;
-    desktopManager.gnome.enable = true;
     pulseaudio.enable = false;
     pipewire = {
       enable = true;
