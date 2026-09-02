@@ -1,6 +1,6 @@
 layout splits
 cd ~
-launch --title "BTOP" btop 
+launch --title "Monitor" btop 
 
 launch --location=hsplit --bias=40 --title "Network" sudo nethogs -b 
 focus
