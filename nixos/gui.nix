@@ -6,6 +6,7 @@
     vlc
     thunderbird
     obsidian
+    openshot-qt
     # floorp-bin
     proton-vpn
     brave

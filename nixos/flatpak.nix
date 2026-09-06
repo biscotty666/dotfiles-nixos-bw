@@ -5,8 +5,7 @@
     enable = true;
     packages = [
       "app.zen_browser.zen"
-      "org.openshot.OpenShot"
-      # "md.obsidian.Obsidian"
+      # "org.openshot.OpenShot"
     ];
     update.auto = {
       enable = true;
