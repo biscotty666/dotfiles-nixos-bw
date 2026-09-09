@@ -17,10 +17,14 @@
     slack
     spotify
     discord
-    obs-studio
     gimagereader-qt
     helix
     zed-editor-fhs
+    # (blender.override {
+    #   config.cudaSupport = true;
+    #   config.rocmSupport = false;
+    # })
+
   ];
 
 }

@@ -31,6 +31,7 @@
     ./nixos/options.nix
     ./nixos/zsh.nix
     ./nixos/bootloader.nix
+    ./nixos/obs-studio.nix
     ./brian/modules/utils.nix
     ./containers/database.nix
     # ./nixos/zen.nix
