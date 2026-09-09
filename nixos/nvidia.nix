@@ -1,4 +1,9 @@
-{ config, lib, pkgs, ... }:
+{
+  config,
+  lib,
+  pkgs,
+  ...
+}:
 {
 
   environment.systemPackages = with pkgs; [
@@ -10,7 +15,12 @@
     enable = true;
   };
 
-  services.xserver.videoDrivers = ["nvidia"];
+  # nixpkgs.config = {
+  #   cudaSupport = true;
+  #   allowUnfree = true;
+  # };
+  services.xserver.videoDrivers = [ "nvidia" ];
+  nix.settings.system-features = [ "cuda" ];
 
   hardware.nvidia = {
     modesetting.enable = true;
