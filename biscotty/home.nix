@@ -1,7 +1,4 @@
 {
-  config,
-  pkgs,
-  inputs,
   ...
 }:
 
@@ -15,14 +12,15 @@
     # inputs.niri.homeModules.config
   ];
 
-  home.username = "biscotty";
-  home.homeDirectory = "/home/biscotty";
+  home = {
+    username = "biscotty";
+    homeDirectory = "/home/biscotty";
+    stateVersion = "23.11"; # Please read the comment before changing.
 
-  home.stateVersion = "23.11"; # Please read the comment before changing.
+    packages = [
 
-  home.packages = with pkgs; [
-
-  ];
+    ];
+  };
 
   programs = {
 
