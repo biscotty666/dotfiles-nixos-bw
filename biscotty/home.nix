@@ -1,4 +1,5 @@
 {
+  inputs,
   ...
 }:
 
@@ -6,7 +7,7 @@
   imports = [
     ./sh.nix
     ./nvim-spell.nix
-    # ./noctalia.nix
+    ./noctalia.nix
     # ./plasma.nix
     ./scripts/scripts.nix
     # inputs.niri.homeModules.config

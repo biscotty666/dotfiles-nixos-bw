@@ -1,5 +1,4 @@
-{ config, pkgs, ... }:
-
+{ lib, pkgs, ... }:
 {
   programs.niri = {
     enable = true;
@@ -9,16 +8,11 @@
     gnome.gnome-keyring.enable = true;
     power-profiles-daemon.enable = true;
     upower.enable = true;
-    niri-session-manager = {
-      enable = true;
-      # settings = {
-      #   save-interval = 30;
-      #   max-backup-count = 3;
-      # };
-    };
+    displayManager.defaultSession = lib.mkForce "plasma";
   };
 
   security.pam.services.swaylock = { };
+  security.polkit.enable = true;
 
   environment.systemPackages = with pkgs; [
     alacritty

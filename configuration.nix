@@ -9,6 +9,7 @@
     ./nixos/nvidia.nix
     ./nixos/flatpak.nix
     #    ./nixos/input.nix
+    ./nixos/niri.nix
     ./nixos/vm.nix
     ./nixos/fonts.nix
     ./nixos/utilities.nix

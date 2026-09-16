@@ -1,5 +1,4 @@
 {
-  pkgs,
   inputs,
   config,
   ...
@@ -16,7 +15,7 @@
       defaultWallpaper = "${config.home.homeDirectory}/.dotfiles/tree.jpg";
     };
   };
-  programs.noctalia-shell = {
+  programs.noctalia = {
     enable = true;
     settings = {
       # configure noctalia here
