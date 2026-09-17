@@ -10,6 +10,7 @@
     ./nixos/flatpak.nix
     #    ./nixos/input.nix
     ./nixos/niri.nix
+    ./nixos/kindle.nix
     ./nixos/vm.nix
     ./nixos/fonts.nix
     ./nixos/utilities.nix
