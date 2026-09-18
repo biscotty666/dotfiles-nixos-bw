@@ -17,6 +17,7 @@
     slack
     spotify
     discord
+    element-desktop
     gimagereader-qt
     helix
     zed-editor-fhs
