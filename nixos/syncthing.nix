@@ -1,8 +1,8 @@
-{ config, lib, ... }:
+{ config, ... }:
 
-  let
-    theUser = "biscotty";
-  in 
+let
+  theUser = "biscotty";
+in
 {
   services.syncthing = {
     enable = true;

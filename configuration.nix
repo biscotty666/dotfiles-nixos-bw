@@ -6,37 +6,38 @@
 {
   imports = [
     ./hardware-configuration.nix
-    ./nixos/nvidia.nix
-    ./nixos/flatpak.nix
     #    ./nixos/input.nix
     # ./nixos/niri.nix
-    ./nixos/kindle.nix
-    ./nixos/vm.nix
-    ./nixos/fonts.nix
-    ./nixos/utilities.nix
-    ./nixos/steam.nix
-    ./nixos/langs.nix
-    #./nixos/sops.nix
-    ./nixos/restic.nix
-    ./nixos/neovim.nix
-    ./nixos/kde.nix
-    ./nixos/gnome.nix
     # ./nixos/nushell.nix
-    ./nixos/syncthing.nix
-    ./nixos/cachix.nix
-    ./nixos/dm.nix
-    ./nixos/yazi.nix
-    ./nixos/spell.nix
-    ./nixos/lsp.nix
-    ./nixos/gui.nix
     # ./nixos/osrm.nix
-    ./nixos/options.nix
-    ./nixos/zsh.nix
-    ./nixos/bootloader.nix
-    ./nixos/obs-studio.nix
+    # ./nixos/zen.nix
+    #./nixos/sops.nix
     ./brian/modules/utils.nix
     ./containers/database.nix
-    # ./nixos/zen.nix
+    ./nixos/bootloader.nix
+    ./nixos/cachix.nix
+    ./nixos/dm.nix
+    ./nixos/flatpak.nix
+    ./nixos/fonts.nix
+    ./nixos/gnome.nix
+    ./nixos/gui.nix
+    ./nixos/kde.nix
+    ./nixos/kindle.nix
+    ./nixos/langs.nix
+    ./nixos/lsp.nix
+    ./nixos/neovim.nix
+    ./nixos/nvidia.nix
+    ./nixos/obs-studio.nix
+    ./nixos/options.nix
+    ./nixos/restic.nix
+    ./nixos/spell.nix
+    ./nixos/steam.nix
+    ./nixos/syncthing.nix
+    ./nixos/typst.nix
+    ./nixos/utilities.nix
+    ./nixos/vm.nix
+    ./nixos/yazi.nix
+    ./nixos/zsh.nix
   ];
 
   boot.enableContainers = true;
@@ -133,8 +134,6 @@
       "input"
       "mlocate"
     ];
-    shell = pkgs.zsh;
-    # packages = with pkgs; [ ];
   };
 
   nixpkgs.config = {
@@ -163,7 +162,6 @@
     };
   };
 
-  # Open ports in the firewall.
   networking.firewall = {
     allowedTCPPorts = [
       8384
@@ -187,15 +185,6 @@
     ];
   };
 
-  # Or disable the firewall altogether.
-  # networking.firewall.enable = false;
-
-  # This value determines the NixOS release from which the default
-  # settings for stateful data, like file locations and database versions
-  # on your system were taken. It‘s perfectly fine and recommended to leave
-  # this value at the release version of the first install of this system.
-  # Before changing this value read the documentation for this option
-  # (e.g. man configuration.nix or on https://nixos.org/nixos/options.html).
   system.stateVersion = "23.11"; # Did you read the comment?
 
   environment.sessionVariables.NIXOS_OZONE_WL = "1";
@@ -204,7 +193,7 @@
       "nix-command"
       "flakes"
     ];
-    #auto-optimise-store = true;
+    auto-optimise-store = true;
     trusted-users = [
       "root"
       "biscotty"

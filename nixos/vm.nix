@@ -1,7 +1,6 @@
-{ config, pkgs, ... }:
+{ pkgs, ... }:
 
 {
-
   # Enable dconf (System Management Tool)
   programs.dconf.enable = true;
 
@@ -12,7 +11,8 @@
   environment.systemPackages = with pkgs; [
     virt-manager
     virt-viewer
-    spice spice-gtk
+    spice
+    spice-gtk
     spice-protocol
     virtio-win
     win-spice
@@ -22,7 +22,7 @@
   # Manage the virtualisation services
   virtualisation = {
     libvirtd = {
-            enable = true;
+      enable = true;
       qemu = {
         swtpm.enable = true;
         # ovmf.enable = true;

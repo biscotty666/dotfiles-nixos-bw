@@ -20,43 +20,45 @@ let
   };
 in
 {
-  programs.zsh = {
-    enable = true;
-    enableCompletion = true;
-    autosuggestion.enable = true;
-    syntaxHighlighting.enable = true;
-    shellAliases = myAliases;
-    sessionVariables = {
-      EDITOR = "nvim";
-      NIXPKGS_ALLOW_UNFREE = 1;
-      NIXPKGS_ALLOW_BROKEN = 1;
-      BARTIB_FILE = "${config.home.homeDirectory}/.local/bartib/activities.bartib";
-      PATH = "$PATH:${config.home.homeDirectory}/.cargo/bin";
-      BROWSER = "brave";
+  programs = {
+    zsh = {
+      enable = true;
+      enableCompletion = true;
+      autosuggestion.enable = true;
+      syntaxHighlighting.enable = true;
+      shellAliases = myAliases;
+      sessionVariables = {
+        EDITOR = "nvim";
+        NIXPKGS_ALLOW_UNFREE = 1;
+        NIXPKGS_ALLOW_BROKEN = 1;
+        BARTIB_FILE = "${config.home.homeDirectory}/.local/bartib/activities.bartib";
+        PATH = "$PATH:${config.home.homeDirectory}/.cargo/bin";
+        BROWSER = "brave";
+      };
+      loginExtra = ''
+        ${config.home.homeDirectory}/.local/bin/unlock-vaults.sh
+      '';
+      plugins = [
+        {
+          name = "fzf-tab";
+          src = pkgs.fetchFromGitHub {
+            owner = "Aloxaf";
+            repo = "fzf-tab";
+            rev = "c2b4aa5ad2532cca91f23908ac7f00efb7ff09c9";
+            sha256 = "1b4pksrc573aklk71dn2zikiymsvq19bgvamrdffpf7azpq6kxl2";
+          };
+        }
+      ];
     };
-    loginExtra = ''
-      ${config.home.homeDirectory}/.local/bin/unlock-vaults.sh
-    '';
-    plugins = [
-      {
-        name = "fzf-tab";
-        src = pkgs.fetchFromGitHub {
-          owner = "Aloxaf";
-          repo = "fzf-tab";
-          rev = "c2b4aa5ad2532cca91f23908ac7f00efb7ff09c9";
-          sha256 = "1b4pksrc573aklk71dn2zikiymsvq19bgvamrdffpf7azpq6kxl2";
-        };
-      }
-    ];
-  };
 
-  programs.starship = {
-    enable = true;
-    #presets = [ "nerd-font-symbols" ];
-  };
+    starship = {
+      enable = true;
+      #presets = [ "nerd-font-symbols" ];
+    };
 
-  programs.bash = {
-    enable = true;
-    shellAliases = myAliases;
+    bash = {
+      enable = true;
+      shellAliases = myAliases;
+    };
   };
 }

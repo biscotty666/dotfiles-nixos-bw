@@ -1,9 +1,9 @@
-{ config, lib, pkgs, ... }:
+{ ... }:
 {
   programs.yazi = {
     enable = true;
     settings = {
-      yazi= {
+      yazi = {
         ratio = [
           1
           4
@@ -21,4 +21,3 @@
     };
   };
 }
-

@@ -1,8 +1,10 @@
-{ config, pkgs, ... }:
+{ pkgs, ... }:
 
 {
   environment.systemPackages = with pkgs; [
-    osrm-backend osmium-tool libosmium
+    osrm-backend
+    osmium-tool
+    libosmium
   ];
   # services = {
   #   osrm = {
