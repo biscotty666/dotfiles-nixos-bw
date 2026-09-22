@@ -56,9 +56,9 @@ in
       #presets = [ "nerd-font-symbols" ];
     };
 
-    bash = {
-      enable = true;
-      shellAliases = myAliases;
-    };
+    # bash = {
+    #   enable = true;
+    #   shellAliases = myAliases;
+    # };
   };
 }

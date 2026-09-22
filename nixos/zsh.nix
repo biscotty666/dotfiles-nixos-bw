@@ -1,7 +1,7 @@
 { pkgs, ... }:
 
 {
-
+  users.defaultUserShell = pkgs.zsh;
   environment.systemPackages = with pkgs; [
     zsh-forgit
     zsh-fzf-history-search
