@@ -5,7 +5,11 @@
     enable = true;
     packages = [
       "app.zen_browser.zen"
-      # "org.openshot.OpenShot"
+      "org.libreoffice.LibreOffice"
+      "md.obsidian.Obsidian"
+      "com.github.hugolabe.Wike"
+      "com.discordapp.Discord"
+      "com.brave.Browser"
     ];
     update.auto = {
       enable = true;

@@ -1,22 +1,15 @@
 { pkgs, ... }:
 
 {
-
   environment.systemPackages = with pkgs; [
     vlc
     thunderbird
-    obsidian
     openshot-qt
-    # floorp-bin
     proton-vpn
-    brave
     calibre
-    wike
     kdePackages.tokodon
-    libreoffice-qt-stable
     slack
     spotify
-    discord
     element-desktop
     gimagereader-qt
     helix
@@ -27,5 +20,4 @@
     # })
 
   ];
-
 }
