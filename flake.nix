@@ -31,6 +31,10 @@
     # };
     # niri-session-manager.url = "github:MTeaHead/niri-session-manager";
     nix-flatpak.url = "github:gmodena/nix-flatpak/?ref=latest";
+    nix-index-database = {
+      url = "github:nix-community/nix-index-database";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs =
@@ -42,6 +46,7 @@
       # sops-nix,
       # plasma-manager,
       # niri-session-manager,
+      nix-index-database,
       ...
     }@inputs:
 
@@ -57,6 +62,7 @@
         modules = [
           ./configuration.nix
           nix-flatpak.nixosModules.nix-flatpak
+          nix-index-database.nixosModules.default
           # sops-nix.nixosModules.sops
           # niri-session-manager.nixosModules.niri-session-manager
         ];

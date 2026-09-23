@@ -1,4 +1,4 @@
-{ ... }:
+{ pkgs, ... }:
 
 {
   programs = {
@@ -23,5 +23,15 @@
     };
 
     virt-manager.enable = true;
+
+    nix-index = {
+      enable = true;
+      enableZshIntegration = true;
+    };
+    command-not-found.enable = false;
+    nix-index-database.comma.enable = true;
+    zsh.interactiveShellInit = ''
+      source ${pkgs.nix-index}/etc/profile.d/command-not-found.sh
+    '';
   };
 }
