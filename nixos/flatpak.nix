@@ -10,6 +10,7 @@
       "com.github.hugolabe.Wike"
       "com.discordapp.Discord"
       "com.brave.Browser"
+      "org.kde.krita"
     ];
     update.auto = {
       enable = true;
