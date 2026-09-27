@@ -14,6 +14,11 @@
       "eu.betterbird.Betterbird"
       "com.github.tchx84.Flatseal"
       "org.onlyoffice.desktopeditors"
+      "org.mozilla.thunderbird"
+      "org.mozilla.firefox"
+      "org.gimp.GIMP"
+      "org.inkscape.Inkscape"
+      "org.kde.digikam"
     ];
     update.auto = {
       enable = true;
