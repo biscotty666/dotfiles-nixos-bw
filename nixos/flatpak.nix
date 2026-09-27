@@ -13,6 +13,7 @@
       "org.kde.krita"
       "eu.betterbird.Betterbird"
       "com.github.tchx84.Flatseal"
+      "org.onlyoffice.desktopeditors"
     ];
     update.auto = {
       enable = true;
