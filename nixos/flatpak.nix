@@ -11,6 +11,8 @@
       "com.discordapp.Discord"
       "com.brave.Browser"
       "org.kde.krita"
+      "eu.betterbird.Betterbird"
+      "com.github.tchx84.Flatseal"
     ];
     update.auto = {
       enable = true;
