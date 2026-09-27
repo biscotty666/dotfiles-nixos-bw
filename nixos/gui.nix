@@ -3,7 +3,7 @@
 {
   environment.systemPackages = with pkgs; [
     vlc
-    thunderbird
+    # thunderbird
     openshot-qt
     proton-vpn
     calibre
