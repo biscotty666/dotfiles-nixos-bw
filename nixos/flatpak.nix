@@ -19,6 +19,7 @@
       "org.gimp.GIMP"
       "org.inkscape.Inkscape"
       "org.kde.digikam"
+      "com.obsproject.Studio"
     ];
     update.auto = {
       enable = true;

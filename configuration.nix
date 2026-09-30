@@ -27,11 +27,11 @@
     ./nixos/lsp.nix
     ./nixos/neovim.nix
     ./nixos/nvidia.nix
-    ./nixos/obs-studio.nix
+    # ./nixos/obs-studio.nix
     ./nixos/options.nix
     ./nixos/restic.nix
     ./nixos/spell.nix
-    ./nixos/steam.nix
+    # ./nixos/steam.nix
     ./nixos/syncthing.nix
     ./nixos/typst.nix
     ./nixos/utilities.nix
