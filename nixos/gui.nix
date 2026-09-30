@@ -4,7 +4,7 @@
   environment.systemPackages = with pkgs; [
     vlc
     # thunderbird
-    openshot-qt
+    # openshot-qt
     proton-vpn
     calibre
     kdePackages.tokodon
