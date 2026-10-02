@@ -14,13 +14,13 @@
       obs-vaapi # optional AMD hardware acceleration
       obs-gstreamer
       obs-vkcapture
-      obs-noise
+      # obs-noise
       pixel-art
       input-overlay
       obs-3d-effect
-      obs-retro-effects
-      obs-vintage-filter
-      obs-composite-blur
+      # obs-retro-effects
+      # obs-vintage-filter
+      # obs-composite-blur
       obs-scale-to-sound
       obs-media-controls
       # obs-move-transition
