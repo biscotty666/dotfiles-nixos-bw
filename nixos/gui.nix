@@ -14,6 +14,7 @@
     gimagereader-qt
     helix
     zed-editor-fhs
+    # blender
     (blender.override {
       config.cudaSupport = true;
       config.rocmSupport = false;
