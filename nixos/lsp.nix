@@ -6,7 +6,7 @@
     ruff
     rPackages.lintr
     rPackages.languageserver
-    typescript-language-server
+    # typescript-language-server
     luaPackages.tree-sitter-cli
     nil
   ];

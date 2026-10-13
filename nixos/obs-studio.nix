@@ -19,11 +19,11 @@
       input-overlay
       obs-3d-effect
       # obs-retro-effects
-      # obs-vintage-filter
-      # obs-composite-blur
+      obs-vintage-filter
+      obs-composite-blur
       obs-scale-to-sound
       obs-media-controls
-      # obs-move-transition
+      obs-move-transition
       obs-wayland-hotkeys
       advanced-scene-switcher
     ];
