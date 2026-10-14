@@ -6,6 +6,8 @@
     # thunderbird
     # openshot-qt
     proton-vpn
+    geogebra6
+    kgeotag
     calibre
     kdePackages.tokodon
     slack

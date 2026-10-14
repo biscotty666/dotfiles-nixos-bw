@@ -19,6 +19,8 @@
       "org.gimp.GIMP"
       "org.inkscape.Inkscape"
       "org.kde.digikam"
+      "com.github.johnfactotum.Foliate"
+      "rocks.koreader.KOReader"
       # "com.obsproject.Studio"
     ];
     update.auto = {
