@@ -108,7 +108,6 @@
     xlsx2csv
     xsel
     xwayland
-    yazi
     zathura
     zoxide
   ];
