@@ -13,7 +13,7 @@
       "org.kde.krita"
       "eu.betterbird.Betterbird"
       "com.github.tchx84.Flatseal"
-      "org.onlyoffice.desktopeditors"
+      # "org.onlyoffice.desktopeditors"
       "org.mozilla.thunderbird"
       "org.mozilla.firefox"
       "org.gimp.GIMP"
@@ -21,7 +21,7 @@
       "org.kde.digikam"
       "com.github.johnfactotum.Foliate"
       "rocks.koreader.KOReader"
-      # "com.obsproject.Studio"
+      "org.openshot.OpenShot"
     ];
     update.auto = {
       enable = true;
