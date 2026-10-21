@@ -9,6 +9,7 @@
     # geogebra6
     kgeotag
     # calibre
+    kmymoney
     kdePackages.tokodon
     slack
     spotify
