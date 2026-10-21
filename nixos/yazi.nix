@@ -50,14 +50,14 @@
       };
     };
     plugins = {
-      bookmarks = pkgs.yaziPlugins.bookmarks.overrideAttrs (oldAttrs: {
-        src = pkgs.fetchFromGitHub {
-          owner = "sidhantunnithan";
-          repo = "bookmarks.yazi";
-          rev = "a61e524a2b74f8f09e5af2265df0a32605f7528c";
-          sha256 = "u5AtP6Mp6OwLQps10PNV1xjwjwfDmZxND0NDnIuqZRY=";
-        };
-      });
+      # bookmarks = pkgs.yaziPlugins.bookmarks.overrideAttrs (oldAttrs: {
+      #   src = pkgs.fetchFromGitHub {
+      #     owner = "sidhantunnithan";
+      #     repo = "bookmarks.yazi";
+      #     rev = "a61e524a2b74f8f09e5af2265df0a32605f7528c";
+      #     sha256 = "u5AtP6Mp6OwLQps10PNV1xjwjwfDmZxND0NDnIuqZRY=";
+      #   };
+      # });
     };
   };
 }
