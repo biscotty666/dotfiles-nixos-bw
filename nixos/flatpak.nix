@@ -18,6 +18,7 @@
       "com.calibre_ebook.calibre"
       "org.geogebra.GeoGebra"
       "org.mozilla.firefox"
+      "org.kde.kmymoney"
       "org.gimp.GIMP"
       "org.inkscape.Inkscape"
       "org.kde.digikam"

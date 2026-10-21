@@ -6,10 +6,9 @@
     # thunderbird
     # openshot-qt
     proton-vpn
-    # geogebra6
+    geogebra6
     kgeotag
     # calibre
-    kmymoney
     kdePackages.tokodon
     slack
     spotify
