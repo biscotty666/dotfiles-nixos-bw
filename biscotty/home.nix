@@ -9,6 +9,7 @@
     # ./noctalia.nix
     # ./plasma.nix
     ./scripts/scripts.nix
+    ./yazi.nix
     # inputs.niri.homeModules.config
   ];
 

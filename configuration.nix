@@ -36,7 +36,7 @@
     ./nixos/typst.nix
     ./nixos/utilities.nix
     ./nixos/vm.nix
-    ./nixos/yazi.nix
+    # ./nixos/yazi.nix
     ./nixos/zsh.nix
   ];
 
