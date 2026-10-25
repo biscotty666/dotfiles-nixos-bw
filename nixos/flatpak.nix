@@ -14,7 +14,7 @@
       # "org.onlyoffice.desktopeditors"
       "org.mozilla.thunderbird"
       "com.calibre_ebook.calibre"
-      # "org.geogebra.GeoGebra"
+      "org.geogebra.GeoGebra"
       "org.mozilla.firefox"
       "org.kde.kmymoney"
       "org.gimp.GIMP"

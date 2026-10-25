@@ -6,7 +6,7 @@
     # thunderbird
     # openshot-qt
     proton-vpn
-    geogebra6
+    # geogebra6
     libreoffice-qt
     kgeotag
     # calibre
