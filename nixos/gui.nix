@@ -7,6 +7,7 @@
     # openshot-qt
     proton-vpn
     geogebra6
+    libreoffice-qt
     kgeotag
     # calibre
     kdePackages.tokodon

@@ -22,6 +22,7 @@
     };
     keymap = {
       mgr.prepend_keymap = [
+        # Bookmarks
         {
           on = [ "n" ];
           run = "plugin bookmarks save";
@@ -48,10 +49,17 @@
           run = "plugin bookmarks delete_all";
           desc = "Delete all bookmarks";
         }
+        # Jump-to-char
         {
           on = [ "F" ];
           run = "plugin jump-to-char";
           desc = "Jump to char";
+        }
+        # wl-clipboard
+        {
+          on = [ "<C-y>" ];
+          run = "plugin wl-clipboard";
+          desc = "Yank file to clipboard";
         }
       ];
     };
@@ -62,6 +70,8 @@
         jump-to-char
         kanagawa
         full-border
+        wl-clipboard
+        mactag
         ;
       starship = {
         package = starship;
@@ -98,7 +108,7 @@
 
     theme.flavor = {
       light = "nord";
-      dark = "kanagawa";
+      dark = "nord";
     };
 
     initLua = /* lua */ ''
