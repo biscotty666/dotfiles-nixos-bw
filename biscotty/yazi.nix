@@ -4,22 +4,22 @@
     enable = true;
     enableZshIntegration = true;
     shellWrapperName = "y";
-    settings = {
-      yazi.mgr = {
-        ratio = [
-          1
-          3
-          3
-        ];
-        sort_by = "natural";
-        sort_sensitive = true;
-        sort_reverse = false;
-        sort_dir_first = true;
-        linemode = "none";
-        show_hidden = true;
-        show_symlink = true;
-      };
-    };
+    # settings = {
+    #   yazi.mgr = {
+    #     ratio = [
+    #       1
+    #       3
+    #       3
+    #     ];
+    #     sort_by = "natural";
+    #     sort_sensitive = true;
+    #     sort_reverse = false;
+    #     sort_dir_first = true;
+    #     linemode = "none";
+    #     show_hidden = true;
+    #     show_symlink = true;
+    #   };
+    # };
     keymap = {
       mgr.prepend_keymap = [
         # Bookmarks
@@ -71,7 +71,7 @@
         kanagawa
         full-border
         wl-clipboard
-        mactag
+        office
         ;
       starship = {
         package = starship;
@@ -104,21 +104,54 @@
       };
     };
 
-    flavors = { inherit (pkgs.yaziPlugins) nord kanagawa; };
+    flavors = { inherit (pkgs.yaziPlugins) yatline-catppuccin nord kanagawa; };
 
     theme.flavor = {
-      light = "nord";
-      dark = "nord";
+      # light = "nord";
+      dark = "kanagawa";
     };
 
     initLua = /* lua */ ''
-      require("yatline"):setup({
-        theme = require("nord"):setup(),
-      })
+      -- require("yatline"):setup({
+      --   theme = require("nord"):setup(),
+      -- })
       require("full-border"):setup {
       	set = "rounded",
       }
     '';
 
   };
+
+  xdg.configFile."yazi/yazi.toml".text = ''
+      [yazi.mgr]
+
+      linemode = "none"
+      ratio = [1, 3, 3]
+      show_hidden = true
+      show_symlink = true
+      sort_by = "natural"
+      sort_dir_first = true
+      sort_reverse = false
+      sort_sensitive = true
+
+      [plugin]
+
+      prepend_preloaders = [
+        # Office Documents
+        { mime = "application/openxmlformats-officedocument.*", run = "office" },
+        { mime = "application/oasis.opendocument.*", run = "office" },
+        { mime = "application/ms-*", run = "office" },
+        { mime = "application/msword", run = "office" },
+        { url = "*.docx", run = "office" },
+    ]
+
+      prepend_previewers = [
+        # Office Documents
+        { mime = "application/openxmlformats-officedocument.*", run = "office" },
+        { mime = "application/oasis.opendocument.*", run = "office" },
+        { mime = "application/ms-*", run = "office" },
+        { mime = "application/msword", run = "office" },
+        { url = "*.docx", run = "office" },
+    ]
+  '';
 }
