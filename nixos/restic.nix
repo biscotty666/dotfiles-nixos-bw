@@ -11,7 +11,7 @@ in
   systemd.timers."restic-backup" = {
     wantedBy = [ "timers.target" ];
     timerConfig = {
-      OnBootSec = "5m";
+      OnBootSec = "30m";
       OnUnitActiveSec = "12h";
       Unit = "restic-backup.service";
     };
