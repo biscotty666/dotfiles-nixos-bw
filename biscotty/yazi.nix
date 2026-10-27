@@ -61,10 +61,17 @@
           run = "plugin wl-clipboard";
           desc = "Yank file to clipboard";
         }
+        # kde-connect
+        {
+          on = [ "<C-s>" ];
+          run = "plugin kdeconnect-send";
+          desc = "Send selected files via KDE Connect";
+        }
       ];
     };
     plugins = with pkgs.yaziPlugins; {
       inherit
+        kdeconnect-send
         nord
         yatline
         jump-to-char
@@ -72,6 +79,9 @@
         full-border
         wl-clipboard
         office
+        piper
+        glow
+        rich-preview
         ;
       starship = {
         package = starship;
@@ -86,7 +96,7 @@
             persist = false;
             mode = "dir";
           };
-          persist = "none";
+          persist = "all";
           desc_format = "full";
           file_pick_mode = "hover";
           custom_desc_input = false;
@@ -107,14 +117,14 @@
     flavors = { inherit (pkgs.yaziPlugins) yatline-catppuccin nord kanagawa; };
 
     theme.flavor = {
-      # light = "nord";
+      light = "nord";
       dark = "kanagawa";
     };
 
     initLua = /* lua */ ''
-      -- require("yatline"):setup({
-      --   theme = require("nord"):setup(),
-      -- })
+      require("yatline"):setup({
+        theme = require("nord"):setup(),
+      })
       require("full-border"):setup {
       	set = "rounded",
       }
@@ -123,35 +133,44 @@
   };
 
   xdg.configFile."yazi/yazi.toml".text = ''
-      [yazi.mgr]
+    [mgr]
 
-      linemode = "none"
-      ratio = [1, 3, 3]
-      show_hidden = true
-      show_symlink = true
-      sort_by = "natural"
-      sort_dir_first = true
-      sort_reverse = false
-      sort_sensitive = true
+    linemode = "none"
+    ratio = [1, 3, 3]
+    show_hidden = true
+    show_symlink = true
+    sort_by = "natural"
+    sort_dir_first = true
+    sort_reverse = false
+    sort_sensitive = true
 
-      [plugin]
+    [plugin]
 
-      prepend_preloaders = [
-        # Office Documents
-        { mime = "application/openxmlformats-officedocument.*", run = "office" },
-        { mime = "application/oasis.opendocument.*", run = "office" },
-        { mime = "application/ms-*", run = "office" },
-        { mime = "application/msword", run = "office" },
-        { url = "*.docx", run = "office" },
+    prepend_preloaders = [
+      # Office Documents
+      { mime = "application/openxmlformats-officedocument.*", run = "office" },
+      { mime = "application/oasis.opendocument.*", run = "office" },
+      { mime = "application/ms-*", run = "office" },
+      { mime = "application/msword", run = "office" },
+      { url = "*.docx", run = "office" },
     ]
 
-      prepend_previewers = [
-        # Office Documents
-        { mime = "application/openxmlformats-officedocument.*", run = "office" },
-        { mime = "application/oasis.opendocument.*", run = "office" },
-        { mime = "application/ms-*", run = "office" },
-        { mime = "application/msword", run = "office" },
-        { url = "*.docx", run = "office" },
+    prepend_previewers = [
+      # Office Documents
+      { mime = "application/openxmlformats-officedocument.*", run = "office" },
+      { mime = "application/oasis.opendocument.*", run = "office" },
+      { mime = "application/ms-*", run = "office" },
+      { mime = "application/msword", run = "office" },
+      { url = "*.docx", run = "office" },
+      { url = "*.csv", run = 'piper -- bat -p --color=always  "$1"' },
+      # { url = "*.csv", run = "rich-preview"}, # for csv files
+      { url = "*.md", run = "rich-preview" }, # for markdown (.md) files
+      { url = "*.rst", run = "rich-preview"}, # for restructured text (.rst) files
+      { url = "*.ipynb", run = "rich-preview"}, # for jupyter notebooks (.ipynb)
+      { url = "*.json", run = "rich-preview"}, # for json (.json) files
+      #    { url = "*.lang_type", run = "rich-preview"} # for particular language files eg. .py, .go., .lua, etc.
+
     ]
+
   '';
 }

@@ -39,6 +39,7 @@
     gh
     ghostscript
     git
+    glow
     gocryptfs
     gv
     httpie-desktop
@@ -79,6 +80,7 @@
     qemu
     quickemu
     restic
+    rich-cli
     ripgrep
     ripgrep-all
     ruff
