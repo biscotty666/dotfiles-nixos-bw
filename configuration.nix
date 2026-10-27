@@ -12,7 +12,6 @@
     # ./nixos/osrm.nix
     # ./nixos/zen.nix
     #./nixos/sops.nix
-    ./brian/modules/utils.nix
     ./containers/database.nix
     ./nixos/bootloader.nix
     ./nixos/cachix.nix
