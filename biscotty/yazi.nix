@@ -1,5 +1,10 @@
 { pkgs, ... }:
 {
+  home.packages = with pkgs; [
+    miller
+    rich-cli
+    glow
+  ];
   programs.yazi = {
     enable = true;
     enableZshIntegration = true;
@@ -82,6 +87,7 @@
         piper
         glow
         rich-preview
+        miller
         ;
       starship = {
         package = starship;
@@ -142,7 +148,7 @@
     sort_by = "natural"
     sort_dir_first = true
     sort_reverse = false
-    sort_sensitive = true
+    sort_sensitive = false
 
     [plugin]
 
@@ -162,8 +168,9 @@
       { mime = "application/ms-*", run = "office" },
       { mime = "application/msword", run = "office" },
       { url = "*.docx", run = "office" },
-      { url = "*.csv", run = 'piper -- bat -p --color=always  "$1"' },
+      # { url = "*.csv", run = 'piper -- bat -p --color=always  "$1"' },
       # { url = "*.csv", run = "rich-preview"}, # for csv files
+      { mime = "text/csv", run = "miller" },
       { url = "*.md", run = "rich-preview" }, # for markdown (.md) files
       { url = "*.rst", run = "rich-preview"}, # for restructured text (.rst) files
       { url = "*.ipynb", run = "rich-preview"}, # for jupyter notebooks (.ipynb)
