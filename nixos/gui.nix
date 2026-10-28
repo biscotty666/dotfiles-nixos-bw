@@ -10,7 +10,6 @@
     libreoffice-qt
     kgeotag
     # calibre
-    kdePackages.tokodon
     slack
     spotify
     element-desktop

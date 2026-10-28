@@ -11,6 +11,9 @@
     konversation # IRC client
     kpat # Solitaire
     ksudoku
+    kmail
+    kmailtransport
+    kmail-account-wizard
   ];
   environment.systemPackages = with pkgs.kdePackages; [
     # fcitx5-with-addons
@@ -19,5 +22,6 @@
     kparts
     parley
     sddm
+    tokodon
   ];
 }
