@@ -10,6 +10,8 @@
     # ./plasma.nix
     ./scripts/scripts.nix
     ./yazi.nix
+    ./gui.nix
+    # ./flatpak.nix
     # inputs.niri.homeModules.config
   ];
 
