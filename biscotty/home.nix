@@ -11,7 +11,7 @@
     ./scripts/scripts.nix
     ./yazi.nix
     ./gui.nix
-    # ./flatpak.nix
+    ./flatpak.nix
     # inputs.niri.homeModules.config
   ];
 

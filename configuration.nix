@@ -16,10 +16,8 @@
     ./nixos/bootloader.nix
     ./nixos/cachix.nix
     ./nixos/dm.nix
-    ./nixos/flatpak.nix
     ./nixos/fonts.nix
     # ./nixos/gnome.nix
-    # ./nixos/gui.nix
     ./nixos/kde.nix
     ./nixos/kindle.nix
     ./nixos/langs.nix

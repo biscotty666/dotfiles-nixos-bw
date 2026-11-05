@@ -23,6 +23,7 @@ in
   programs = {
     zsh = {
       enable = true;
+      dotDir = config.home.homeDirectory;
       enableCompletion = true;
       autosuggestion.enable = true;
       syntaxHighlighting.enable = true;
@@ -60,5 +61,8 @@ in
     #   enable = true;
     #   shellAliases = myAliases;
     # };
+  };
+  home.sessionVariables = {
+    XDG_DATA_DIRS = "$XDG_DATA_DIRS:/var/lib/flatpak/exports/share:$HOME/.local/share/flatpak/exports/share";
   };
 }

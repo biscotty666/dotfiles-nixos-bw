@@ -61,7 +61,7 @@
         specialArgs = { inherit inputs; };
         modules = [
           ./configuration.nix
-          nix-flatpak.nixosModules.nix-flatpak
+          # nix-flatpak.nixosModules.nix-flatpak
           nix-index-database.nixosModules.default
           # sops-nix.nixosModules.sops
           # niri-session-manager.nixosModules.niri-session-manager
@@ -78,6 +78,7 @@
         modules = [
           # inputs.plasma-manager.homeModules.plasma-manager
           ./biscotty/home.nix
+          nix-flatpak.homeManagerModules.nix-flatpak
         ];
       };
     };
