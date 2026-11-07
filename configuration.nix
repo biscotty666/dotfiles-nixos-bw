@@ -24,7 +24,7 @@
     ./nixos/lsp.nix
     ./nixos/neovim.nix
     ./nixos/nvidia.nix
-    ./nixos/obs-studio.nix
+    # ./nixos/obs-studio.nix
     ./nixos/options.nix
     # ./nixos/pihole.nix
     ./nixos/restic.nix

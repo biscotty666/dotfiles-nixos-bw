@@ -11,6 +11,7 @@
     ./scripts/scripts.nix
     ./yazi.nix
     ./gui.nix
+    ./obs-studio.nix
     ./flatpak.nix
     # inputs.niri.homeModules.config
   ];
