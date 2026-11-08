@@ -11,16 +11,11 @@
 
   boot.kernelPackages = pkgs.linuxPackages_7_3;
 
-  hardware = {
-  };
-
   services.xserver.videoDrivers = [ "nvidia" ];
   nix.settings.system-features = [ "cuda" ];
 
   hardware = {
-    graphics = {
-      enable = true;
-    };
+    graphics.enable = true;
     nvidia = {
       branch = "legacy_580";
       modesetting.enable = true;

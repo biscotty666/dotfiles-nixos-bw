@@ -4,7 +4,7 @@
 
   environment.systemPackages = with pkgs; [
     aaxtomp3
-    air-formatter
+    # air-formatter
     age
     appimage-run
     ascii-image-converter
