@@ -24,9 +24,12 @@
       "rocks.koreader.KOReader"
       "org.openshot.OpenShot"
     ];
-    update.auto = {
-      enable = true;
-      onCalendar = "daily";
+    update = {
+      onActivation = true;
+      auto = {
+        enable = true;
+        onCalendar = "daily";
+      };
     };
   };
   home.sessionVariables = {
