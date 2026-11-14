@@ -8,12 +8,14 @@
     kdepim-runtime # Akonadi agents
     kmahjongg
     kmines
+    kontact
     konversation # IRC client
     kpat # Solitaire
     ksudoku
     kmail
     kmailtransport
     kmail-account-wizard
+    kate
   ];
   environment.systemPackages = with pkgs.kdePackages; [
     # fcitx5-with-addons
