@@ -12,7 +12,7 @@
     ./yazi.nix
     ./gui.nix
     ./obs-studio.nix
-    # ./flatpak.nix
+    ./flatpak.nix
     # inputs.niri.homeModules.config
   ];
 

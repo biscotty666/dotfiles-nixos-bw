@@ -17,7 +17,7 @@
     ./nixos/cachix.nix
     ./nixos/dm.nix
     ./nixos/fonts.nix
-    ./nixos/flatpak.nix
+    # ./nixos/flatpak.nix
     # ./nixos/gnome.nix
     ./nixos/kde.nix
     ./nixos/kindle.nix

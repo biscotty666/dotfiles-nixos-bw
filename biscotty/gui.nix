@@ -8,7 +8,7 @@
     # openshot-qt
     proton-vpn
     # geogebra6
-    libreoffice-qt
+    # libreoffice-qt
     kgeotag
     # calibre
     slack
