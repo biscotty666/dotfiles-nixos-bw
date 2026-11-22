@@ -11,8 +11,6 @@
       "org.kde.krita"
       "eu.betterbird.Betterbird"
       "com.github.tchx84.Flatseal"
-      # "org.onlyoffice.desktopeditors"
-      "org.mozilla.thunderbird"
       "com.calibre_ebook.calibre"
       "org.geogebra.GeoGebra"
       "org.mozilla.firefox"
