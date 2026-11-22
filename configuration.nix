@@ -12,7 +12,7 @@
     # ./nixos/osrm.nix
     # ./nixos/zen.nix
     #./nixos/sops.nix
-    ./containers/database.nix
+    # ./containers/database.nix
     ./nixos/bootloader.nix
     ./nixos/cachix.nix
     ./nixos/dm.nix
@@ -131,7 +131,7 @@
       "networkmanager"
       "wheel"
       "input"
-      "mlocate"
+      # "mlocate"
     ];
   };
 

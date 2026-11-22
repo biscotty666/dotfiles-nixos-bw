@@ -1,4 +1,4 @@
-{ config, pkgs, ... }: {
+{ pkgs, ... }: {
   environment.systemPackages = with pkgs; [ postgresql ];
   containers.database = {
     config = { config, pkgs, ... }: {
