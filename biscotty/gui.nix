@@ -9,15 +9,15 @@
     proton-vpn
     # geogebra6
     # libreoffice-qt
-    kgeotag
+    # kgeotag
     # calibre
-    slack
+    # slack
     spotify
-    element-desktop
+    # element-desktop
     gimagereader-qt
-    helix
-    zed-editor-fhs
-    blender
+    # helix
+    # zed-editor-fhs
+    # blender
     # (blender.override {
     #   config.cudaSupport = true;
     #   config.rocmSupport = false;
