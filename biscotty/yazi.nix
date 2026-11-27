@@ -39,6 +39,11 @@
           desc = "Jump to a bookmark";
         }
         {
+          on = [ "!" ];
+          run = "shell '$SHELL' --block";
+          desc = "Open shell";
+        }
+        {
           on = [
             "b"
             "d"
