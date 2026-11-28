@@ -5,12 +5,15 @@
   home.packages = with pkgs; [
     vlc
     # thunderbird
-    # openshot-qt
+    openshot-qt
     proton-vpn
     # geogebra6
-    # libreoffice-qt
+    libreoffice-qt
     # kgeotag
-    # calibre
+    calibre
+    obsidian
+    wike
+    brave
     # slack
     spotify
     # element-desktop

@@ -3,17 +3,17 @@
     enable = true;
     packages = [
       "app.zen_browser.zen"
-      "org.libreoffice.LibreOffice"
-      "md.obsidian.Obsidian"
-      "com.github.hugolabe.Wike"
+      # "org.libreoffice.LibreOffice"
+      # "md.obsidian.Obsidian"
+      # "com.github.hugolabe.Wike"
       # "com.discordapp.Discord"
-      "com.brave.Browser"
+      # "com.brave.Browser"
       # "org.kde.krita"
       "eu.betterbird.Betterbird"
       "com.github.tchx84.Flatseal"
       # "org.onlyoffice.desktopeditors"
       # "org.mozilla.thunderbird"
-      "com.calibre_ebook.calibre"
+      # "com.calibre_ebook.calibre"
       # "org.geogebra.GeoGebra"
       # "org.mozilla.firefox"
       # "org.kde.kmymoney"
@@ -22,7 +22,7 @@
       # "org.kde.digikam"
       # "com.github.johnfactotum.Foliate"
       # "rocks.koreader.KOReader"
-      "org.openshot.OpenShot"
+      # "org.openshot.OpenShot"
     ];
     update = {
       onActivation = true;
